@@ -54,7 +54,7 @@
                     <div class="flex gap-3">
                         <a href="/"
                            class="bg-purple-600 hover:bg-purple-700 text-white text-2xl p-4 rounded-lg font-semibold">Register</a>
-                        <a href="/"
+                        <a href="/courses"
                            class="bg-gray-100 hover:bg-gray-200 text-gray-700 hover:text-black text-2xl p-4 rounded-lg font-semibold">Explore
                             Courses</a>
                     </div>
