@@ -1,13 +1,12 @@
-<footer class="pt-20 pb-12 px-2 relative">
-    <div class="container mx-auto flex gap-2 flex-col justify-between">
-        <div class="flex justify-between">
-            <x-footer.newsletter/>
+<footer class="px-2">
+    <div class="container mx-auto pt-12 pb-6 flex flex-col justify-between">
+        <div class="flex justify-between items-center">
+            <x-footer.nav/>
             <x-footer.social/>
         </div>
-        <hr class="border-px my-8">
-        <div class="flex justify-between">
-            <p class="text-gray-500 text-center text-lg">&copy; 2024 All rights reserved.</p>
-            <x-footer.nav/>
+        <hr class="border-px my-5">
+        <div>
+            <p class="text-gray-500 text-center text-lg">&copy; Watch 2024. All rights reserved.</p>
         </div>
     </div>
 </footer>

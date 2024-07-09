@@ -12,8 +12,13 @@
                 <a href="#" class="font-semibold hover:text-purple-800 text-xl">About</a>
             </li>
         </ul>
-        <div class="w-1/3 text-right">
-            <a href="#" class="font-semibold hover:text-purple-800 text-xl">Login &rarr;</a>
-        </div>
+        <ul class="flex gap-6 w-1/3 justify-end">
+            <li>
+                <a href="#" class="font-semibold hover:text-purple-800 text-xl">Register</a>
+            </li>
+            <li>
+                <a href="#" class="font-semibold hover:text-purple-800 text-xl">Login &rarr;</a>
+            </li>
+        </ul>
     </nav>
 </header>

@@ -22,4 +22,5 @@
             </div>
         </div>
     </section>
+    <x-footer.newsletter/>
 </x-layout>
