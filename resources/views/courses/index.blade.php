@@ -49,7 +49,8 @@
                 </div>
                 <div class="w-3/4 flex flex-col gap-8">
                     <form action="/" class="flex gap-1">
-                        <input class="border-2 py-2 px-4 flex-grow rounded-lg" type="search" placeholder="Search by course title or description">
+                        <input class="border-2 py-2 px-4 flex-grow rounded-lg" type="search"
+                               placeholder="Search by course title or description">
                         <button class="bg-purple-500 p-3 rounded-lg">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="size-6 fill-white">
                                 <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
