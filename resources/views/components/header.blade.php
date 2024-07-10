@@ -9,7 +9,7 @@
                 <a href="#" class="font-semibold hover:text-purple-800 text-xl">Courses</a>
             </li>
             <li>
-                <a href="#" class="font-semibold hover:text-purple-800 text-xl">About</a>
+                <a href="/contact" class="font-semibold hover:text-purple-800 text-xl">Contact</a>
             </li>
         </ul>
         <ul class="flex gap-6 w-1/3 justify-end">

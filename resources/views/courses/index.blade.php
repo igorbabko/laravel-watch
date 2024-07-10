@@ -1,5 +1,5 @@
 <x-layout>
-    <section class="px-2">
+    <x-section>
         <div class="container py-20 mx-auto flex flex-col items-center gap-6">
             <x-heading>Courses</x-heading>
             <div class="flex gap-6">
@@ -77,5 +77,5 @@
                 </div>
             </div>
         </div>
-    </section>
+    </x-section>
 </x-layout>

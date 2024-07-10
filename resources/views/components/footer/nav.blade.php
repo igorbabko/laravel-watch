@@ -6,7 +6,7 @@
         <a href="/" class="text-gray-600 hover:text-purple-600 text-lg font-medium">Courses</a>
     </li>
     <li>
-        <a href="/" class="text-gray-600 hover:text-purple-600 text-lg font-medium">About</a>
+        <a href="/contact" class="text-gray-600 hover:text-purple-600 text-lg font-medium">Contact</a>
     </li>
     <li>
         <a href="/" class="text-gray-600 hover:text-purple-600 text-lg font-medium">Privacy</a>
