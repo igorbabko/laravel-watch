@@ -2,8 +2,7 @@
     <x-hero/>
     <section class="px-2">
         <div class="container pb-20 mx-auto flex flex-col items-center gap-6">
-            <h2 class="text-5xl font-black">Topics</h2>
-            <hr class="border-4 border-pink-500 my-4 w-20 rounded-lg">
+            <x-heading type="section">Topics</x-heading>
             <div class="grid gap-4 grid-cols-3 w-full">
                 <x-topic name="Laravel" logo="/img/laravel.svg" course-count="4" lesson-count="72"/>
                 <x-topic name="Symfony" logo="/img/symfony.svg" course-count="4" lesson-count="72"/>
@@ -17,8 +16,7 @@
     </section>
     <section class="px-2">
         <div class="container py-20 mx-auto flex flex-col items-center gap-6">
-            <h2 class="text-5xl font-black">Latest Courses</h2>
-            <hr class="border-4 border-pink-500 my-4 w-20 rounded-lg">
+            <x-heading type="section">Latest Courses</x-heading>
             <div class="flex gap-4">
                 <x-course/>
                 <x-course/>
@@ -28,8 +26,7 @@
     </section>
     <section class="px-2">
         <div class="container py-20 mx-auto flex flex-col items-center gap-6">
-            <h2 class="text-5xl font-black">Popular Courses</h2>
-            <hr class="border-4 border-pink-500 my-4 w-20 rounded-lg">
+            <x-heading type="section">Popular Courses</x-heading>
             <div class="flex gap-4">
                 <x-course/>
                 <x-course/>
