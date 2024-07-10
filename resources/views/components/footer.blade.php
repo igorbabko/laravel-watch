@@ -1,4 +1,4 @@
-<footer class="px-2">
+<footer class="px-10">
     <div class="container mx-auto pt-12 pb-6 flex flex-col justify-between">
         <x-newsletter/>
         <div class="flex justify-between items-center">

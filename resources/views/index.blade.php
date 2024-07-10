@@ -1,6 +1,6 @@
 <x-layout>
     <x-hero/>
-    <section class="px-2">
+    <x-section>
         <div class="container pb-20 mx-auto flex flex-col items-center gap-6">
             <x-heading type="section">Topics</x-heading>
             <div class="grid gap-4 grid-cols-3 w-full">
@@ -13,8 +13,8 @@
                 <x-topic name="Tailwind" logo="/img/tailwind.svg" course-count="4" lesson-count="72"/>
             </div>
         </div>
-    </section>
-    <section class="px-2">
+    </x-section>
+    <x-section>
         <div class="container py-20 mx-auto flex flex-col items-center gap-6">
             <x-heading type="section">Latest Courses</x-heading>
             <div class="flex gap-4">
@@ -23,8 +23,8 @@
                 <x-course/>
             </div>
         </div>
-    </section>
-    <section class="px-2">
+    </x-section>
+    <x-section>
         <div class="container py-20 mx-auto flex flex-col items-center gap-6">
             <x-heading type="section">Popular Courses</x-heading>
             <div class="flex gap-4">
@@ -33,5 +33,5 @@
                 <x-course/>
             </div>
         </div>
-    </section>
+    </x-section>
 </x-layout>

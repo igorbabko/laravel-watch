@@ -1,4 +1,4 @@
-<header class="absolute w-full px-2 z-10">
+<header class="absolute w-full px-10 z-10">
     <nav class="container mx-auto flex justify-between items-center py-4">
         <x-header.logo/>
         <ul class="flex gap-6">

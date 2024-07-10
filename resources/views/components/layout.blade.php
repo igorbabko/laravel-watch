@@ -9,7 +9,7 @@
         <script src="https://cdn.tailwindcss.com"></script>
         @vite('resources/js/app.js')
     </head>
-    <body class="px-8 border-box">
+    <body>
         <x-header/>
         <main class="overflow-x-hidden">{{ $slot }}</main>
         <x-footer/>
