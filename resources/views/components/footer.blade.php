@@ -1,5 +1,6 @@
 <footer class="px-2">
     <div class="container mx-auto pt-12 pb-6 flex flex-col justify-between">
+        <x-newsletter/>
         <div class="flex justify-between items-center">
             <x-footer.nav/>
             <x-footer.social/>
