@@ -3,11 +3,7 @@
         Want to receive updates about courses?
     </h3>
     <form action="/" class="flex gap-4">
-        <input
-            class="w-96 rounded-lg border-2 p-2"
-            type="email"
-            placeholder="Your email"
-        />
+        <x-input type="email" placeholder="Your email" class="w-96" />
         <x-button>Subscribe</x-button>
     </form>
 </div>

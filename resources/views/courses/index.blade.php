@@ -48,11 +48,11 @@
                     </ul>
                 </div>
                 <div class="flex w-3/4 flex-col gap-8">
-                    <form action="/" class="flex gap-1">
-                        <input
-                            class="flex-grow rounded-lg border-2 px-4 py-2"
+                    <form action="/" class="flex gap-2">
+                        <x-input
                             type="search"
                             placeholder="Search by course title or description"
+                            class="flex-grow"
                         />
                         <x-button>
                             <svg
