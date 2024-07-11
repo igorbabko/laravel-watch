@@ -1,4 +1,6 @@
-<footer class="mx-4 flex justify-between pb-6 font-semibold">
+<footer
+    {{ $attributes->merge(["class" => "flex justify-between font-semibold"]) }}
+>
     <span class="flex items-center gap-2">
         <svg
             xmlns="http://www.w3.org/2000/svg"
