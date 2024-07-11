@@ -1,37 +1,17 @@
 <ul class="flex gap-6">
     <li>
-        <a
-            href="/"
-            class="text-lg font-medium text-white hover:text-purple-100"
-        >
-            Home
-        </a>
+        <x-footer.nav-link href="/">Home</x-footer.nav-link>
     </li>
     <li>
-        <a
-            href="/"
-            class="text-lg font-medium text-white hover:text-purple-100"
-        >
-            Courses
-        </a>
+        <x-footer.nav-link href="/courses">Courses</x-footer.nav-link>
     </li>
     <li>
-        <a
-            href="/contact"
-            class="text-lg font-medium text-white hover:text-purple-100"
-        >
-            Contact
-        </a>
+        <x-footer.nav-link href="/contact">Contact</x-footer.nav-link>
     </li>
     <li>
-        <a
-            href="/"
-            class="text-lg font-medium text-white hover:text-purple-100"
-        >
-            Privacy
-        </a>
+        <x-footer.nav-link href="/">Privacy</x-footer.nav-link>
     </li>
     <li>
-        <a href="/" class="text-lg text-white hover:text-purple-100">Terms</a>
+        <x-footer.nav-link href="/">Terms</x-footer.nav-link>
     </li>
 </ul>
