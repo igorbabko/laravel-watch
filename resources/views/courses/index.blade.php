@@ -1,5 +1,6 @@
 <x-layout>
     <x-section>
+        <x-circles class="-right-40 -top-40 rotate-90" />
         <div class="container mx-auto flex flex-col items-center gap-6 py-20">
             <x-heading>Courses</x-heading>
             <div class="flex gap-6">
