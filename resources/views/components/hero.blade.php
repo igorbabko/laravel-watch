@@ -15,8 +15,8 @@
         }
     </style>
 
-    <x-circles class="-right-40 -top-40 rotate-90" />
-    <x-circles class="-bottom-1/3 -left-40" />
+    {{-- <x-circles class="-right-40 -top-40 rotate-90" /> --}}
+    {{-- <x-circles class="-bottom-1/3 -left-40" /> --}}
     <div
         class="container mx-auto flex h-screen flex-col items-center justify-center"
     >

@@ -1,10 +1,10 @@
 <x-layout>
     <x-section>
-        <x-circles class="-right-40 -top-40 rotate-90" />
+        {{-- <x-circles class="-right-40 -top-40 rotate-90" /> --}}
         <div class="container mx-auto flex flex-col items-center gap-6 py-20">
             <x-heading>Courses</x-heading>
-            <div class="flex gap-6">
-                <div class="flex w-1/4 flex-col">
+            <div class="top-20 flex items-start gap-6">
+                <div class="sticky top-9 flex w-1/4 flex-col">
                     <x-filters
                         :items="['Laravel', 'Symfony', 'Vue', 'React', 'Angular', 'Nuxt', 'Tailwind CSS']"
                     />
@@ -15,7 +15,7 @@
                     <hr class="my-8" />
                     <x-filters :items="['Free', 'Paid']" />
                 </div>
-                <div class="flex w-3/4 flex-col gap-8">
+                <div class="flex w-3/4 flex-col gap-6">
                     <form action="/" class="flex gap-2">
                         <x-input
                             type="search"
