@@ -3,49 +3,16 @@
         <div class="container mx-auto flex flex-col items-center gap-6 py-20">
             <x-heading>Courses</x-heading>
             <div class="flex gap-6">
-                {{-- <h2 class="text-3xl font-semibold">Topics</h2> --}}
                 <div class="flex w-1/4 flex-col">
-                    <ul class="space-y-4">
-                        <li>
-                            <x-filter-item>Laravel</x-filter-item>
-                        </li>
-                        <li>
-                            <x-filter-item>Symfony</x-filter-item>
-                        </li>
-                        <li>
-                            <x-filter-item>Laravel</x-filter-item>
-                        </li>
-                        <li>
-                            <x-filter-item>Laravel</x-filter-item>
-                        </li>
-                        <li>
-                            <x-filter-item>Laravel</x-filter-item>
-                        </li>
-                        <li>
-                            <x-filter-item>Laravel</x-filter-item>
-                        </li>
-                    </ul>
+                    <x-filters
+                        :items="['Laravel', 'Symfony', 'Vue', 'React', 'Angular', 'Nuxt', 'Tailwind CSS']"
+                    />
                     <hr class="my-8" />
-                    <ul class="space-y-4">
-                        <li>
-                            <x-filter-item>Beginner</x-filter-item>
-                        </li>
-                        <li>
-                            <x-filter-item>Intermediate</x-filter-item>
-                        </li>
-                        <li>
-                            <x-filter-item>Advanced</x-filter-item>
-                        </li>
-                    </ul>
+                    <x-filters
+                        :items="['Beginner', 'Intermediate', 'Advanced']"
+                    />
                     <hr class="my-8" />
-                    <ul class="space-y-4">
-                        <li>
-                            <x-filter-item>Free</x-filter-item>
-                        </li>
-                        <li>
-                            <x-filter-item>Paid</x-filter-item>
-                        </li>
-                    </ul>
+                    <x-filters :items="['Free', 'Paid']" />
                 </div>
                 <div class="flex w-3/4 flex-col gap-8">
                     <form action="/" class="flex gap-2">
@@ -67,19 +34,9 @@
                         </x-button>
                     </form>
                     <div class="grid grid-cols-2 gap-4">
-                        <x-course />
-                        <x-course />
-                        <x-course />
-                        <x-course />
-                        <x-course />
-                        <x-course />
-                        <x-course />
-                        <x-course />
-                        <x-course />
-                        <x-course />
-                        <x-course />
-                        <x-course />
-                        <x-course />
+                        @foreach (range(1, 10) as $i)
+                            <x-course />
+                        @endforeach
                     </div>
                 </div>
             </div>
