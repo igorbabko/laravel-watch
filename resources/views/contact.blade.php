@@ -3,33 +3,18 @@
         <div class="container mx-auto flex flex-col items-center gap-6 py-20">
             <x-heading>Contact Us</x-heading>
             <form action="/" class="flex w-full max-w-xl flex-col gap-6">
-                <div class="flex flex-col gap-1">
-                    <label for="name" class="text-xl font-medium">Name</label>
-                    <input
-                        id="name"
-                        class="flex-grow rounded-lg border-2 px-4 py-2"
-                        type="text"
-                    />
-                </div>
-                <div class="flex flex-col gap-1">
-                    <label for="email" class="text-xl font-medium">Email</label>
-                    <input
-                        id="email"
-                        class="flex-grow rounded-lg border-2 px-4 py-2"
-                        type="text"
-                    />
-                </div>
-                <div class="flex flex-col gap-1">
-                    <label for="message" class="text-xl font-medium">
-                        Message
-                    </label>
-                    <textarea
-                        id="message"
-                        class="flex-grow rounded-lg border-2 px-4 py-2"
-                        cols="30"
-                        rows="10"
-                    ></textarea>
-                </div>
+                <x-form-control>
+                    <x-label for="name">Name</x-label>
+                    <x-input id="name" />
+                </x-form-control>
+                <x-form-control>
+                    <x-label for="email">Email</x-label>
+                    <x-input id="email" />
+                </x-form-control>
+                <x-form-control>
+                    <x-label for="message">Message</x-label>
+                    <x-textarea id="message" cols="30" rows="10" />
+                </x-form-control>
                 <x-button>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"

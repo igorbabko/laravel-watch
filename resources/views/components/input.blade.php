@@ -1,3 +1,3 @@
 <input
-    {{ $attributes->merge(["class" => "rounded-lg border-2 py-2 px-4"]) }}
+    {{ $attributes->merge(["type" => "text", "class" => "rounded-lg border-2 py-2 px-4"]) }}
 />
