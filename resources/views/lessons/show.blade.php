@@ -77,10 +77,22 @@
             </div>
             <div class="flex flex-col gap-4">
                 <h2 class="mb-4 text-3xl font-bold">Comments</h2>
-                <x-form-field>
-                    <x-label>Write your comment here</x-label>
-                    <x-textarea />
-                </x-form-field>
+                <form action="/" class="mb-4 flex flex-col gap-3">
+                    <x-form-field>
+                        <x-label for="comment">Write your comment here</x-label>
+                        <x-textarea id="comment" />
+                    </x-form-field>
+                    <x-button>Reply</x-button>
+                </form>
+                <div class="flex flex-col gap-3">
+                    <x-comment />
+                    <x-comment />
+                    <x-comment />
+                    <x-comment />
+                    <x-comment />
+                    <x-comment />
+                    <x-comment />
+                </div>
             </div>
         </div>
     </x-section>
