@@ -13,10 +13,20 @@
     </ul>
     <ul class="flex w-1/3 justify-end gap-6">
         <li>
-            <x-nav.link href="/register">Register</x-nav.link>
+            <x-nav.link
+                :href="route('register')"
+                :is-active="request()->route()->named('register')"
+            >
+                Register
+            </x-nav.link>
         </li>
         <li>
-            <x-nav.link href="/login">Login &rarr;</x-nav.link>
+            <x-nav.link
+                :href="route('login')"
+                :is-active="request()->route()->named('login')"
+            >
+                Login &rarr;
+            </x-nav.link>
         </li>
     </ul>
 </nav>
