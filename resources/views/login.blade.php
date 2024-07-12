@@ -8,6 +8,9 @@
             <x-label for="password">Password</x-label>
             <x-input id="password" type="password" required />
         </x-form-field>
+        <x-checkbox class="flex items-center gap-3 self-start text-lg">
+            Remember me
+        </x-checkbox>
         <div class="flex items-center justify-between">
             <a
                 href="{{ route("login") }}"
