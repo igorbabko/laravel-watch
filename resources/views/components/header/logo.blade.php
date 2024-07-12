@@ -2,8 +2,8 @@
 
 <a
     href="{{ route("index") }}"
-    class="flex items-center gap-1 rounded-full text-3xl font-bold"
+    class="flex items-center gap-2 rounded-full text-3xl font-bold"
 >
-    <x-icon-circle-play class="size-16" />
+    <x-icon-circle-play-2 class="size-10" />
     {{ $withName ? "Watch" : "" }}
 </a>

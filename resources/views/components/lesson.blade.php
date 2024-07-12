@@ -1,23 +1,17 @@
 <a
     href="/lessons/1"
-    class="flex items-start rounded-lg bg-gray-100 p-4 shadow hover:bg-gray-200"
+    class="flex flex-col gap-2 rounded-lg bg-gray-100 p-4 shadow hover:bg-gray-200"
 >
-    <span class="mr-2 text-lg font-medium">01.</span>
-    <h3 class="mr-10 text-lg font-medium">
+    <div class="flex justify-between">
+        <span class="text-sm font-bold">01</span>
+        <div
+            class="ml-auto flex items-center gap-2 whitespace-nowrap font-medium text-gray-600"
+        >
+            <x-icon-clock />
+            <span class="text-sm">5m 32s</span>
+        </div>
+    </div>
+    <h3 class="font-medium">
         Lorem ipsum dolor sit amet, consectetur adipisicing ipsum
     </h3>
-    <div
-        class="ml-auto flex items-center gap-2 whitespace-nowrap font-medium text-gray-600"
-    >
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 512 512"
-            class="size-4"
-        >
-            <path
-                d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
-            />
-        </svg>
-        5m 32s
-    </div>
 </a>
