@@ -1,6 +1,6 @@
 <nav class="container mx-auto flex items-center justify-between py-4">
     <div class="w-1/3">
-        <x-header.logo />
+        <x-header.logo with-name />
     </div>
     <ul class="flex gap-6">
         <li>

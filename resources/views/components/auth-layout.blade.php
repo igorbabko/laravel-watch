@@ -14,8 +14,10 @@
         class="flex h-screen flex-col items-center justify-center gap-4 bg-gray-100"
     >
         <header>
-            <x-icon-circle-play />
+            <x-header.logo />
         </header>
-        {{ $slot }}
+        <main class="w-1/3 rounded-lg bg-white p-4 shadow">
+            {{ $slot }}
+        </main>
     </body>
 </html>
