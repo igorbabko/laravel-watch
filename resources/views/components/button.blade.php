@@ -2,7 +2,7 @@
 
 @php
     $classes =
-        "ml-auto flex items-center justify-center gap-2 whitespace-nowrap rounded-lg px-4 py-3 font-semibold";
+        "flex items-center justify-center gap-2 whitespace-nowrap rounded-lg px-4 py-3 font-semibold";
 
     $classes .=
         $type === "primary"

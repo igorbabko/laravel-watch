@@ -1,19 +1,30 @@
-<div class="flex flex-col gap-3 rounded-lg bg-gray-100 p-6">
+@props([
+    "i",
+])
+
+<div class="flex flex-col gap-3 rounded-lg bg-gray-100 p-4">
     <div class="flex items-center justify-between">
-        <div class="flex items-center justify-between gap-2">
-            <img src="https://i.pravatar.cc/64" class="size-12 rounded-full" />
+        <div class="flex items-center gap-2">
+            <img
+                src="https://i.pravatar.cc/64?img={{ $i }}"
+                class="size-12 rounded-full"
+                alt=""
+            />
             <span class="text-lg font-semibold">John Doe</span>
         </div>
-        <span>9 months ago</span>
+        <span class="text-sm">9 months ago</span>
     </div>
     <div>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi odit
         omnis reprehenderit. Ab ducimus exercitationem harum modi placeat
         provident ratione temporibus vero. Error, nesciunt quisquam?
     </div>
-    <div class="ml-auto flex items-center">
+    <div class="flex items-center gap-2">
         <div class="flex items-center gap-6">
-            <span class="flex items-center gap-2">
+            <x-button
+                type="secondary"
+                class="bg-gray-200 px-2.5 py-1 text-base hover:bg-gray-300"
+            >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512"
@@ -24,7 +35,7 @@
                     />
                 </svg>
                 3
-            </span>
+            </x-button>
             {{-- <span class="flex items-center gap-2"> --}}
             {{-- <svg --}}
             {{-- xmlns="http://www.w3.org/2000/svg" --}}
@@ -38,6 +49,11 @@
             {{-- 2 --}}
             {{-- </span> --}}
         </div>
-        {{-- <x-button type="secondary">Reply</x-button> --}}
+        <x-button
+            type="secondary"
+            class="bg-gray-200 px-2.5 py-1 text-base hover:bg-gray-300"
+        >
+            Reply
+        </x-button>
     </div>
 </div>
