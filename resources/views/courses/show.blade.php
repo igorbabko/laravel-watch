@@ -11,7 +11,7 @@
                             href="/"
                             class="ml-auto flex flex-grow gap-2 font-semibold"
                         >
-                            <x-icon-circle-play-2 />
+                            <x-icon-circle-play-2 class="size-6" />
                             Start Watching
                         </x-button>
                         <x-button
@@ -23,6 +23,7 @@
                             Source Code
                         </x-button>
                     </div>
+                    <h3 class="mt-4 text-2xl font-bold">Overview</h3>
                     <div>
                         Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit. A alias aliquam aliquid aperiam asperiores

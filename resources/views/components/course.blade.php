@@ -1,5 +1,7 @@
 <article class="flex-grow overflow-hidden rounded-lg bg-gray-100 shadow">
-    <img src="/img/full.jpg" alt="" class="mb-4 w-full" />
+    <a href="/courses/1" class="mb-4 inline-block">
+        <img src="/img/full.jpg" alt="" />
+    </a>
     <header class="mx-4">
         <h3>
             <a href="/courses/1" class="text-2xl font-semibold">

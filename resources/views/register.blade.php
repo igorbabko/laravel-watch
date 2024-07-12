@@ -18,7 +18,7 @@
         </x-form-field>
         <div class="flex items-center justify-between">
             <a
-                href="/"
+                href="{{ route("login") }}"
                 class="text-lg font-medium text-gray-500 underline hover:text-purple-600"
             >
                 Already registered?
