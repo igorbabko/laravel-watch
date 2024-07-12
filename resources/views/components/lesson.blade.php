@@ -1,6 +1,6 @@
 <a
     href="/lessons/1"
-    class="flex items-start rounded-lg bg-gray-100 p-4 hover:bg-gray-200"
+    class="flex items-start rounded-lg bg-gray-100 p-4 shadow hover:bg-gray-200"
 >
     <span class="mr-2 text-lg font-medium">01.</span>
     <h3 class="mr-10 text-lg font-medium">

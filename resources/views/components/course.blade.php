@@ -1,4 +1,4 @@
-<article class="flex-grow overflow-hidden rounded-lg bg-gray-100">
+<article class="flex-grow overflow-hidden rounded-lg bg-gray-100 shadow">
     <img src="/img/full.jpg" alt="" class="mb-4 w-full" />
     <header class="mx-4">
         <h3>

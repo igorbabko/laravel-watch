@@ -2,7 +2,7 @@
     "i",
 ])
 
-<div class="flex flex-col gap-3 rounded-lg bg-gray-100 p-4">
+<div class="flex flex-col gap-3 rounded-lg bg-gray-100 p-4 shadow">
     <div class="flex items-center justify-between">
         <div class="flex items-center gap-2">
             <img
