@@ -20,7 +20,9 @@
     <div
         class="container mx-auto flex h-screen flex-col items-center justify-center"
     >
-        <h1 class="text-center text-7xl font-black">Learn Web Development</h1>
+        <h1 class="text-center text-7xl font-black" id="a">
+            Learn Web Development
+        </h1>
         <p class="mb-10 mt-2 text-center text-3xl">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum,
             quis.
