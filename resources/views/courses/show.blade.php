@@ -1,6 +1,8 @@
 <x-layout>
     <x-section>
-        <div class="container mx-auto flex flex-col gap-4 py-20">
+        <div
+            class="container mx-auto flex max-w-screen-xl flex-col gap-4 py-20"
+        >
             <x-heading>Course Title</x-heading>
             <div class="flex items-start gap-6">
                 <div class="flex w-1/2 flex-col gap-2">

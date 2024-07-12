@@ -1,7 +1,9 @@
 <x-layout>
     <x-section>
         {{-- <x-circles class="-right-40 -top-40 rotate-90" /> --}}
-        <div class="container mx-auto flex flex-col items-center gap-6 py-20">
+        <div
+            class="container mx-auto flex max-w-screen-xl flex-col items-center gap-6 py-20"
+        >
             <x-heading>Courses</x-heading>
             <div class="top-20 flex items-start gap-6">
                 <div class="sticky top-9 flex w-1/4 flex-col">
