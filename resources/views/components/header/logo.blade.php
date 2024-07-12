@@ -2,7 +2,7 @@
 
 <a
     href="{{ route("index") }}"
-    class="flex items-center gap-2 rounded-full text-3xl font-bold"
+    {{ $attributes->merge(["class" => "flex items-center gap-2 text-3xl font-bold"]) }}
 >
     @if ($withName)
         <x-icon-circle-play-2 class="size-10" />

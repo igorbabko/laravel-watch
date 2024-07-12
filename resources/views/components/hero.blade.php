@@ -18,7 +18,7 @@
     {{-- <x-circles class="-right-40 -top-40 rotate-90" /> --}}
     {{-- <x-circles class="-bottom-1/3 -left-40" /> --}}
     <div
-        class="container mx-auto flex h-screen flex-col items-center justify-center"
+        class="container mx-auto flex min-h-screen flex-col items-center justify-center py-40"
     >
         <h1 class="text-center text-7xl font-black" id="a">
             Learn Web Development

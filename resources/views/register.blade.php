@@ -16,6 +16,14 @@
             <x-label for="password_confirmation">Confirm Password</x-label>
             <x-input id="password_confirmation" type="password" />
         </x-form-field>
-        <x-button class="ml-auto">Register</x-button>
+        <div class="flex items-center justify-between">
+            <a
+                href="/"
+                class="text-lg font-medium text-gray-500 underline hover:text-purple-600"
+            >
+                Already registered?
+            </a>
+            <x-button>Register</x-button>
+        </div>
     </form>
 </x-auth-layout>

@@ -14,7 +14,7 @@
         class="flex min-h-screen flex-col items-center justify-center gap-8 bg-gray-100 p-8"
     >
         <header>
-            <x-header.logo />
+            <x-header.logo class="overflow-hidden rounded-full" />
         </header>
         <main
             class="w-full max-w-screen-sm rounded-lg bg-white px-8 py-6 shadow md:w-2/3 lg:w-1/2"
