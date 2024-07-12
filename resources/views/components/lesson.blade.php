@@ -1,11 +1,14 @@
 <a
-    href="/"
-    class="flex items-center justify-between rounded-lg bg-gray-100 p-4 hover:bg-gray-200"
+    href="/lessons/1"
+    class="flex items-start rounded-lg bg-gray-100 p-4 hover:bg-gray-200"
 >
-    <h3 class="text-xl font-semibold">
-        01. Lorem ipsum dolor sit amet, consectetur adipisicing.
+    <span class="mr-2 text-lg font-medium">01.</span>
+    <h3 class="mr-10 text-lg font-medium">
+        Lorem ipsum dolor sit amet, consectetur adipisicing ipsum
     </h3>
-    <div class="flex items-center gap-2 font-semibold">
+    <div
+        class="ml-auto flex items-center gap-2 whitespace-nowrap font-medium text-gray-600"
+    >
         <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512"
