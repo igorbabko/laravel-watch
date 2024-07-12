@@ -11,12 +11,14 @@
         @vite(["resources/css/app.css", "resources/js/app.js"])
     </head>
     <body
-        class="flex h-screen flex-col items-center justify-center gap-4 bg-gray-100"
+        class="flex min-h-screen flex-col items-center justify-center gap-8 bg-gray-100 p-8"
     >
         <header>
             <x-header.logo />
         </header>
-        <main class="w-1/3 rounded-lg bg-white p-4 shadow">
+        <main
+            class="w-full max-w-screen-sm rounded-lg bg-white px-8 py-6 shadow md:w-2/3 lg:w-1/2"
+        >
             {{ $slot }}
         </main>
     </body>
