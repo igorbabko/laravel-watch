@@ -48,9 +48,11 @@
                 <div class="flex flex-col gap-4">
                     <div class="flex items-center justify-between">
                         <h2 class="text-3xl font-bold">Lessons</h2>
-                        <a
+                        {{-- class="flex gap-2 font-semibold underline hover:fill-purple-600 hover:text-purple-600" --}}
+                        <x-button
                             href="/"
-                            class="flex gap-2 font-semibold underline hover:fill-purple-600 hover:text-purple-600"
+                            type="secondary"
+                            class="flex gap-2 font-semibold"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +64,7 @@
                                 />
                             </svg>
                             Source Code
-                        </a>
+                        </x-button>
                     </div>
                     <div class="grid gap-2 xl:grid-cols-2">
                         <x-lesson />
