@@ -2,16 +2,13 @@
     "items",
 ])
 
-<ul
-    id="nav"
-    class="peer absolute inset-x-0 top-0 z-10 hidden flex-col gap-1 bg-white p-4 pt-[72px] shadow target:flex"
->
+<ul class="flex gap-8">
     @foreach ($items as $routeName => $label)
-        <x-mobile-nav.item
+        <x-nav.item
             :href="route($routeName)"
             :is-active="request()->route()->named($routeName)"
         >
             {{ $label }}
-        </x-mobile-nav.item>
+        </x-nav.item>
     @endforeach
 </ul>
