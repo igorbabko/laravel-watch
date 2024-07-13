@@ -16,16 +16,7 @@
                     <x-filters :items="['Free', 'Paid']" />
                 </div>
                 <div class="flex w-3/4 flex-col gap-6">
-                    <form action="/" class="flex gap-2">
-                        <x-input
-                            type="search"
-                            placeholder="Search by course title or description"
-                            class="flex-grow"
-                        />
-                        <x-button>
-                            <x-icon-magnifying-glass />
-                        </x-button>
-                    </form>
+                    <x-search-form />
                     <div class="grid grid-cols-2 gap-4">
                         @foreach (range(1, 10) as $i)
                             <x-course />
