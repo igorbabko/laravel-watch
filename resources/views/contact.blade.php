@@ -1,4 +1,4 @@
-<x-layout>
+<x-layouts.guest>
     <x-section>
         <div class="container mx-auto flex flex-col items-center gap-6 py-20">
             <x-heading>Contact Us</x-heading>
@@ -22,4 +22,4 @@
             </form>
         </div>
     </x-section>
-</x-layout>
+</x-layouts.guest>

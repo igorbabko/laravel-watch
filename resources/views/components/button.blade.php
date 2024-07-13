@@ -2,7 +2,7 @@
 
 @php
     $classes =
-        "flex items-center justify-center gap-2 whitespace-nowrap rounded-lg px-4 py-3 font-semibold";
+        "flex items-center justify-center gap-2 whitespace-nowrap rounded-lg px-4 py-3 font-semibold transition-colors";
 
     $classes .=
         $type === "primary"

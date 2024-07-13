@@ -1,4 +1,4 @@
-<x-layout>
+<x-layouts.guest>
     <x-hero />
     <x-section>
         <div
@@ -75,4 +75,4 @@
             </div>
         </div>
     </x-section>
-</x-layout>
+</x-layouts.guest>

@@ -27,8 +27,15 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum,
             quis.
         </p>
-        <div>
-            <x-button href="/courses" class="text-2xl">
+        <div class="flex gap-2">
+            <x-button :href="route('register')" class="text-2xl">
+                Get Started
+            </x-button>
+            <x-button
+                :href="route('courses.index')"
+                class="text-2xl"
+                type="secondary"
+            >
                 Explore Courses
             </x-button>
         </div>

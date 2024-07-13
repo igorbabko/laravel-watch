@@ -4,7 +4,7 @@
     <div class="w-1/3">
         <x-header.logo with-name />
     </div>
-    <ul class="flex gap-6">
+    <ul class="flex gap-8">
         <li>
             <x-nav.link
                 :href="route('index')"
@@ -29,8 +29,8 @@
                 Contact
             </x-nav.link>
         </li>
-    </ul>
-    <ul class="flex w-1/3 justify-end gap-6">
+        {{-- </ul> --}}
+        {{-- <ul class="flex w-1/3 justify-end gap-6"> --}}
         <li>
             <x-nav.link
                 :href="route('login')"

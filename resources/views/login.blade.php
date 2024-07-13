@@ -1,4 +1,4 @@
-<x-auth-layout>
+<x-layouts.auth>
     <form action="/" class="flex w-full flex-col gap-6">
         <x-form-field>
             <x-label for="email">Email</x-label>
@@ -13,7 +13,7 @@
         </x-checkbox>
         <div class="flex items-center justify-between">
             <a
-                href="{{ route("login") }}"
+                href="{{ route("password.request") }}"
                 class="text-lg font-medium text-gray-500 underline hover:text-purple-600"
             >
                 Forgot your password?
@@ -21,4 +21,4 @@
             <x-button>Log In</x-button>
         </div>
     </form>
-</x-auth-layout>
+</x-layouts.auth>

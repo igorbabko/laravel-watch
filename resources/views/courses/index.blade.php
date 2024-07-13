@@ -1,4 +1,4 @@
-<x-layout>
+<x-layouts.guest>
     <x-section>
         {{-- <x-circles class="-right-40 -top-40 rotate-90" /> --}}
         <div
@@ -45,4 +45,4 @@
             </div>
         </div>
     </x-section>
-</x-layout>
+</x-layouts.guest>

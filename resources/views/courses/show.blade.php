@@ -1,4 +1,4 @@
-<x-layout>
+<x-layouts.guest>
     <x-section>
         <div
             class="container mx-auto flex max-w-screen-xl flex-col gap-4 py-20"
@@ -82,4 +82,4 @@
             </div>
         </div>
     </x-section>
-</x-layout>
+</x-layouts.guest>
