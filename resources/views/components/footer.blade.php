@@ -11,9 +11,7 @@
                 <x-footer.social />
             </div>
             <div>
-                <p class="text-center text-lg text-purple-200">
-                    &copy; Watch 2024. All rights reserved.
-                </p>
+                <x-footer.copyright />
             </div>
         </x-container>
     </x-section>
