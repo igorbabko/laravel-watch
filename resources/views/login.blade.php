@@ -12,12 +12,9 @@
             Remember me
         </x-checkbox>
         <div class="flex items-center justify-between">
-            <a
-                href="{{ route("password.request") }}"
-                class="text-lg font-medium text-gray-500 underline hover:text-purple-600"
-            >
+            <x-button type="secondary" :href="route('password.request')">
                 Forgot your password?
-            </a>
+            </x-button>
             <x-button>Log In</x-button>
         </div>
     </form>
