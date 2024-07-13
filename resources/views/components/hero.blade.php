@@ -18,7 +18,7 @@
     {{-- <x-circles class="-right-40 -top-40 rotate-90" /> --}}
     {{-- <x-circles class="-bottom-1/3 -left-40" /> --}}
     <x-container
-        class="flex flex-col items-center justify-center py-28 md:min-h-screen md:py-40"
+        class="flex flex-col items-center justify-center pb-16 pt-28 md:min-h-screen md:py-40"
     >
         <h1
             class="text-center text-4xl font-black sm:text-5xl md:text-7xl"
