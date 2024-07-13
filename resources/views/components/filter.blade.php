@@ -4,7 +4,7 @@
 
 <ul class="space-y-4">
     @foreach ($items as $item)
-        <li>
+        <li class="flex">
             <x-filter-item>{{ $item }}</x-filter-item>
         </li>
     @endforeach
