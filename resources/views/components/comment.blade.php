@@ -2,7 +2,7 @@
     "i",
 ])
 
-<div class="flex flex-col gap-3 rounded-lg bg-gray-100 p-4 shadow">
+<x-card class="flex flex-col gap-3 bg-gray-100 p-4">
     <div class="flex items-center justify-between">
         <div class="flex items-center gap-2">
             <img
@@ -12,7 +12,7 @@
             />
             <span class="text-lg font-semibold">John Doe</span>
         </div>
-        <span class="text-sm">9 months ago</span>
+        <span class="self-start text-sm">9 months ago</span>
     </div>
     <div>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi odit
@@ -56,4 +56,4 @@
             Reply
         </x-button>
     </div>
-</div>
+</x-card>
