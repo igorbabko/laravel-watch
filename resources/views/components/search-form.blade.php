@@ -4,7 +4,7 @@
         placeholder="Search by course title or description"
         class="flex-grow"
     />
-    <x-button>
+    <x-button-primary>
         <x-icon-magnifying-glass />
-    </x-button>
+    </x-button-primary>
 </form>

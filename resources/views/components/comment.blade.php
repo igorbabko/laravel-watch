@@ -21,13 +21,12 @@
     </div>
     <div class="flex items-center gap-2">
         <div class="flex items-center gap-6">
-            <x-button
-                type="secondary"
+            <x-button-secondary
                 class="bg-gray-200 px-2.5 py-1 text-base hover:bg-gray-300"
             >
                 <x-icon-heart />
                 3
-            </x-button>
+            </x-button-secondary>
             {{-- <span class="flex items-center gap-2"> --}}
             {{-- <svg --}}
             {{-- xmlns="http://www.w3.org/2000/svg" --}}
@@ -41,11 +40,10 @@
             {{-- 2 --}}
             {{-- </span> --}}
         </div>
-        <x-button
-            type="secondary"
+        <x-button-secondary
             class="bg-gray-200 px-2.5 py-1 text-base hover:bg-gray-300"
         >
             Reply
-        </x-button>
+        </x-button-secondary>
     </div>
 </x-card>

@@ -10,14 +10,10 @@
                         <x-icon-chevron-left />
                         Course Title
                     </a>
-                    <x-button
-                        href="{{ route('index') }}"
-                        type="secondary"
-                        class="flex gap-2 font-semibold"
-                    >
+                    <x-button-secondary href="{{ route('index') }}">
                         <x-icon-github class="size-6" />
                         Source Code
-                    </x-button>
+                    </x-button-secondary>
                 </div>
                 <x-video />
                 <div class="mt-4 flex items-start justify-between gap-10">
@@ -25,19 +21,15 @@
                         01. Lorem ipsum dolor sit amet, consectetur adipisicing
                     </h1>
                     <div class="flex items-start gap-2">
-                        <x-button
-                            :href="route('lessons.show', 1)"
-                            type="secondary"
-                        >
+                        <x-button-secondary :href="route('lessons.show', 1)">
                             <x-icon-chevron-left />
-                        </x-button>
-                        <x-button
-                            :href="route('lessons.show', 1)"
-                            type="secondary"
-                        >
+                        </x-button-secondary>
+                        <x-button-secondary :href="route('lessons.show', 1)">
                             <x-icon-chevron-right />
-                        </x-button>
-                        <x-button type="secondary">Mark as complete</x-button>
+                        </x-button-secondary>
+                        <x-button-secondary>
+                            Mark as complete
+                        </x-button-secondary>
                     </div>
                 </div>
             </div>

@@ -7,21 +7,20 @@
                     {{-- <x-course.footer /> --}}
                     <img src="/img/full.jpg" alt="" class="rounded-lg shadow" />
                     <div class="flex gap-2">
-                        <x-button
+                        <x-button-primary
                             href="{{ route('index') }}"
-                            class="ml-auto flex flex-grow gap-2 font-semibold"
+                            class="flex-grow"
                         >
                             <x-icon-circle-play-2 class="size-6" />
                             Start Watching
-                        </x-button>
-                        <x-button
+                        </x-button-primary>
+                        <x-button-secondary
                             href="{{ route('index') }}"
-                            type="secondary"
-                            class="ml-auto flex flex-grow gap-2 font-semibold"
+                            class="flex-grow"
                         >
                             <x-icon-github class="size-6" />
                             Source Code
-                        </x-button>
+                        </x-button-secondary>
                     </div>
                     <h3 class="mt-4 text-2xl font-bold">Overview</h3>
                     <div>

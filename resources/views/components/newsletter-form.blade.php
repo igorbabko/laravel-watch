@@ -2,5 +2,5 @@
     <x-form-field>
         <x-input type="email" placeholder="Your email" class="w-96" />
     </x-form-field>
-    <x-button class="!py-0">Subscribe</x-button>
+    <x-button-primary class="!py-0">Subscribe</x-button-primary>
 </form>

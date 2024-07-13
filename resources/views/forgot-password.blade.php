@@ -10,7 +10,7 @@
             <x-input id="email" />
         </x-form-field>
         <div class="ml-auto">
-            <x-button>Email Password Reset Link</x-button>
+            <x-button-primary>Email Password Reset Link</x-button-primary>
         </div>
     </form>
 </x-layouts.auth>
