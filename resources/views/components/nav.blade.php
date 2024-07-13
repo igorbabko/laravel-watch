@@ -1,7 +1,7 @@
 <nav {{ $attributes }}>
     <x-container class="flex items-center justify-between py-4">
         <div class="w-1/3">
-            <x-header.logo with-name />
+            <x-header.logo>Watch</x-header.logo>
         </div>
         <ul class="flex gap-8">
             <li>

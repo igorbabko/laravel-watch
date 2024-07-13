@@ -14,7 +14,7 @@
         class="flex min-h-screen flex-col items-center justify-center gap-8 bg-gray-100 p-8"
     >
         <header>
-            <x-header.logo class="overflow-hidden rounded-full" />
+            <x-header.logo class="overflow-hidden rounded-full *:size-20" />
         </header>
         <main class="w-full max-w-screen-sm md:w-2/3 lg:w-1/2">
             <x-card class="bg-white px-8 py-6">
