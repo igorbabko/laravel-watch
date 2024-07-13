@@ -18,12 +18,12 @@
     {{-- <x-circles class="-right-40 -top-40 rotate-90" /> --}}
     {{-- <x-circles class="-bottom-1/3 -left-40" /> --}}
     <x-container
-        class="flex min-h-screen flex-col items-center justify-center py-40"
+        class="flex flex-col items-center justify-center py-28 md:min-h-screen md:py-40"
     >
-        <h1 class="text-center text-7xl font-black" id="a">
+        <h1 class="text-center text-4xl font-black md:text-7xl" id="a">
             Learn Web Development
         </h1>
-        <p class="mb-10 mt-2 text-center text-2xl font-medium">
+        <p class="mb-10 mt-2 text-center text-lg font-medium md:text-2xl">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum,
             quis.
         </p>

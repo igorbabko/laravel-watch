@@ -1,10 +1,10 @@
 <div class="z-20 peer-[:target]:hidden">
-    <a href="#nav" class="transition-colors hover:fill-purple-600">
+    <x-button-secondary href="#nav">
         <x-icon-bars />
-    </a>
+    </x-button-secondary>
 </div>
 <div class="z-20 peer-[&:not(:target)]:hidden">
-    <a href="#" class="transition-colors hover:fill-purple-600">
+    <x-button-secondary href="#">
         <x-icon-xmark />
-    </a>
+    </x-button-secondary>
 </div>

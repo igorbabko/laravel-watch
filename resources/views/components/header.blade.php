@@ -1,6 +1,6 @@
-<header class="fixed inset-x-0 z-10 bg-white">
+<header class="fixed inset-x-0 z-10 bg-white shadow">
     <x-section>
-        <x-nav class="hidden md:block" />
-        <x-mobile-nav class="md:hidden" />
+        <x-nav />
+        <x-mobile-nav />
     </x-section>
 </header>
