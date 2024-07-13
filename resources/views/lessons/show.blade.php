@@ -5,7 +5,7 @@
                 <div class="mb-4 mt-8 flex items-center justify-between">
                     <a
                         href="{{ route("courses.show", 1) }}"
-                        class="flex items-center gap-3 text-2xl font-bold hover:fill-purple-500 hover:text-purple-500"
+                        class="flex items-center gap-3 text-2xl font-bold transition-colors hover:fill-purple-500 hover:text-purple-500"
                     >
                         <x-icon-chevron-left />
                         Course Title

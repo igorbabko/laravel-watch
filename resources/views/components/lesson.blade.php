@@ -1,4 +1,4 @@
-<x-card class="bg-gray-100 hover:bg-gray-200">
+<x-card class="bg-gray-100 transition-colors hover:bg-gray-200">
     <a href="{{ route("lessons.show", 1) }}" class="flex flex-col gap-2 p-4">
         <div class="flex justify-between">
             <span class="text-sm font-bold">01</span>
