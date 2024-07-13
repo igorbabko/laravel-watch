@@ -3,7 +3,7 @@
 ])
 
 @php
-    $classes = "text-xl font-bold hover:text-purple-800";
+    $classes = "text-xl font-bold transition-colors hover:text-purple-800";
 
     if ($isActive) {
         $classes .= " text-purple-800";
