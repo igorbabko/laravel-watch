@@ -5,7 +5,7 @@
 >
     @if ($withName)
         <x-icon-circle-play-2 class="size-10" />
-        Watch
+        <span class="hidden sm:inline">Watch</span>
     @else
         <x-icon-circle-play-2 class="size-20" />
     @endif
