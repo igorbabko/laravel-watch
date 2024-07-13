@@ -1,21 +1,21 @@
 <ul class="flex gap-4">
     <li>
-        <a>
+        <a href="{{ route('index') }}">
             <x-icon-youtube class="size-9 fill-white hover:fill-purple-200"/>
         </a>
     </li>
     <li>
-        <a>
+        <a href="{{ route('index') }}">
             <x-icon-telegram class="size-9 fill-white hover:fill-purple-200"/>
         </a>
     </li>
     <li>
-        <a>
+        <a href="{{ route('index') }}">
             <x-icon-github class="size-9 fill-white hover:fill-purple-200"/>
         </a>
     </li>
     <li>
-        <a>
+        <a href="{{ route('index') }}">
             <x-icon-x class="size-9 fill-white hover:fill-purple-200"/>
         </a>
     </li>
