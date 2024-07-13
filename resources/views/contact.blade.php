@@ -1,6 +1,6 @@
 <x-layouts.guest>
     <x-section>
-        <div class="container mx-auto flex flex-col items-center gap-6 py-20">
+        <x-container class="flex flex-col items-center gap-6 py-20">
             <x-heading>Contact Us</x-heading>
             <form action="/" class="flex w-full max-w-xl flex-col gap-6">
                 <x-form-field>
@@ -20,6 +20,6 @@
                     Send
                 </x-button>
             </form>
-        </div>
+        </x-container>
     </x-section>
 </x-layouts.guest>

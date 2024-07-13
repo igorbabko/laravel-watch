@@ -1,9 +1,7 @@
 <x-layouts.guest>
     <x-hero />
     <x-section>
-        <div
-            class="container mx-auto flex max-w-screen-xl flex-col items-center gap-6 pb-20"
-        >
+        <x-container class="flex flex-col items-center gap-6 pb-20">
             <x-heading type="section">Topics</x-heading>
             <div class="grid w-full grid-cols-3 gap-4">
                 <x-topic
@@ -49,30 +47,26 @@
                     lesson-count="72"
                 />
             </div>
-        </div>
+        </x-container>
     </x-section>
     <x-section>
-        <div
-            class="container mx-auto flex max-w-screen-xl flex-col items-center gap-6 py-20"
-        >
+        <x-container class="flex flex-col items-center gap-6 py-20">
             <x-heading type="section">Latest Courses</x-heading>
             <div class="flex gap-4">
                 <x-course />
                 <x-course />
                 <x-course />
             </div>
-        </div>
+        </x-container>
     </x-section>
     <x-section>
-        <div
-            class="container mx-auto flex max-w-screen-xl flex-col items-center gap-6 py-20"
-        >
+        <x-container class="flex flex-col items-center gap-6 py-20">
             <x-heading type="section">Popular Courses</x-heading>
             <div class="flex gap-4">
                 <x-course />
                 <x-course />
                 <x-course />
             </div>
-        </div>
+        </x-container>
     </x-section>
 </x-layouts.guest>

@@ -1,8 +1,6 @@
 <x-layouts.guest>
     <x-section>
-        <div
-            class="container mx-auto flex max-w-screen-xl flex-col gap-10 py-20"
-        >
+        <x-container class="flex flex-col gap-10 py-20">
             <div class="flex flex-col">
                 <div class="mb-4 mt-8 flex items-center justify-between">
                     <a
@@ -38,6 +36,6 @@
                 </div>
             </div>
             <x-comments />
-        </div>
+        </x-container>
     </x-section>
 </x-layouts.guest>
