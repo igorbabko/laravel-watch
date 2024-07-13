@@ -20,23 +20,28 @@
     <x-container
         class="flex flex-col items-center justify-center py-28 md:min-h-screen md:py-40"
     >
-        <h1 class="text-center text-4xl font-black md:text-7xl" id="a">
+        <h1
+            class="text-center text-4xl font-black sm:text-5xl md:text-7xl"
+            id="a"
+        >
             Learn Web Development
         </h1>
-        <p class="mb-10 mt-2 text-center text-lg font-medium md:text-2xl">
+        <p
+            class="mb-6 mt-1 text-center text-lg font-medium sm:mb-8 sm:text-xl md:mb-10 md:mt-2 md:text-2xl"
+        >
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum,
             quis.
         </p>
-        <div class="flex gap-2">
+        <div class="flex flex-col gap-2 md:flex-row">
             <x-button-primary
                 :href="route('register')"
-                class="px-6 py-4 text-2xl"
+                class="sm:px-6 sm:py-4 sm:text-xl md:text-2xl"
             >
                 Get Started
             </x-button-primary>
             <x-button-secondary
                 :href="route('courses.index')"
-                class="px-6 py-4 text-2xl"
+                class="sm:px-6 sm:py-4 sm:text-xl md:text-2xl"
             >
                 Explore Courses
             </x-button-secondary>
