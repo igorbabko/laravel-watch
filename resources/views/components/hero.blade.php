@@ -28,12 +28,12 @@
             quis.
         </p>
         <div class="flex gap-2">
-            <x-button :href="route('register')" class="text-2xl">
+            <x-button :href="route('register')" class="px-6 py-4 text-2xl">
                 Get Started
             </x-button>
             <x-button
                 :href="route('courses.index')"
-                class="text-2xl"
+                class="px-6 py-4 text-2xl"
                 type="secondary"
             >
                 Explore Courses
