@@ -15,7 +15,7 @@
                         type="secondary"
                         class="flex gap-2 font-semibold"
                     >
-                        <x-icon-github />
+                        <x-icon-github class="size-6" />
                         Source Code
                     </x-button>
                 </div>
