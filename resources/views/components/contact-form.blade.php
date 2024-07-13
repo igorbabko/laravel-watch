@@ -9,7 +9,7 @@
     </x-form-field>
     <x-form-field>
         <x-label for="message">Message</x-label>
-        <x-textarea id="message" cols="30" rows="10" />
+        <x-textarea id="message" rows="10" />
     </x-form-field>
     <x-button-primary class="ml-auto">
         <x-icon-paper-plane />

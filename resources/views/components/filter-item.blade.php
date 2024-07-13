@@ -1,3 +1,3 @@
-<label class="flex items-center gap-3 text-md font-semibold">
-    <input type="checkbox" class="size-6">{{ $slot }}
-</label>
+<x-checkbox class="text-md flex items-center gap-3 font-semibold">
+    {{ $slot }}
+</x-checkbox>

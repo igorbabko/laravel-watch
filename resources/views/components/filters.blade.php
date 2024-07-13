@@ -1,11 +1,7 @@
-@props([
-    "items",
-])
-
-<ul class="space-y-4">
-    @foreach ($items as $item)
-        <li>
-            <x-filter-item>{{ $item }}</x-filter-item>
-        </li>
-    @endforeach
-</ul>
+<x-filter
+    :items="['Laravel', 'Symfony', 'Vue', 'React', 'Angular', 'Nuxt', 'Tailwind CSS']"
+/>
+<hr class="my-8" />
+<x-filter :items="['Beginner', 'Intermediate', 'Advanced']" />
+<hr class="my-8" />
+<x-filter :items="['Free', 'Paid']" />

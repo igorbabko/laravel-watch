@@ -1,19 +1,10 @@
 <x-layouts.guest>
     <x-section>
-        {{-- <x-circles class="-right-40 -top-40 rotate-90" /> --}}
         <x-container class="flex flex-col items-center gap-6 py-20">
             <x-heading>Courses</x-heading>
             <div class="top-20 flex items-start gap-6">
                 <div class="sticky top-9 flex w-1/4 flex-col">
-                    <x-filters
-                        :items="['Laravel', 'Symfony', 'Vue', 'React', 'Angular', 'Nuxt', 'Tailwind CSS']"
-                    />
-                    <hr class="my-8" />
-                    <x-filters
-                        :items="['Beginner', 'Intermediate', 'Advanced']"
-                    />
-                    <hr class="my-8" />
-                    <x-filters :items="['Free', 'Paid']" />
+                    <x-filters />
                 </div>
                 <div class="flex w-3/4 flex-col gap-6">
                     <x-search-form />
