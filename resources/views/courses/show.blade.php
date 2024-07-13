@@ -8,14 +8,14 @@
                     <img src="/img/full.jpg" alt="" class="rounded-lg shadow" />
                     <div class="flex gap-2">
                         <x-button
-                            href="/"
+                            href="{{ route('index') }}"
                             class="ml-auto flex flex-grow gap-2 font-semibold"
                         >
                             <x-icon-circle-play-2 class="size-6" />
                             Start Watching
                         </x-button>
                         <x-button
-                            href="/"
+                            href="{{ route('index') }}"
                             type="secondary"
                             class="ml-auto flex flex-grow gap-2 font-semibold"
                         >

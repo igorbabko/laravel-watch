@@ -1,11 +1,14 @@
 <x-card class="overflow-hidden bg-gray-100">
     <article>
-        <a href="/courses/1" class="mb-4 inline-block">
+        <a href="{{ route("courses.show", 1) }}" class="mb-4 inline-block">
             <img src="/img/full.jpg" alt="" />
         </a>
         <header class="mx-4">
             <h3>
-                <a href="/courses/1" class="text-2xl font-semibold">
+                <a
+                    href="{{ route("courses.show", 1) }}"
+                    class="text-2xl font-semibold"
+                >
                     Laravel for beginners
                 </a>
             </h3>

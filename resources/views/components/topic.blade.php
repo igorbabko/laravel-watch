@@ -6,7 +6,7 @@
 ])
 
 <a
-    href="/courses"
+    href="{{ route("courses.show", 1) }}"
     class="flex flex-col items-center gap-2 rounded-xl bg-gray-100 p-4 hover:bg-gray-200"
 >
     <div class="flex items-center gap-4">

@@ -1,17 +1,19 @@
 <ul class="flex gap-6">
     <li>
-        <x-footer.nav-link href="/">Home</x-footer.nav-link>
+        <x-footer.nav-link :href="route('index')">Home</x-footer.nav-link>
     </li>
     <li>
-        <x-footer.nav-link href="/courses">Courses</x-footer.nav-link>
+        <x-footer.nav-link :href="route('courses.index')">
+            Courses
+        </x-footer.nav-link>
     </li>
     <li>
-        <x-footer.nav-link href="/contact">Contact</x-footer.nav-link>
+        <x-footer.nav-link :href="route('contact')">Contact</x-footer.nav-link>
     </li>
     <li>
-        <x-footer.nav-link href="/">Privacy</x-footer.nav-link>
+        <x-footer.nav-link :href="route('index')">Privacy</x-footer.nav-link>
     </li>
     <li>
-        <x-footer.nav-link href="/">Terms</x-footer.nav-link>
+        <x-footer.nav-link :href="route('index')">Terms</x-footer.nav-link>
     </li>
 </ul>
