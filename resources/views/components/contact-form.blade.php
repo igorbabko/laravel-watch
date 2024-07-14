@@ -1,4 +1,4 @@
-<form action="/" class="flex w-full max-w-xl flex-col gap-4 md:gap-6">
+<x-form class="max-w-xl">
     <x-form-field>
         <x-label for="name">Name</x-label>
         <x-input id="name" />
@@ -15,4 +15,4 @@
         <x-icon name="paper-plane" class="size-4 fill-white md:size-6" />
         Send
     </x-button>
-</form>
+</x-form>

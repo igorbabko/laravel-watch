@@ -1,5 +1,5 @@
 <x-layouts.auth>
-    <form action="/" class="flex w-full flex-col gap-6">
+    <x-form>
         <x-form-field>
             <x-label for="name">Name</x-label>
             <x-input id="name" />
@@ -22,5 +22,5 @@
             </x-button>
             <x-button>Register</x-button>
         </div>
-    </form>
+    </x-form>
 </x-layouts.auth>
