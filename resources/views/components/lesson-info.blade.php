@@ -7,10 +7,10 @@
             <x-icon name="chevron-left" class="size-4 md:size-6" />
             Course Title
         </a>
-        <x-button-secondary :href="route('index')">
+        <x-button type="secondary" :href="route('index')">
             <x-icon name="github" class="size-6" />
             Source Code
-        </x-button-secondary>
+        </x-button>
     </div>
     <x-video />
     <div

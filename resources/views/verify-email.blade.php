@@ -6,8 +6,8 @@
             didn't receive the email, we will gladly send you another.
         </div>
         <div class="flex items-center justify-between">
-            <x-button-secondary>Log Out</x-button-secondary>
-            <x-button-primary>Resend Verification Email</x-button-primary>
+            <x-button type="secondary">Log Out</x-button>
+            <x-button>Resend Verification Email</x-button>
         </div>
     </form>
 </x-layouts.auth>

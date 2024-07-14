@@ -33,18 +33,19 @@
             quis.
         </p>
         <div class="flex flex-col gap-2 md:flex-row">
-            <x-button-primary
+            <x-button
                 :href="route('register')"
                 class="sm:px-6 sm:py-4 sm:text-xl md:text-2xl"
             >
                 Get Started
-            </x-button-primary>
-            <x-button-secondary
+            </x-button>
+            <x-button
+                type="secondary"
                 :href="route('courses.index')"
                 class="sm:px-6 sm:py-4 sm:text-xl md:text-2xl"
             >
                 Explore Courses
-            </x-button-secondary>
+            </x-button>
         </div>
     </x-container>
 </x-section>

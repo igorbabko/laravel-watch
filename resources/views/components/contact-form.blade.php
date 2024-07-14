@@ -11,8 +11,8 @@
         <x-label for="message">Message</x-label>
         <x-textarea id="message" rows="10" />
     </x-form-field>
-    <x-button-primary class="ml-auto">
+    <x-button class="ml-auto">
         <x-icon name="paper-plane" class="size-6 fill-white" />
         Send
-    </x-button-primary>
+    </x-button>
 </form>

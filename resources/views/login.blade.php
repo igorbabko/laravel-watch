@@ -12,10 +12,10 @@
             Remember me
         </x-checkbox>
         <div class="flex items-center justify-between">
-            <x-button-secondary :href="route('password.request')">
+            <x-button type="secondary" :href="route('password.request')">
                 Forgot your password?
-            </x-button-secondary>
-            <x-button-primary>Log In</x-button-primary>
+            </x-button>
+            <x-button>Log In</x-button>
         </div>
     </form>
 </x-layouts.auth>

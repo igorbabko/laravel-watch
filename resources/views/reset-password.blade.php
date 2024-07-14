@@ -13,7 +13,7 @@
             <x-input id="password_confirmation" type="password" />
         </x-form-field>
         <div class="ml-auto">
-            <x-button-primary>Reset Password</x-button-primary>
+            <x-button>Reset Password</x-button>
         </div>
     </form>
 </x-layouts.auth>

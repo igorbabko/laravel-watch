@@ -9,7 +9,7 @@
             <x-input id="password" type="password" required />
         </x-form-field>
         <div class="ml-auto">
-            <x-button-primary>Confirm</x-button-primary>
+            <x-button>Confirm</x-button>
         </div>
     </form>
 </x-layouts.auth>

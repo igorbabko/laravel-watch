@@ -17,10 +17,10 @@
             <x-input id="password_confirmation" type="password" />
         </x-form-field>
         <div class="flex items-center justify-between">
-            <x-button-secondary :href="route('login')">
+            <x-button type="secondary" :href="route('login')">
                 Already registered?
-            </x-button-secondary>
-            <x-button-primary>Register</x-button-primary>
+            </x-button>
+            <x-button>Register</x-button>
         </div>
     </form>
 </x-layouts.auth>
