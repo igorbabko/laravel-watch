@@ -9,7 +9,7 @@
         </h2>
     @else
         <h2
-            class="text-center text-3xl font-bold sm:text-4xl md:text-5xl md:font-black"
+            class="text-center text-3xl font-black sm:text-4xl md:text-5xl md:font-black"
         >
             {{ $slot }}
         </h2>

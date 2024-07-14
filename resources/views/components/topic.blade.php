@@ -1,5 +1,5 @@
 <a
-    href="{{ route("courses.show", 1) }}"
+    href="{{ route("courses.index") }}"
     class="flex flex-col items-center gap-2 rounded-xl bg-gray-100 p-4 transition-colors hover:bg-gray-200"
 >
     <div class="flex items-center gap-2 md:gap-3">
