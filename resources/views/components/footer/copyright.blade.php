@@ -1,3 +1,3 @@
-<p class="text-center text-lg text-purple-200">
+<p class="text-center text-purple-200 md:text-lg">
     &copy; Watch 2024. All rights reserved.
 </p>

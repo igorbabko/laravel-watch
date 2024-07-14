@@ -6,7 +6,7 @@
     </x-section>
     <x-section class="bg-purple-600">
         <x-container
-            class="flex flex-col justify-between gap-6 py-6 md:pt-12 lg:gap-10"
+            class="flex flex-col justify-between gap-6 py-6 md:gap-10 md:pt-12"
         >
             <div
                 class="flex flex-col items-center justify-between gap-8 md:flex-row md:gap-0"

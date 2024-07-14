@@ -8,7 +8,7 @@
     ];
 @endphp
 
-<ul class="flex flex-col gap-2 md:flex-row md:gap-6">
+<ul class="flex flex-col gap-4 md:flex-row md:gap-6">
     @foreach ($items as $routeName => $label)
         <x-footer.nav-item :href="route($routeName)">
             {{ $label }}
