@@ -1,21 +1,29 @@
 @props(["type" => "primary"])
 
-@php
-    $classes =
-        "flex items-center justify-center gap-2 whitespace-nowrap rounded-lg px-4 py-3 font-semibold transition-colors";
-
-    $classes .=
-        $type === "primary"
-            ? " bg-purple-500 text-white fill-white hover:bg-purple-600"
-            : " bg-gray-100 hover:bg-gray-200";
-@endphp
-
 @if ($attributes->has("href"))
-    <a {{ $attributes->merge(["class" => $classes]) }}>
+    <a
+        {{
+            $attributes
+                ->class([
+                    "bg-purple-500 text-white fill-white hover:bg-purple-600" => $type === "primary",
+                    "bg-gray-100 hover:bg-gray-200" => $type === "secondary",
+                ])
+                ->merge(["class" => "flex items-center justify-center gap-2 whitespace-nowrap rounded-lg px-3 py-1.5 text-sm font-semibold transition-colors md:px-4 md:py-3 md:text-base"])
+        }}
+    >
         {{ $slot }}
     </a>
 @else
-    <button {{ $attributes->merge(["class" => $classes]) }}>
+    <button
+        {{
+            $attributes
+                ->class([
+                    "bg-purple-500 text-white fill-white hover:bg-purple-600" => $type === "primary",
+                    "bg-gray-100 hover:bg-gray-200" => $type === "secondary",
+                ])
+                ->merge(["class" => "flex items-center justify-center gap-2 whitespace-nowrap rounded-lg px-3 py-1.5 text-sm font-semibold transition-colors md:px-4 md:py-3 md:text-base"])
+        }}
+    >
         {{ $slot }}
     </button>
 @endif
