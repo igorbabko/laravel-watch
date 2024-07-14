@@ -24,7 +24,7 @@
             <x-button-secondary
                 class="bg-gray-200 px-2.5 py-1 text-base hover:bg-gray-300"
             >
-                <x-icon-heart />
+                <x-icon name="heart" class="size-4" />
                 3
             </x-button-secondary>
             {{-- <span class="flex items-center gap-2"> --}}

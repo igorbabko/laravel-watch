@@ -7,11 +7,11 @@
                         href="{{ route("courses.show", 1) }}"
                         class="flex items-center gap-3 text-2xl font-bold transition-colors hover:fill-purple-500 hover:text-purple-500"
                     >
-                        <x-icon-chevron-left />
+                        <x-icon name="chevron-left" class="size-6" />
                         Course Title
                     </a>
                     <x-button-secondary href="{{ route('index') }}">
-                        <x-icon-github class="size-6" />
+                        <x-icon name="github" class="size-6" />
                         Source Code
                     </x-button-secondary>
                 </div>
@@ -22,10 +22,10 @@
                     </h1>
                     <div class="flex items-start gap-2">
                         <x-button-secondary :href="route('lessons.show', 1)">
-                            <x-icon-chevron-left />
+                            <x-icon name="chevron-left" class="size-6" />
                         </x-button-secondary>
                         <x-button-secondary :href="route('lessons.show', 1)">
-                            <x-icon-chevron-right />
+                            <x-icon name="chevron-right" class="size-6" />
                         </x-button-secondary>
                         <x-button-secondary>
                             Mark as complete

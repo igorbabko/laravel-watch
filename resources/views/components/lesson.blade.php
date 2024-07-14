@@ -5,7 +5,7 @@
             <div
                 class="ml-auto flex items-center gap-2 whitespace-nowrap font-medium text-gray-600"
             >
-                <x-icon-clock />
+                <x-icon name="clock" class="size-4" />
                 <span class="text-sm">5m 32s</span>
             </div>
         </div>

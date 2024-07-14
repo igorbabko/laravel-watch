@@ -5,6 +5,6 @@
         class="flex-grow"
     />
     <x-button-primary>
-        <x-icon-magnifying-glass />
+        <x-icon name="magnifying-glass" class="size-6 fill-white" />
     </x-button-primary>
 </form>

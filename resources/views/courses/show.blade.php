@@ -11,14 +11,14 @@
                             href="{{ route('index') }}"
                             class="flex-grow"
                         >
-                            <x-icon-circle-play-2 class="size-6" />
+                            <x-icon name="circle-play-2" class="size-6" />
                             Start Watching
                         </x-button-primary>
                         <x-button-secondary
                             href="{{ route('index') }}"
                             class="flex-grow"
                         >
-                            <x-icon-github class="size-6" />
+                            <x-icon name="github" class="size-6" />
                             Source Code
                         </x-button-secondary>
                     </div>
