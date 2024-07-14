@@ -2,7 +2,7 @@
     "items",
 ])
 
-<ul class="flex gap-8">
+<ul class="flex gap-8 lg:gap-10">
     @foreach ($items as $routeName => $label)
         <x-nav.item
             :href="route($routeName)"

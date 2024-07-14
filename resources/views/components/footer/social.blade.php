@@ -1,5 +1,5 @@
 <ul class="flex gap-4">
-    @foreach (["youtube", "telegram", "x", "github"] as $iconName)
+    @foreach (["youtube", "telegram", "github", "x"] as $iconName)
         <li>
             <a href="/">
                 <x-icon
