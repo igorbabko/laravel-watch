@@ -1,19 +1,17 @@
-<ul class="flex gap-6">
-    <li>
-        <x-footer.nav-link :href="route('index')">Home</x-footer.nav-link>
-    </li>
-    <li>
-        <x-footer.nav-link :href="route('courses.index')">
-            Courses
-        </x-footer.nav-link>
-    </li>
-    <li>
-        <x-footer.nav-link :href="route('contact')">Contact</x-footer.nav-link>
-    </li>
-    <li>
-        <x-footer.nav-link :href="route('index')">Privacy</x-footer.nav-link>
-    </li>
-    <li>
-        <x-footer.nav-link :href="route('index')">Terms</x-footer.nav-link>
-    </li>
+@php
+    $items = [
+        "index" => "Home",
+        "courses.index" => "Courses",
+        "contact" => "Contact",
+        "privacy" => "Privacy",
+        "terms" => "Terms",
+    ];
+@endphp
+
+<ul class="flex flex-col gap-2 md:flex-row md:gap-6">
+    @foreach ($items as $routeName => $label)
+        <x-footer.nav-item :href="route($routeName)">
+            {{ $label }}
+        </x-footer.nav-item>
+    @endforeach
 </ul>

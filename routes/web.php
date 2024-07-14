@@ -15,3 +15,5 @@ Route::view('/courses', 'courses.index')->name('courses.index');
 Route::view('/courses/{course}', 'courses.show')->name('courses.show');
 Route::view('/lessons/{lesson}', 'lessons.show')->name('lessons.show');
 Route::view('/contact', 'contact')->name('contact');
+Route::view('/privacy', 'index')->name('privacy');
+Route::view('/terms', 'index')->name('terms');
