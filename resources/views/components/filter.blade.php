@@ -2,7 +2,9 @@
     "items",
 ])
 
-<ul class="space-y-4">
+<ul
+    class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:block md:gap-6 md:space-y-4"
+>
     @foreach ($items as $item)
         <li class="flex">
             <x-filter-item>{{ $item }}</x-filter-item>

@@ -2,7 +2,11 @@
 
 <div {{ $attributes->merge(["class" => "flex flex-col gap-4 sm:gap-6"]) }}>
     @if ($type === "page")
-        <h2 class="mt-8 text-center text-7xl font-black">{{ $slot }}</h2>
+        <h2
+            class="mt-8 text-center text-4xl font-black sm:text-5xl md:text-7xl"
+        >
+            {{ $slot }}
+        </h2>
     @else
         <h2
             class="text-center text-3xl font-bold sm:text-4xl md:text-5xl md:font-black"

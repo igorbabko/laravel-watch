@@ -13,21 +13,13 @@
     <x-section>
         <x-container class="flex flex-col items-center gap-6 py-10 md:py-20">
             <x-heading type="section">Latest Courses</x-heading>
-            <div class="grid w-full gap-2 sm:grid-cols-2 lg:grid-cols-3">
-                @foreach (range(1, 3) as $i)
-                    <x-course />
-                @endforeach
-            </div>
+            <x-courses />
         </x-container>
     </x-section>
     <x-section>
         <x-container class="flex flex-col items-center gap-6 py-10 md:py-20">
             <x-heading type="section">Popular Courses</x-heading>
-            <div class="grid w-full gap-2 sm:grid-cols-2 lg:grid-cols-3">
-                @foreach (range(1, 3) as $i)
-                    <x-course />
-                @endforeach
-            </div>
+            <x-courses />
         </x-container>
     </x-section>
 </x-layouts.guest>
