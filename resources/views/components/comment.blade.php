@@ -13,7 +13,7 @@
         </span>
         <x-media :comment="$comment" :i="$i" />
     </div>
-    <x-comment-buttons :is-reply="$isReply" />
+    <x-comment-buttons :comment="$comment" :is-reply="$isReply" />
 </x-card>
 
 @if (! $isReply && $i === 2)

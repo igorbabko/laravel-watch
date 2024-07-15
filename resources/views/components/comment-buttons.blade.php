@@ -4,14 +4,17 @@
         3
     </x-button>
     @if (! $isReply)
-        <x-button
-            type="secondary"
-            size="sm"
-            class="bg-gray-200 hover:bg-gray-300"
-        >
-            <x-icon name="comment" class="size-4" />
-            2
-        </x-button>
+        @if ($comment->replies()->count())
+            <x-button
+                type="secondary"
+                size="sm"
+                class="bg-gray-200 hover:bg-gray-300"
+            >
+                <x-icon name="comment" class="size-4" />
+                {{ $comment->replies()->count() }}
+            </x-button>
+        @endif
+
         <x-button
             type="secondary"
             size="sm"
