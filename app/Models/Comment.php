@@ -47,7 +47,7 @@ class Comment extends Model
 
     public function likes(): BelongsToMany
     {
-        return $this->belongsToMany(User::class, 'likes', 'comment_id', 'user_id');
+        return $this->belongsToMany(User::class, 'likes', 'comment_id', 'user_id')->withTimestamps();
     }
 
     public function scopeSearch($query, ?string $text)
