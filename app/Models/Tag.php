@@ -10,7 +10,7 @@ class Tag extends Model
 {
     use HasFactory;
 
-    public function tags(): BelongsToMany
+    public function courses(): BelongsToMany
     {
         return $this->belongsToMany(Course::class)->withTimestamps();
     }

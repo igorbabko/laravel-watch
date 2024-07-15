@@ -24,7 +24,7 @@ class TagSeeder extends Seeder
             ->create();
 
         Course::each(function (Course $course) {
-            Tag::take(mt_rand(1, 3))->inRandomOrder()->each(function (Tag $tag) use ($course) {
+            Tag::take(mt_rand(1, 3))->inRandomOrder()->get()->each(function (Tag $tag) use ($course) {
                 $course->tags()->attach($tag);
             });
         });
