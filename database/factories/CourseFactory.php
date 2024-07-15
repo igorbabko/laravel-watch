@@ -11,7 +11,7 @@ class CourseFactory extends Factory
         return [
             'title' => ucfirst(fake()->words(mt_rand(2, 6), true)),
             'description' => fake()->sentences(mt_rand(2, 5), true),
-            'repository' => 'ontrack',
+            'repository' => fake()->unique()->word(),
         ];
     }
 }

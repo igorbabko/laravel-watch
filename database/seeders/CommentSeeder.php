@@ -20,11 +20,11 @@ class CommentSeeder extends Seeder
 
     private function forLesson(Lesson $lesson)
     {
-        return Comment::factory(1)->for($lesson)->create();
+        return Comment::factory(mt_rand(1, 10))->for($lesson)->create();
     }
 
     private function repliesOf(Comment $comment)
     {
-        return Comment::factory(1)->for($comment, 'parent')->create();
+        return Comment::factory(mt_rand(1, 5))->for($comment, 'parent')->create();
     }
 }

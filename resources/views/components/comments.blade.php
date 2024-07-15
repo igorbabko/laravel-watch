@@ -4,7 +4,7 @@
     <div class="flex flex-col gap-4">
         @foreach (range(1, 10) as $i)
             <x-comment :i="$i" />
-            @foreach (range(1, rand(0, 5)) as $j)
+            @foreach (range(1, mt_rand(0, 5)) as $j)
                 <x-comment :i="$j" is-reply />
             @endforeach
         @endforeach

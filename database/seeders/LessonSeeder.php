@@ -11,7 +11,7 @@ class LessonSeeder extends Seeder
     public function run(): void
     {
         Course::each(function (Course $course) {
-            collect(range(1, mt_rand(3, 10)))->each(function () use ($course) {
+            collect(range(1, mt_rand(5, 30)))->each(function () use ($course) {
                 Lesson::factory()->for($course)->create();
             });
         });
