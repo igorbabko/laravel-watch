@@ -13,7 +13,7 @@ Route::view('/verify-email', 'verify-email')->name('verification.notice');
 Route::view('/confirm-password', 'confirm-password')->name('password.confirm');
 
 Route::view('/', 'index')->name('index');
-Route::view('/courses', 'courses.index')->name('courses.index');
+Route::get('/courses', [CourseController::class, 'index'])->name('courses.index');
 Route::get('/lessons/{lesson:slug}', [LessonController::class, 'show'])->name('lessons.show');
 Route::get('/courses/{course:slug}', [CourseController::class, 'show'])->name('courses.show');
 Route::view('/contact', 'contact')->name('contact');

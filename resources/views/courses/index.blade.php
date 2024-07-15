@@ -12,7 +12,7 @@
                 </div>
                 <div class="flex flex-col gap-4 md:w-3/4 md:gap-6">
                     <x-search-form />
-                    <x-courses count="10" />
+                    <x-courses :courses="$courses" />
                     <x-pagination />
                 </div>
             </div>

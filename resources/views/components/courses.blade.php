@@ -1,7 +1,11 @@
+@props([
+    "courses",
+])
+
 <div
     {{ $attributes->merge(["class" => "grid w-full gap-4 sm:grid-cols-2 lg:grid-cols-3"]) }}
 >
-    @foreach (range(1, $count ?? 3) as $i)
-        <x-course />
+    @foreach ($courses as $course)
+        <x-course :course="$course" />
     @endforeach
 </div>
