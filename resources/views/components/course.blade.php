@@ -18,15 +18,13 @@
                     href="{{ route("courses.show", $course->slug) }}"
                     class="text-lg font-semibold sm:text-xl lg:text-2xl"
                 >
-                    Laravel for beginners
+                    {{ $course->title }}
                 </a>
             </h3>
         </header>
         <div class="mx-4 mb-4 mt-2 text-sm sm:mb-8 sm:text-base">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
-            deserunt doloremque dolores ducimus enim expedita id quidem sit unde
-            vitae.
+            {{ $course->description }}
         </div>
-        <x-course.footer class="mx-4 mb-4 sm:mb-6" />
+        <x-course.footer :course="$course" class="mx-4 mb-4 sm:mb-6" />
     </article>
 </x-card>

@@ -5,11 +5,9 @@
             class="size-10 rounded-full md:size-12"
             alt=""
         />
-        <span class="font-semibold md:text-lg">John Doe</span>
+        <span class="font-semibold md:text-lg">
+            {{ $comment->author->name }}
+        </span>
     </div>
-    <div>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi odit
-        omnis reprehenderit. Ab ducimus exercitationem harum modi placeat
-        provident ratione temporibus vero. Error, nesciunt quisquam?
-    </div>
+    <div>{{ $comment->body }}</div>
 </div>

@@ -3,7 +3,7 @@
 >
     <span class="flex items-center gap-2 text-sm sm:text-base">
         <x-icon name="circle-play" class="size-4 sm:size-6" />
-        25 lessons
+        {{ $course->lessons()->count() }} lessons
     </span>
     <span class="flex items-center gap-2 text-sm sm:text-base">
         <x-icon name="clock" class="size-4 sm:size-6" />

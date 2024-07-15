@@ -1,5 +1,6 @@
 @props([
     "isReply" => false,
+    "comment",
     "i",
 ])
 
@@ -8,9 +9,9 @@
 >
     <div class="relative">
         <span class="absolute right-0 top-0 self-start text-sm">
-            9 months ago
+            {{ $comment->created_at->diffForHumans() }}
         </span>
-        <x-media :i="$i" />
+        <x-media :comment="$comment" :i="$i" />
     </div>
     <x-comment-buttons :is-reply="$isReply" />
 </x-card>

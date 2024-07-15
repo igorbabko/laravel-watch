@@ -10,7 +10,7 @@ class CommentSeeder extends Seeder
 {
     public function run(): void
     {
-        Lesson::take(1)
+        Lesson::take(3)
             ->get()
             ->flatMap(fn (Lesson $lesson) => $this->forLesson($lesson))
             ->flatMap(fn (Comment $comment) => $this->repliesOf($comment))

@@ -7,7 +7,7 @@
 >
     @foreach ($items as $item)
         <li class="flex">
-            <x-filter-item>{{ $item }}</x-filter-item>
+            <x-filter-item>{{ $item->name ?? $item }}</x-filter-item>
         </li>
     @endforeach
 </ul>

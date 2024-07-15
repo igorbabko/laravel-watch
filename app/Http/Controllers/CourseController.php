@@ -5,12 +5,16 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreCourseRequest;
 use App\Http\Requests\UpdateCourseRequest;
 use App\Models\Course;
+use App\Models\Tag;
 
 class CourseController extends Controller
 {
     public function index()
     {
-        return view('courses.index', ['courses' => Course::get()]);
+        return view('courses.index', [
+            'courses' => Course::get(),
+            'tags' => Tag::get(),
+        ]);
 
         //        return Course::withRelationships(request('with'))
         //            ->search(request('query'))
