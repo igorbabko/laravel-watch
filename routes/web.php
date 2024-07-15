@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\CourseController;
+use App\Http\Controllers\LessonController;
 use Illuminate\Support\Facades\Route;
 
 Route::view('/register', 'register')->name('register');
@@ -12,8 +14,8 @@ Route::view('/confirm-password', 'confirm-password')->name('password.confirm');
 
 Route::view('/', 'index')->name('index');
 Route::view('/courses', 'courses.index')->name('courses.index');
-Route::view('/courses/{course}', 'courses.show')->name('courses.show');
-Route::view('/lessons/{lesson}', 'lessons.show')->name('lessons.show');
+Route::get('/lessons/{lesson:slug}', [LessonController::class, 'show'])->name('lessons.show');
+Route::get('/courses/{course:slug}', [CourseController::class, 'show'])->name('courses.show');
 Route::view('/contact', 'contact')->name('contact');
 Route::view('/privacy', 'index')->name('privacy');
 Route::view('/terms', 'index')->name('terms');
