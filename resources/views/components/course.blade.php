@@ -16,13 +16,13 @@
             <h3>
                 <a
                     href="{{ route("courses.show", $course) }}"
-                    class="text-lg font-semibold sm:text-xl lg:text-2xl"
+                    class="line-clamp-2 text-lg font-semibold sm:text-xl lg:text-2xl"
                 >
                     {{ $course->title }}
                 </a>
             </h3>
         </header>
-        <div class="mx-4 mb-4 mt-2 text-sm sm:mb-8 sm:text-base">
+        <div class="mx-4 mb-4 mt-2 line-clamp-6 text-sm sm:mb-8 sm:text-base">
             {{ $course->description }}
         </div>
         <x-course.footer :course="$course" class="mx-4 mb-4 sm:mb-6" />
