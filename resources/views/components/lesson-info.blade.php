@@ -1,4 +1,4 @@
-<div class="flex flex-col">
+<div {{ $attributes->merge(["class" => "flex flex-col"]) }}>
     <div class="mb-2 mt-8 flex items-center justify-between md:mb-4">
         <a
             href="{{ route("courses.show", 1) }}"

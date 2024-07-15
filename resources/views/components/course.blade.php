@@ -1,4 +1,6 @@
-<x-card class="overflow-hidden bg-gray-100">
+<x-card
+    :attributes="$attributes->merge(['class' => 'overflow-hidden bg-gray-100'])"
+>
     <article>
         <a
             href="{{ route("courses.show", 1) }}"

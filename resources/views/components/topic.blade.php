@@ -1,6 +1,5 @@
 <a
-    href="{{ route("courses.index") }}"
-    class="flex flex-col items-center gap-2 rounded-xl bg-gray-100 p-4 transition-colors hover:bg-gray-200"
+    {{ $attributes->merge(["href" => route("courses.index"), "class" => "flex flex-col items-center gap-2 rounded-xl bg-gray-100 p-4 transition-colors hover:bg-gray-200"]) }}
 >
     <div class="flex items-center gap-2 md:gap-3">
         <img src="{{ $logo }}" alt="" class="size-12" />
@@ -8,7 +7,6 @@
             {{ $name }}
         </h3>
     </div>
-    {{-- <hr class="border border-gray-200 w-full my-2"> --}}
     <div class="text-center">
         <p>
             <span class="font-semibold">{{ $courseCount }}</span>

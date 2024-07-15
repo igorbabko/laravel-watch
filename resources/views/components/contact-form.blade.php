@@ -1,4 +1,4 @@
-<x-form class="max-w-xl">
+<x-form :attributes="$attributes->merge(['class' => 'max-w-xl'])">
     <x-form-field>
         <x-label for="name">Name</x-label>
         <x-input id="name" />

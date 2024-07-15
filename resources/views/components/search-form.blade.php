@@ -1,4 +1,4 @@
-<x-form class="!flex-row !gap-2">
+<x-form :attributes="$attributes->merge(['class' => '!flex-row !gap-2'])">
     <x-input
         type="search"
         placeholder="Search by course title or description"

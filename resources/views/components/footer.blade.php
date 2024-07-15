@@ -1,4 +1,4 @@
-<footer class="relative">
+<footer {{ $attributes->merge(["class" => "relative"]) }}>
     <x-section class="bg-gray-50">
         <x-container class="flex flex-col justify-between py-10 md:py-20">
             <x-newsletter />
