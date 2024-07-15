@@ -1,5 +1,5 @@
 <x-layouts.auth>
-    <form action="/" class="flex w-full flex-col gap-6">
+    <x-form>
         <div class="text-lg">
             Forgot your password? No problem. Just let us know your email
             address and we will email you a password reset link that will allow
@@ -12,5 +12,5 @@
         <div class="ml-auto">
             <x-button>Email Password Reset Link</x-button>
         </div>
-    </form>
+    </x-form>
 </x-layouts.auth>

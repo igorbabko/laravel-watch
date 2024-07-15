@@ -1,5 +1,5 @@
 <x-layouts.auth>
-    <form action="/" class="flex w-full flex-col gap-6">
+    <x-form>
         <x-form-field>
             <x-label for="email">Email</x-label>
             <x-input id="email" />
@@ -15,5 +15,5 @@
         <div class="ml-auto">
             <x-button>Reset Password</x-button>
         </div>
-    </form>
+    </x-form>
 </x-layouts.auth>

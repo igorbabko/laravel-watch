@@ -1,5 +1,5 @@
 <x-layouts.auth>
-    <form action="/" class="flex w-full flex-col gap-6">
+    <x-form>
         <div class="text-lg">
             Thanks for signing up! Before getting started, could you verify your
             email address by clicking on the link we just emailed to you? If you
@@ -9,5 +9,5 @@
             <x-button type="secondary">Log Out</x-button>
             <x-button>Resend Verification Email</x-button>
         </div>
-    </form>
+    </x-form>
 </x-layouts.auth>

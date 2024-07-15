@@ -1,5 +1,5 @@
 <x-layouts.auth>
-    <form action="/" class="flex w-full flex-col gap-6">
+    <x-form>
         <div class="text-lg">
             This is a secure area of the application. Please confirm your
             password before continuing.
@@ -11,5 +11,5 @@
         <div class="ml-auto">
             <x-button>Confirm</x-button>
         </div>
-    </form>
+    </x-form>
 </x-layouts.auth>

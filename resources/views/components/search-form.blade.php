@@ -1,4 +1,4 @@
-<form action="/" class="flex gap-2">
+<x-form class="!flex-row !gap-2">
     <x-input
         type="search"
         placeholder="Search by course title or description"
@@ -7,4 +7,4 @@
     <x-button>
         <x-icon name="magnifying-glass" class="size-6 fill-white" />
     </x-button>
-</form>
+</x-form>
