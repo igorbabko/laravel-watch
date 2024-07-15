@@ -8,9 +8,6 @@ use App\Models\Course;
 
 class CourseController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
         return view('courses.index', ['courses' => Course::get()]);
@@ -37,9 +34,6 @@ class CourseController extends Controller
         //
     }
 
-    /**
-     * Display the specified resource.
-     */
     public function show(Course $course)
     {
         return view('courses.show', $course);

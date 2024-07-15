@@ -32,9 +32,6 @@ class LessonController extends Controller
         //
     }
 
-    /**
-     * Display the specified resource.
-     */
     public function show(Lesson $lesson)
     {
         return view('lessons.show', [
