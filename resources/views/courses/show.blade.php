@@ -12,7 +12,7 @@
                         &middot;
                         <span>2h 25m</span>
                     </div>
-                    <x-lessons />
+                    <x-lessons :lessons="$course->lessons" />
                 </div>
             </div>
         </x-container>

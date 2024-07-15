@@ -1,7 +1,7 @@
 <x-layouts.guest>
     <x-section>
         <x-container class="flex flex-col gap-10 pb-10 pt-12 md:py-20">
-            <x-lesson-info />
+            <x-lesson-info :lesson="$lesson" />
             <x-comments />
         </x-container>
     </x-section>
