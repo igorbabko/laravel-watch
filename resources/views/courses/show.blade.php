@@ -6,7 +6,7 @@
                 <div class="flex flex-col gap-2 md:w-1/2">
                     <x-course-info />
                 </div>
-                <div class="flex flex-col gap-4 md:w-1/2">
+                <div class="flex w-full flex-col gap-4 md:w-1/2">
                     <div class="text-xl font-bold md:text-2xl">
                         <span>25 lessons</span>
                         &middot;
