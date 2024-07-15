@@ -2,7 +2,7 @@
     "isReply" => false,
 ])
 
-<x-form :attributes="$attributes">
+<x-form :attributes="$attributes->merge(['class' => 'sm:gap-3'])">
     <x-form-field>
         <x-label for="{{ $isReply ? 'reply' : 'comment' }}">
             Write your comment here
