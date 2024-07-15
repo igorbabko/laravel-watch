@@ -12,7 +12,7 @@ return new class extends Migration
         Schema::create('lessons', function (Blueprint $table) {
             $table->id();
             $table->foreignIdFor(Course::class)->constrained();
-            $table->smallInteger('order')->nullable();
+            $table->smallInteger('number')->nullable();
             $table->string('title');
             $table->string('slug');
             $table->text('description');

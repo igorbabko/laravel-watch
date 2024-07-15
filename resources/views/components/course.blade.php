@@ -7,7 +7,7 @@
 >
     <article>
         <a
-            href="{{ route("courses.show", $course->slug) }}"
+            href="{{ route("courses.show", $course) }}"
             class="mb-2 inline-block sm:mb-4"
         >
             <img src="/img/full.jpg" alt="" />
@@ -15,7 +15,7 @@
         <header class="mx-4">
             <h3>
                 <a
-                    href="{{ route("courses.show", $course->slug) }}"
+                    href="{{ route("courses.show", $course) }}"
                     class="text-lg font-semibold sm:text-xl lg:text-2xl"
                 >
                     {{ $course->title }}

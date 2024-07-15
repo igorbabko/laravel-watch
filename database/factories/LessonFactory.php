@@ -14,7 +14,7 @@ class LessonFactory extends Factory
         $title = ucfirst(fake()->words(mt_rand(2, 6), true));
 
         return [
-            'order' => Lesson::count() + 1,
+            'number' => Lesson::count() + 1,
             'title' => $title,
             'slug' => Str::slug($title),
             'description' => fake()->sentences(mt_rand(2, 5), true),

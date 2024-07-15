@@ -4,7 +4,7 @@
             <x-heading>{{ $course->title }}</x-heading>
             <div class="flex flex-col items-start gap-6 md:flex-row">
                 <div class="flex flex-col gap-2 md:w-1/2">
-                    <x-course-info />
+                    <x-course-info :course="$course" />
                 </div>
                 <div class="flex w-full flex-col gap-4 md:w-1/2">
                     <div class="text-xl font-bold md:text-2xl">
