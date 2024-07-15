@@ -2,28 +2,34 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Course extends Model
 {
     use HasFactory;
 
-    public function modules()
+    public function lessons(): HasMany
     {
-        return $this->hasMany(Module::class)->orderBy('order');
+        return $this->hasMany(Lesson::class);
     }
 
-    public function firstLesson()
+    public function tags(): BelongsToMany
     {
-        return $this->hasOneThrough(Lesson::class, Module::class)->orderBy('order');
+        return $this->belongsToMany(Tag::class);
     }
 
-    protected function repositoryUrl(): Attribute
-    {
-        return Attribute::make(
-            get: fn () => 'https://github.com/igorbabko/'.$this->repository,
-        );
-    }
+    //    public function firstLesson()
+    //    {
+    //        return $this->hasOneThrough(Lesson::class, Module::class)->orderBy('order');
+    //    }
+
+    //    protected function repositoryUrl(): Attribute
+    //    {
+    //        return Attribute::make(
+    //            get: fn () => 'https://github.com/igorbabko/'.$this->repository,
+    //        );
+    //    }
 }

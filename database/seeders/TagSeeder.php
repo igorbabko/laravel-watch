@@ -2,13 +2,13 @@
 
 namespace Database\Seeders;
 
-use App\Models\Course;
+use App\Models\Tag;
 use Illuminate\Database\Seeder;
 
-class CourseSeeder extends Seeder
+class TagSeeder extends Seeder
 {
     public function run(): void
     {
-        Course::factory(5)->create();
+        Tag::factory(10)->create();
     }
 }

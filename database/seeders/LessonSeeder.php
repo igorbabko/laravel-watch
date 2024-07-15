@@ -2,18 +2,17 @@
 
 namespace Database\Seeders;
 
+use App\Models\Course;
+use App\Models\Lesson;
 use Illuminate\Database\Seeder;
 
 class LessonSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
     public function run(): void
     {
-        Module::each(function (Module $module) {
-            collect(range(1, mt_rand(3, 10)))->each(function () use ($module) {
-                Lesson::factory()->for($module)->create();
+        Course::each(function (Course $course) {
+            collect(range(1, mt_rand(3, 10)))->each(function () use ($course) {
+                Lesson::factory()->for($course)->create();
             });
         });
     }
