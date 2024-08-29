@@ -1,5 +1,5 @@
 <footer
-    {{ $attributes->merge(["class" => "flex justify-between font-semibold"]) }}
+    {{ $attributes->merge(["class" => "flex justify-between font-medium"]) }}
 >
     <span class="flex items-center gap-2 text-sm sm:text-base">
         <x-icon name="circle-play" class="size-4 sm:size-6" />

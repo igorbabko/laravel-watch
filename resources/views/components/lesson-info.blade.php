@@ -17,7 +17,7 @@
         class="mt-2 flex flex-col items-start justify-between gap-2 md:mt-4 md:flex-row md:gap-6 lg:gap-10"
     >
         <h1
-            class="order-2 text-lg font-semibold md:order-1 md:w-1/2 lg:w-2/3 lg:text-xl"
+            class="order-2 text-lg font-medium md:order-1 md:w-1/2 lg:w-2/3 lg:text-xl"
         >
             {{ Str::padLeft($lesson->number, 2, 0) }}. {{ $lesson->title }}
         </h1>

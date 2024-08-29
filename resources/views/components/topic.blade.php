@@ -7,17 +7,17 @@
             alt=""
             class="size-12"
         />
-        <h3 class="text-2xl font-semibold md:text-3xl">
+        <h3 class="text-2xl font-medium md:text-3xl">
             {{ $tag->name }}
         </h3>
     </div>
     <div class="text-center">
         <p>
-            <span class="font-semibold">{{ $tag->courses()->count() }}</span>
+            <span class="font-medium">{{ $tag->courses()->count() }}</span>
             courses
         </p>
         <p>
-            <span class="font-semibold">
+            <span class="font-medium">
                 {{ $tag->courses->reduce(fn (int $carry, $course) => $carry + $course->lessons()->count(), 0) }}
             </span>
             lessons

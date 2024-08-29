@@ -16,7 +16,7 @@
             <h3>
                 <a
                     href="{{ route("courses.show", $course) }}"
-                    class="line-clamp-2 text-lg font-semibold sm:text-xl lg:text-2xl"
+                    class="line-clamp-2 text-lg font-medium sm:text-xl lg:text-2xl"
                 >
                     {{ $course->title }}
                 </a>

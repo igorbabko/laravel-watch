@@ -1,5 +1,5 @@
 <header
-    {{ $attributes->merge(["class" => "fixed inset-x-0 z-10 bg-white shadow"]) }}
+    {{ $attributes->merge(["class" => "fixed inset-x-0 z-10 bg-white border-b"]) }}
 >
     <x-section>
         <x-nav />

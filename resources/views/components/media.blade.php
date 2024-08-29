@@ -5,7 +5,7 @@
             class="size-10 rounded-full md:size-12"
             alt=""
         />
-        <span class="font-semibold md:text-lg">
+        <span class="font-medium md:text-lg">
             {{ $comment->author->name }}
         </span>
     </div>
