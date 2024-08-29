@@ -12,7 +12,7 @@
             <div
                 class="ml-auto flex items-center gap-2 whitespace-nowrap font-medium text-gray-600"
             >
-                {{-- <x-icon name="clock" class="size-4" /> --}}
+                {{-- <x-icon name="clock" /> --}}
                 <span class="font-mono text-sm">5m 32s</span>
             </div>
         </div>

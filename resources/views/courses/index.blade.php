@@ -3,7 +3,7 @@
         <x-container
             class="flex flex-col items-center gap-6 py-10 pt-20 md:py-20"
         >
-            <x-heading>Courses</x-heading>
+            <x-page-heading>Courses</x-page-heading>
             <div
                 class="flex flex-col items-start gap-12 md:top-20 md:flex-row md:gap-6"
             >

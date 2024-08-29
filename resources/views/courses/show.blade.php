@@ -1,9 +1,9 @@
 <x-layouts.guest>
     <x-section>
         <x-container class="flex flex-col gap-4 pb-10 pt-20 md:py-20">
-            <x-heading>{{ $course->title }}</x-heading>
+            <x-page-heading>{{ $course->title }}</x-page-heading>
             <div class="flex flex-col items-start gap-6 md:flex-row">
-                <div class="flex flex-col gap-4 md:w-1/2">
+                <div class="md:w-1/2">
                     <x-course-info :course="$course" />
                 </div>
                 <div class="flex w-full flex-col gap-4 md:w-1/2">

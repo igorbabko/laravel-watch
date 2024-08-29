@@ -4,7 +4,7 @@
             href="{{ route("courses.show", $lesson->course) }}"
             class="flex items-center gap-2 text-lg font-bold transition-colors hover:fill-purple-500 hover:text-purple-500 md:gap-3 md:text-2xl"
         >
-            <x-icon name="chevron-left" class="size-4 md:size-6" />
+            <x-icon name="chevron-left" />
             {{ $lesson->course->title }}
         </a>
         <x-button type="secondary" :href="$lesson->course->repositoryUrl">
@@ -21,9 +21,7 @@
         >
             {{ Str::padLeft($lesson->number, 2, 0) }}. {{ $lesson->title }}
         </h1>
-        <div
-            class="order-1 flex w-full gap-2 md:order-2 md:w-1/2 md:items-start lg:w-1/3"
-        >
+        <div class="order-1 md:order-2 md:w-1/2 lg:w-1/3">
             <x-lesson-controls />
         </div>
     </div>
