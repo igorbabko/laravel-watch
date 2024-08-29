@@ -1,5 +1,5 @@
 <div
-    {{ $attributes->merge(["class" => "flex items-center justify-between border-t border-gray-200 bg-white py-3"]) }}
+    {{ $attributes->merge(["class" => "flex items-center justify-between bg-white py-3"]) }}
 >
     <div class="flex flex-1 justify-between sm:hidden">
         <x-button type="secondary" href="#">Previous</x-button>
