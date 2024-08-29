@@ -1,4 +1,4 @@
-<div class="flex gap-2">
+<div {{ $attributes->merge(["class" => "flex gap-2"]) }}>
     <x-button type="secondary" :href="route('lessons.show', 1)">
         <x-icon name="chevron-left" />
     </x-button>
