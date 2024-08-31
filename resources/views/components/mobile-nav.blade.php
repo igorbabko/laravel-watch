@@ -10,7 +10,7 @@
 
 <nav {{ $attributes->merge(["class" => "md:hidden"]) }}>
     <x-container class="flex flex-wrap items-center justify-between py-2">
-        <x-header.logo class="z-20" />
+        <x-header.logo class="z-20" size="xl" />
         <x-mobile-nav.items :items="$items" />
         <x-mobile-nav.button />
     </x-container>
