@@ -5,7 +5,7 @@
                 <x-icon
                     :name="$iconName"
                     size="lg"
-                    class="hover:fill-purple-200"
+                    class="fill-white hover:fill-purple-200"
                 />
             </a>
         </li>
