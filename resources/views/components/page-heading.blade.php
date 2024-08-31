@@ -1,5 +1,5 @@
 <div {{ $attributes->merge(["class" => "flex flex-col gap-4 sm:gap-6"]) }}>
-    <h1 class="mt-8 text-center text-4xl font-bold sm:text-5xl md:text-7xl">
+    <h1 class="mt-8 text-center text-4xl font-bold sm:text-5xl md:text-6xl">
         {{ $slot }}
     </h1>
     <hr

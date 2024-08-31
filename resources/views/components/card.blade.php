@@ -1,3 +1,3 @@
-<div {{ $attributes->merge(["class" => "rounded-lg"]) }}>
+<div {{ $attributes->merge(["class" => "rounded-md"]) }}>
     {{ $slot }}
 </div>

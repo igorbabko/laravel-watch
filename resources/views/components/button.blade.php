@@ -11,7 +11,7 @@
                     "px-4 py-3" => $size === "md",
                     "px-4 py-2 lg:px-6 lg:py-4 text-sm lg:text-lg" => $size === "lg",
                 ])
-                ->merge(["class" => "flex items-center justify-center gap-2 whitespace-nowrap rounded lg:rounded-lg font-medium transition-colors"])
+                ->merge(["class" => "flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium transition-colors"])
         }}
     >
         {{ $slot }}
@@ -27,7 +27,7 @@
                     "px-4 py-3" => $size === "md",
                     "px-6 py-4 text-lg" => $size === "lg",
                 ])
-                ->merge(["class" => "flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-medium transition-colors"])
+                ->merge(["class" => "flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors"])
         }}
     >
         {{ $slot }}
