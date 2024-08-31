@@ -6,7 +6,7 @@
                 <div class="md:w-1/2">
                     <x-course-info
                         :course="$course"
-                        class="md:sticky md:top-9"
+                        class="md:sticky md:top-24"
                     />
                 </div>
                 <div class="flex w-full flex-col gap-4 md:w-1/2">
