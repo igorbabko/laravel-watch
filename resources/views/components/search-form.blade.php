@@ -2,7 +2,7 @@
     <x-input
         type="search"
         placeholder="Search by course title or description"
-        class="flex-grow"
+        class="flex-grow truncate"
     />
     <x-button>
         <x-icon name="magnifying-glass" size="md" class="fill-white" />

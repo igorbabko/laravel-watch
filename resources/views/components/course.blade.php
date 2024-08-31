@@ -10,7 +10,7 @@
             <h2>
                 <a
                     href="{{ route("courses.show", $course) }}"
-                    class="line-clamp line-clamp-1 text-lg font-medium"
+                    class="line-clamp-1 text-lg font-medium lg:line-clamp-2 lg:text-xl"
                 >
                     {{ $course->title }}
                 </a>

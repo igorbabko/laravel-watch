@@ -15,8 +15,8 @@ Route::view('/verify-email', 'verify-email')->name('verification.notice');
 Route::view('/confirm-password', 'confirm-password')->name('password.confirm');
 
 Route::get('/', function () {
-    $popularCourses = Course::skip(3)->take(3)->get();
-    $latestCourses = Course::take(3)->get();
+    $popularCourses = Course::skip(4)->take(4)->get();
+    $latestCourses = Course::take(4)->get();
     $tags = Tag::get();
 
     return view('index', [
