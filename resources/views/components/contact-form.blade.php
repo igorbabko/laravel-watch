@@ -12,7 +12,7 @@
         <x-textarea id="message" rows="10" />
     </x-form-field>
     <x-button class="ml-auto">
-        <x-icon name="paper-plane" class="fill-white" />
+        <x-icon name="paper-plane" />
         Send
     </x-button>
 </x-form>

@@ -1,5 +1,15 @@
+@props([
+    "size" => "sm",
+    "name",
+])
+
 @php
-    $mergedAttributes = $attributes->merge(["class" => "size-4 md:size-6"]);
+    $mergedAttributes = $attributes->class([
+        "size-4 md:size-6" => $size === "sm",
+        "size-6" => $size === "md",
+        "size-8" => $size === "lg",
+        "size-10 md:size-12" => $size === "xl",
+    ]);
 @endphp
 
 @if ($name === "bars")

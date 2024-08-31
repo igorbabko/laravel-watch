@@ -8,7 +8,7 @@
             {{ $lesson->course->title }}
         </a>
         <x-button type="secondary" :href="$lesson->course->repositoryUrl">
-            <x-icon name="github" class="size-6" />
+            <x-icon name="github" size="md" />
             Source Code
         </x-button>
     </div>
