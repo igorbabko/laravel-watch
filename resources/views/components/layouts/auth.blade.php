@@ -18,7 +18,7 @@
         </header>
         <main class="w-full max-w-screen-sm md:w-2/3 lg:w-1/2">
             <x-card
-                class="rounded-none bg-white p-4 sm:rounded-lg sm:px-8 sm:py-6"
+                class="rounded-none bg-white p-4 sm:rounded-md sm:px-8 sm:py-6"
             >
                 {{ $slot }}
             </x-card>
