@@ -11,11 +11,11 @@
         <x-checkbox class="flex items-center gap-2 self-start">
             Remember me
         </x-checkbox>
-        <div class="flex items-center justify-between">
+        <x-stack>
             <x-button type="secondary" :href="route('password.request')">
                 Forgot your password?
             </x-button>
             <x-button>Log In</x-button>
-        </div>
+        </x-stack>
     </x-form>
 </x-layouts.auth>
