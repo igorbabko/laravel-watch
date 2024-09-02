@@ -4,7 +4,7 @@
 
 <li>
     <a
-        {{ $attributes->merge(["class" => "text-lg font-semibold transition-colors hover:text-purple-800" . ($isActive ? " text-purple-800" : "")]) }}
+        {{ $attributes->merge(["class" => "text-lg font-semibold hover:text-purple-600" . ($isActive ? " text-purple-600" : "")]) }}
     >
         {{ $slot }}
     </a>

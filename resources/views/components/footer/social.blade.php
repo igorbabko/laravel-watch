@@ -4,7 +4,7 @@
             <a href="/">
                 <x-icon
                     :name="$iconName"
-                    size="lg"
+                    size="md"
                     class="fill-white hover:fill-purple-200"
                 />
             </a>

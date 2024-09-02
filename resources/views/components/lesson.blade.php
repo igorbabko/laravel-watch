@@ -1,5 +1,5 @@
 <x-card
-    :attributes="$attributes->merge(['class' => 'bg-gray-100 transition-colors hover:bg-gray-200'])"
+    :attributes="$attributes->merge(['class' => 'bg-gray-100 hover:bg-gray-200'])"
 >
     <a
         href="{{ route("lessons.show", $lesson) }}"

@@ -1,5 +1,5 @@
 <a
-    {{ $attributes->merge(["href" => route("courses.index"), "class" => "flex flex-col items-center gap-2 rounded-md bg-gray-100 p-4 transition-colors hover:bg-gray-200"]) }}
+    {{ $attributes->merge(["href" => route("courses.index"), "class" => "flex flex-col items-center gap-2 rounded-md bg-gray-100 p-4 hover:bg-gray-200"]) }}
 >
     <div class="flex items-center gap-2 md:gap-3">
         <img

@@ -3,7 +3,7 @@
 ])
 
 <x-card
-    :attributes="$attributes->merge(['class' => 'overflow-hidden bg-gray-100 hover:bg-gray-200 transition-colors'])"
+    :attributes="$attributes->merge(['class' => 'overflow-hidden bg-gray-100 hover:bg-gray-200'])"
 >
     <a href="{{ route("courses.show", $course) }}">
         <article class="flex h-full flex-col p-2 sm:p-4">

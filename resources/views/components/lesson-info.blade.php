@@ -2,7 +2,7 @@
     <div class="mb-2 mt-8 flex items-center justify-between md:mb-4">
         <a
             href="{{ route("courses.show", $lesson->course) }}"
-            class="flex items-center gap-2 text-lg font-bold transition-colors hover:fill-purple-500 hover:text-purple-500 md:gap-3 md:text-2xl"
+            class="flex items-center gap-2 text-lg font-bold hover:fill-purple-500 hover:text-purple-500 md:gap-3 md:text-2xl"
         >
             <x-icon name="chevron-left" />
             {{ $lesson->course->title }}

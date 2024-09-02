@@ -11,17 +11,13 @@
         @vite(["resources/css/app.css", "resources/js/app.js"])
     </head>
     <body
-        class="flex min-h-screen flex-col items-center justify-center gap-6 sm:gap-8 sm:p-8"
+        class="flex min-h-screen flex-col items-center justify-center gap-6 p-4 sm:gap-8 sm:px-8 sm:py-6"
     >
         <header>
-            <x-header.logo class="overflow-hidden rounded-full" size="xl" />
+            <x-header.logo class="overflow-hidden rounded-full" size="lg" />
         </header>
         <main class="w-full max-w-screen-sm md:w-2/3 lg:w-1/2">
-            <x-card
-                class="rounded-none bg-white p-4 sm:rounded-md sm:px-8 sm:py-6"
-            >
-                {{ $slot }}
-            </x-card>
+            <x-card>{{ $slot }}</x-card>
         </main>
     </body>
 </html>

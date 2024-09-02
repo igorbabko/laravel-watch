@@ -4,7 +4,7 @@
 
 <li>
     <a
-        {{ $attributes->merge(["class" => "inline-block w-full rounded-md p-4 text-xl font-semibold transition-colors hover:bg-gray-100" . ($isActive ? " bg-gray-100" : "")]) }}
+        {{ $attributes->merge(["class" => "inline-block w-full rounded-md p-4 text-xl font-semibold hover:bg-gray-100" . ($isActive ? " bg-gray-100" : "")]) }}
     >
         {{ $slot }}
     </a>
