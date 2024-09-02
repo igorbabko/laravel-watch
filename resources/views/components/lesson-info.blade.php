@@ -22,7 +22,7 @@
             {{ Str::padLeft($lesson->number, 2, 0) }}. {{ $lesson->title }}
         </h1>
         <div class="order-1 md:order-2 md:w-1/2 lg:w-1/3">
-            <x-lesson-controls />
+            <x-lesson-buttons />
         </div>
     </div>
 </div>

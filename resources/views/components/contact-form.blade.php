@@ -9,10 +9,7 @@
     </x-form-field>
     <x-form-field>
         <x-label for="message">Message</x-label>
-        <x-textarea id="message" rows="10" />
+        <x-textarea id="message" />
     </x-form-field>
-    <x-button class="ml-auto">
-        <x-icon name="paper-plane" />
-        Send
-    </x-button>
+    <x-button class="ml-auto">Send</x-button>
 </x-form>
