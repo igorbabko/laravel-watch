@@ -1,6 +1,6 @@
 <x-layouts.auth>
     <x-form>
-        <div class="text-lg">
+        <div class="text-sm sm:text-base">
             This is a secure area of the application. Please confirm your
             password before continuing.
         </div>

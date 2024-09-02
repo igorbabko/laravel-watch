@@ -8,7 +8,7 @@
             <x-label for="password">Password</x-label>
             <x-input id="password" type="password" required />
         </x-form-field>
-        <x-checkbox class="flex items-center gap-3 self-start">
+        <x-checkbox class="flex items-center gap-2 self-start">
             Remember me
         </x-checkbox>
         <div class="flex items-center justify-between">
