@@ -4,13 +4,13 @@
     </h2>
     <x-comment-form />
     @if ($comments->isNotEmpty())
-        <div class="mt-6 flex flex-col gap-4">
+        <x-stack column class="mt-6">
             @foreach ($comments->filter(fn ($comment) => $comment->parent_id === null) as $i => $comment)
                 <x-comment :comment="$comment" :i="$i" />
                 @foreach ($comment->replies as $j => $comment)
                     <x-comment :comment="$comment" :i="$j" is-reply />
                 @endforeach
             @endforeach
-        </div>
+        </x-stack>
     @endif
 </x-stack>
