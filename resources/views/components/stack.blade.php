@@ -18,7 +18,7 @@
             "gap-6 md:gap-10" => $gap === "lg",
             "gap-8" => $gap === "xl",
         ])
-        ->merge(["class" => "flex justify-between"]);
+        ->merge(["class" => "flex"]);
 @endphp
 
 <{{ $tag }} {{ $mergedAttributes }}>

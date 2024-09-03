@@ -1,5 +1,5 @@
-<div {{ $attributes->merge(["class" => "flex flex-col gap-2"]) }}>
-    <div class="flex items-center gap-2">
+<x-stack column gap="sm" :attributes="$attributes">
+    <x-stack gap="sm">
         <img
             src="https://i.pravatar.cc/64?img={{ $i }}"
             class="size-10 rounded-full"
@@ -8,6 +8,6 @@
         <span class="font-medium">
             {{ $comment->user->name }}
         </span>
-    </div>
+    </x-stack>
     <div>{{ $comment->body }}</div>
-</div>
+</x-stack>

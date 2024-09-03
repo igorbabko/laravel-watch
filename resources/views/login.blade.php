@@ -11,7 +11,7 @@
         <x-checkbox class="flex items-center gap-2 self-start">
             Remember me
         </x-checkbox>
-        <x-stack>
+        <x-stack class="justify-between">
             <x-button type="secondary" :href="route('password.request')">
                 Forgot your password?
             </x-button>
