@@ -21,24 +21,6 @@
         ->merge(["class" => "flex justify-between"]);
 @endphp
 
-@if ($tag === "a")
-    <a {{ $mergedAttributes }}>
-        {{ $slot }}
-    </a>
-@elseif ($tag === "ul")
-    <ul {{ $mergedAttributes }}>
-        {{ $slot }}
-    </ul>
-@elseif ($tag === "article")
-    <article {{ $mergedAttributes }}>
-        {{ $slot }}
-    </article>
-@elseif ($tag === "footer")
-    <footer {{ $mergedAttributes }}>
-        {{ $slot }}
-    </footer>
-@else
-    <div {{ $mergedAttributes }}>
-        {{ $slot }}
-    </div>
-@endif
+<{{ $tag }} {{ $mergedAttributes }}>
+    {{ $slot }}
+</{{ $tag }}>
