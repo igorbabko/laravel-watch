@@ -1,4 +1,4 @@
-<div {{ $attributes->merge(["class" => "flex flex-col gap-4"]) }}>
+<x-stack column :attributes="$attributes">
     <h2 class="text-xl font-bold md:mb-4 md:text-2xl">
         Comments ({{ $comments->count() }})
     </h2>
@@ -13,4 +13,4 @@
             @endforeach
         </div>
     @endif
-</div>
+</x-stack>
