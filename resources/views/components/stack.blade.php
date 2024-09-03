@@ -1,4 +1,10 @@
-@props(["column" => false, "centered" => false, "spacing" => "md", "gap" => "md"])
+@props([
+    "column" => false,
+    "centered" => false,
+    "spacing" => "md",
+    "gap" => "md",
+    "tag" => "div",
+])
 
 @php
     $mergedAttributes = $attributes
@@ -15,6 +21,16 @@
         ->merge(["class" => "flex justify-between"]);
 @endphp
 
-<div {{ $mergedAttributes }}>
-    {{ $slot }}
-</div>
+@if ($tag === "a")
+    <a {{ $mergedAttributes }}>
+        {{ $slot }}
+    </a>
+@elseif ($tag === "ul")
+    <ul {{ $mergedAttributes }}>
+        {{ $slot }}
+    </ul>
+@else
+    <div {{ $mergedAttributes }}>
+        {{ $slot }}
+    </div>
+@endif

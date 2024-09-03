@@ -8,12 +8,14 @@
     ];
 @endphp
 
-<ul
-    {{ $attributes->merge(["class" => "flex flex-col gap-4 md:flex-row md:gap-6"]) }}
+<x-stack
+    tag="ul"
+    column
+    :attributes="$attributes->merge(['class' => 'md:flex-row'])"
 >
     @foreach ($items as $routeName => $label)
         <x-footer.nav-item :href="route($routeName)">
             {{ $label }}
         </x-footer.nav-item>
     @endforeach
-</ul>
+</x-stack>
