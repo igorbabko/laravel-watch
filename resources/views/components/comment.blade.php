@@ -7,7 +7,7 @@
 <x-card
     :attributes="$attributes->class(['ml-8 md:ml-12' => $isReply])->merge(['class' => 'bg-gray-100 p-4'])"
 >
-    <x-stack direction="column">
+    <x-stack column>
         <div class="relative">
             <span
                 class="absolute right-0 top-0 self-start text-sm text-gray-500"

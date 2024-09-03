@@ -1,5 +1,5 @@
 <form action="/">
-    <x-stack direction="column" :attributes="$attributes">
+    <x-stack column :attributes="$attributes">
         {{ $slot }}
     </x-stack>
 </form>

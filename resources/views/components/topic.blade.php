@@ -1,8 +1,8 @@
 <a
     {{ $attributes->merge(["href" => route("courses.index"), "class" => "rounded-md bg-gray-100 p-4 hover:bg-gray-200"]) }}
 >
-    <x-stack direction="column" gap="sm" centered>
-        <x-stack gap="sm" centered>
+    <x-stack column centered gap="sm">
+        <x-stack centered gap="sm">
             <img
                 src="{{ "/img/" . $tag->name . ".svg" }}"
                 alt=""
