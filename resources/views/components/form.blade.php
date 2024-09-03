@@ -1,5 +1,5 @@
-<form
-    {{ $attributes->merge(["class" => "flex flex-col gap-4 sm:gap-6", "action" => "/"]) }}
->
-    {{ $slot }}
+<form action="/">
+    <x-stack direction="column" :attributes="$attributes">
+        {{ $slot }}
+    </x-stack>
 </form>
