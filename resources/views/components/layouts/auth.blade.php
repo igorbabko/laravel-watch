@@ -16,7 +16,7 @@
         <header>
             <x-header.logo class="overflow-hidden rounded-full" size="lg" />
         </header>
-        <main class="w-full max-w-screen-sm md:w-2/3 lg:w-1/2">
+        <main class="w-full max-w-96 md:w-2/3 xl:w-1/3">
             <x-card>{{ $slot }}</x-card>
         </main>
     </body>
