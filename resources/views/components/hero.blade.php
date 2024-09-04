@@ -14,7 +14,7 @@
     </style>
 
     <x-container class="pb-16 pt-28 md:min-h-screen md:py-40">
-        <x-stack column centered class="self-center">
+        <x-stack column centered gap="sm" class="self-center">
             <h1
                 class="text-center text-4xl font-black sm:text-5xl md:text-7xl"
                 id="a"
@@ -22,7 +22,7 @@
                 Learn Web Development
             </h1>
             <p
-                class="mb-6 mt-1 text-center text-lg font-medium sm:mb-8 sm:text-xl md:mb-10 md:mt-2 md:text-2xl"
+                class="mb-6 text-center text-lg font-medium sm:text-xl md:text-2xl"
             >
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Nostrum, quis.

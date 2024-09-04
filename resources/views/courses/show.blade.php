@@ -10,7 +10,7 @@
                             class="md:sticky md:top-24"
                         />
                     </div>
-                    <s-stack column class="w-full md:w-1/2">
+                    <x-stack column class="w-full md:w-1/2">
                         <div class="text-right text-xl font-medium">
                             <span>
                                 {{ $course->lessons()->count() }} lessons
@@ -19,7 +19,7 @@
                             <span>2h 25m</span>
                         </div>
                         <x-lessons :lessons="$course->lessons" />
-                    </s-stack>
+                    </x-stack>
                 </x-stack>
             </x-stack>
         </x-container>

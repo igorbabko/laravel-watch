@@ -14,7 +14,7 @@
                     <span class="font-mono text-sm">5m 32s</span>
                 </div>
             </x-stack>
-            <h3 class="font-medium">{{ $lesson->title }}</h3>
+            <div class="text-lg font-medium">{{ $lesson->title }}</div>
         </x-stack>
     </a>
 </x-card>

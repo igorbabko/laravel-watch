@@ -7,9 +7,9 @@
                     column
                     class="items-start gap-12 md:top-20 md:flex-row md:gap-6"
                 >
-                    <s-stack column class="w-full md:sticky md:top-20 md:w-1/4">
+                    <x-stack column class="w-full md:sticky md:top-24 md:w-1/4">
                         <x-filters :tags="$tags" />
-                    </s-stack>
+                    </x-stack>
                     <x-stack column class="md:w-3/4">
                         <x-search-form />
                         <x-courses :courses="$courses" />
