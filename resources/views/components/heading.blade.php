@@ -3,11 +3,10 @@
 @php
     $mergedAttributes = $attributes
         ->class([
-            "text-4xl sm:text-5xl md:text-6xl" => $tag === "h1",
-            "text-3xl sm:text-4xl md:text-5xl" => $tag === "h2",
-            "text-xl sm:text-2xl md:text-3xl lg:text-4xl" => $tag === "h3",
+            "text-4xl sm:text-5xl md:text-6xl mt-8 text-center font-bold" => $tag === "h1",
+            "text-3xl sm:text-4xl md:text-5xl mt-8 text-center font-bold" => $tag === "h2",
         ])
-        ->merge(["class" => "mt-8 text-center font-bold"]);
+        ->merge(["class"]);
 @endphp
 
 <x-stack column>

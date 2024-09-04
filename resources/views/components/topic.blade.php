@@ -8,9 +8,7 @@
                 alt=""
                 class="size-12"
             />
-            <h3 class="text-2xl font-medium md:text-3xl">
-                {{ $tag->name }}
-            </h3>
+            <x-heading tag="h3">{{ $tag->name }}</x-heading>
         </x-stack>
         <div class="text-center">
             <p>
