@@ -2,7 +2,7 @@
     "items",
 ])
 
-<ul {{ $attributes->merge(["class" => "flex gap-8 lg:gap-10"]) }}>
+<ul {{ $attributes->merge(["class" => "flex justify-end gap-8 lg:gap-10"]) }}>
     @foreach ($items as $routeName => $label)
         <x-nav.item
             :href="route($routeName)"

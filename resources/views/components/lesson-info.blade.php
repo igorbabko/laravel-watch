@@ -1,5 +1,5 @@
-<x-stack column :attributes="$attributes">
-    <x-stack centered class="mb-2 mt-8 md:mb-4">
+<x-stack column :attributes="$attributes" class="gap-0">
+    <x-stack class="mb-2 mt-8 justify-between">
         <x-stack
             centered
             tag="a"
