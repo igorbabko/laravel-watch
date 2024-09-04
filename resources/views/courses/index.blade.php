@@ -2,7 +2,7 @@
     <x-section>
         <x-container class="py-10 pt-20 md:py-20">
             <x-stack column centered gap="lg">
-                <x-page-heading>Courses</x-page-heading>
+                <x-heading>Courses</x-heading>
                 <x-stack
                     column
                     class="items-start gap-12 md:top-20 md:flex-row md:gap-6"

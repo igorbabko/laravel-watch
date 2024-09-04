@@ -2,7 +2,7 @@
     <x-section>
         <x-container class="pb-10 pt-20 md:py-20">
             <x-stack column>
-                <x-page-heading>{{ $course->title }}</x-page-heading>
+                <x-heading>{{ $course->title }}</x-heading>
                 <x-stack column gap="lg" class="md:flex-row">
                     <div class="md:w-1/2">
                         <x-course-info
