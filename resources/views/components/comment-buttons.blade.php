@@ -1,4 +1,4 @@
-<x-stack centered gap="sm" :attributes="$attributes">
+<x-stack gap="sm" :attributes="$attributes">
     <x-like-button :is-liked="$comment->isLikedBy(auth()->user())">
         {{ $comment->likes()->count() }}
     </x-like-button>
