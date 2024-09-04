@@ -3,10 +3,10 @@
 >
     <x-stack centered gap="sm" class="text-sm">
         <x-icon name="circle-play" />
-        {{ $course->lessons()->count() }} lessons
+        <x-text>{{ $course->lessons()->count() }} lessons</x-text>
     </x-stack>
     <x-stack centered gap="sm" class="text-sm">
         <x-icon name="clock" />
-        2h 30m
+        <x-text>2h 30m</x-text>
     </x-stack>
 </x-stack>

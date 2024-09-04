@@ -1,8 +1,8 @@
 <x-stack column tag="article" :attributes="$attributes">
-    <header class="text-xl font-medium">
+    <x-text tag="header" size="lg" bold>
         Last Updated: {{ $course->updated_at->format("M d, Y") }}
-    </header>
-    <div>{{ $course->description }}</div>
+    </x-text>
+    <x-text>{{ $course->description }}</x-text>
     <x-stack column gap="sm" tag="footer" class="sm:flex-row">
         <x-course-buttons :course="$course" />
     </x-stack>

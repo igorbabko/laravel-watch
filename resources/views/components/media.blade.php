@@ -5,7 +5,7 @@
             class="size-10 rounded-full"
             alt=""
         />
-        <span class="font-medium">{{ $comment->user->name }}</span>
+        <x-text bold>{{ $comment->user->name }}</x-text>
     </x-stack>
-    <div>{{ $comment->body }}</div>
+    <x-text>{{ $comment->body }}</x-text>
 </x-stack>

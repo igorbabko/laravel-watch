@@ -11,13 +11,10 @@
                         />
                     </div>
                     <x-stack column class="w-full md:w-1/2">
-                        <div class="text-right text-xl font-medium">
-                            <span>
-                                {{ $course->lessons()->count() }} lessons
-                            </span>
-                            &middot;
-                            <span>2h 25m</span>
-                        </div>
+                        <x-text bold size="lg" tag="div" class="text-right">
+                            {{ $course->lessons()->count() }} lessons &middot;
+                            2h 25m
+                        </x-text>
                         <x-lessons :lessons="$course->lessons" />
                     </x-stack>
                 </x-stack>

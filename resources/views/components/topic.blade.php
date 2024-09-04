@@ -11,16 +11,11 @@
             <x-heading tag="h3">{{ $tag->name }}</x-heading>
         </x-stack>
         <div class="text-center">
-            <p>
-                <span class="font-medium">{{ $tag->courses()->count() }}</span>
-                courses
-            </p>
-            <p>
-                <span class="font-medium">
-                    {{ $tag->courses->reduce(fn (int $carry, $course) => $carry + $course->lessons()->count(), 0) }}
-                </span>
+            <x-text>{{ $tag->courses()->count() }} courses</x-text>
+            <x-text>
+                {{ $tag->courses->reduce(fn (int $carry, $course) => $carry + $course->lessons()->count(), 0) }}
                 lessons
-            </p>
+            </x-text>
         </div>
     </x-stack>
 </a>

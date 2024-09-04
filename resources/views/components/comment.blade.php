@@ -9,11 +9,13 @@
 >
     <x-stack column>
         <div class="relative">
-            <span
-                class="absolute right-0 top-0 self-start text-sm text-gray-500"
+            <x-text
+                tag="span"
+                size="sm"
+                class="absolute right-0 top-0 self-start text-gray-500"
             >
                 {{ $comment->created_at->diffForHumans() }}
-            </span>
+            </x-text>
             <x-media :comment="$comment" :i="$i" />
         </div>
         <x-comment-buttons :comment="$comment" :is-reply="$isReply" />

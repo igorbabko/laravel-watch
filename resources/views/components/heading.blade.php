@@ -5,6 +5,7 @@
         ->class([
             "text-4xl sm:text-5xl md:text-6xl mt-8 text-center font-bold" => $tag === "h1",
             "text-3xl sm:text-4xl md:text-5xl mt-8 text-center font-bold" => $tag === "h2",
+            "text-xl font-semibold" => $tag === "h3",
         ])
         ->merge(["class"]);
 @endphp
