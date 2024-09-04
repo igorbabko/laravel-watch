@@ -1,8 +1,11 @@
 @props(["size" => "lg"])
 
-<a
-    {{ $attributes->merge(["href" => route("index"), "class" => "flex items-center gap-2 text-3xl font-bold"]) }}
+<x-stack
+    tag="a"
+    gap="sm"
+    :href="route('index')"
+    :attributes="$attributes->merge(['class' => 'text-3xl font-bold items-center'])"
 >
     <x-icon name="circle-play-2" size="{{ $size }}" />
     {{ $slot }}
-</a>
+</x-stack>

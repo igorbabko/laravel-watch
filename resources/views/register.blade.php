@@ -16,11 +16,11 @@
             <x-label for="password_confirmation">Confirm Password</x-label>
             <x-input id="password_confirmation" type="password" />
         </x-form-field>
-        <div class="flex items-center justify-between">
+        <x-stack centered class="justify-between">
             <x-button type="secondary" :href="route('login')">
                 Already registered?
             </x-button>
             <x-button>Register</x-button>
-        </div>
+        </x-stack>
     </x-form>
 </x-layouts.auth>

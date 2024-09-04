@@ -1,4 +1,4 @@
-<div {{ $attributes->merge(["class" => "flex items-center gap-2"]) }}>
+<x-stack centered gap="sm" :attributes="$attributes">
     <x-like-button :is-liked="$comment->isLikedBy(auth()->user())">
         {{ $comment->likes()->count() }}
     </x-like-button>
@@ -22,4 +22,4 @@
             Reply
         </x-button>
     @endif
-</div>
+</x-stack>

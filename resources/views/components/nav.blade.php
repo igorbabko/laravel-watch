@@ -9,8 +9,10 @@
 @endphp
 
 <nav {{ $attributes->merge(["class" => "hidden md:block"]) }}>
-    <x-container class="flex items-center justify-between py-4">
-        <x-header.logo>Watch</x-header.logo>
-        <x-nav.items :items="$items" />
+    <x-container>
+        <x-stack centered class="justify-between py-4">
+            <x-header.logo>Watch</x-header.logo>
+            <x-nav.items :items="$items" />
+        </x-stack>
     </x-container>
 </nav>

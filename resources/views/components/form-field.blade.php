@@ -1,3 +1,7 @@
-<div {{ $attributes->merge(["class" => "flex flex-grow flex-col gap-1"]) }}>
+<x-stack
+    column
+    gap="xs"
+    :attributes="$attributes->merge(['class' => 'flex-grow'])"
+>
     {{ $slot }}
-</div>
+</x-stack>

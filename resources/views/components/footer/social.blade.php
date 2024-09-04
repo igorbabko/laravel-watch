@@ -1,4 +1,4 @@
-<ul {{ $attributes->merge(["class" => "flex gap-4"]) }}>
+<x-stack tag="ul" :attributes="$attributes">
     @foreach (["youtube", "telegram", "github", "x"] as $iconName)
         <li>
             <a href="/">
@@ -10,4 +10,4 @@
             </a>
         </li>
     @endforeach
-</ul>
+</x-stack>

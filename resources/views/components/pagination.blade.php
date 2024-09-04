@@ -1,10 +1,11 @@
-<div
-    {{ $attributes->merge(["class" => "flex items-center justify-between bg-white py-3"]) }}
+<x-stack
+    centered
+    :attributes="$attributes->merge(['class' => 'justify-between bg-white py-3'])"
 >
-    <div class="flex flex-1 justify-between sm:hidden">
+    <x-stack class="flex-1 justify-between sm:hidden">
         <x-button type="secondary" href="#">Previous</x-button>
         <x-button type="secondary" href="#">Next</x-button>
-    </div>
+    </x-stack>
     <div class="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between">
         <div>
             <p class="text-sm text-gray-700">
@@ -104,4 +105,4 @@
             </nav>
         </div>
     </div>
-</div>
+</x-stack>

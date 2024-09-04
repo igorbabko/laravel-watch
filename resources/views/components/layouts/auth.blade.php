@@ -10,8 +10,11 @@
         <title>Watch</title>
         @vite(["resources/css/app.css", "resources/js/app.js"])
     </head>
-    <body
-        class="flex min-h-screen flex-col items-center justify-center gap-6 p-4 sm:gap-8 sm:px-8 sm:py-6"
+    <x-stack
+        column
+        centered
+        gap="lg"
+        class="min-h-screen justify-center p-4 sm:px-8 sm:py-6"
     >
         <header>
             <x-header.logo class="overflow-hidden rounded-full" size="lg" />
@@ -19,5 +22,5 @@
         <main class="w-full max-w-96 md:w-2/3 xl:w-1/3">
             <x-card>{{ $slot }}</x-card>
         </main>
-    </body>
+    </x-stack>
 </html>

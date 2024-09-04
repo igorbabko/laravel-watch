@@ -5,9 +5,9 @@
             email address by clicking on the link we just emailed to you? If you
             didn't receive the email, we will gladly send you another.
         </div>
-        <div class="flex items-center justify-between">
+        <x-stack centered class="justify-between">
             <x-button type="secondary">Log Out</x-button>
             <x-button>Resend Verification Email</x-button>
-        </div>
+        </x-stack>
     </x-form>
 </x-layouts.auth>
