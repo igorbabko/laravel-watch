@@ -17,7 +17,7 @@
         class="min-h-screen justify-center p-4 sm:px-8 sm:py-6"
     >
         <header>
-            <x-header.logo size="lg" class="overflow-hidden rounded-full" />
+            <x-header.logo class="overflow-hidden rounded-full" />
         </header>
         <main class="w-full max-w-96 md:w-2/3 xl:w-1/3">
             <x-card>{{ $slot }}</x-card>

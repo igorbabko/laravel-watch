@@ -4,7 +4,7 @@
 ])
 
 @php
-    $mergedAttributes = $attributes->merge(["class size-{$size}"]);
+    $mergedAttributes = $attributes->merge(["class" => "size-{$size}"]);
 @endphp
 
 @if ($name === "bars")
