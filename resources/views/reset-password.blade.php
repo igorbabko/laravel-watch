@@ -12,8 +12,8 @@
             <x-label for="password_confirmation">Confirm Password</x-label>
             <x-input id="password_confirmation" type="password" />
         </x-form-field>
-        <div class="ml-auto">
+        <x-stack class="justify-end">
             <x-button>Reset Password</x-button>
-        </div>
+        </x-stack>
     </x-form>
 </x-layouts.auth>

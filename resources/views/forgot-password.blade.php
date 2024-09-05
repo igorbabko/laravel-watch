@@ -1,16 +1,16 @@
 <x-layouts.auth>
     <x-form>
-        <div class="text-sm sm:text-base">
+        <x-text tag="div">
             Forgot your password? No problem. Just let us know your email
             address and we will email you a password reset link that will allow
             you to choose a new one.
-        </div>
+        </x-text>
         <x-form-field>
             <x-label for="email">Email</x-label>
             <x-input id="email" />
         </x-form-field>
-        <div class="ml-auto">
+        <x-stack class="justify-end">
             <x-button>Email Password Reset Link</x-button>
-        </div>
+        </x-stack>
     </x-form>
 </x-layouts.auth>
