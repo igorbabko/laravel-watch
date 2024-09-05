@@ -1,7 +1,7 @@
 @props([
     "column" => false,
     "centered" => false,
-    "gap" => 4,
+    "gap" => 2,
     "tag" => "div",
 ])
 

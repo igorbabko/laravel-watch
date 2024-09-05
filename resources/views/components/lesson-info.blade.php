@@ -3,7 +3,6 @@
         <x-stack
             centered
             tag="a"
-            gap="2"
             :href="route('courses.show', $lesson->course)"
             class="text-lg font-bold hover:fill-purple-500 hover:text-purple-500 md:text-2xl"
         >

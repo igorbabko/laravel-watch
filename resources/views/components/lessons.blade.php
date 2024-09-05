@@ -1,4 +1,4 @@
-<x-stack column gap="2" :attributes="$attributes">
+<x-stack column :attributes="$attributes">
     @foreach ($lessons as $lesson)
         <x-lesson :lesson="$lesson" />
     @endforeach
