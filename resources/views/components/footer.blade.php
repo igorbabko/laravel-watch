@@ -8,7 +8,7 @@
     </x-section>
     <x-section class="bg-purple-600">
         <x-container class="py-6 md:pt-12">
-            <x-stack column gap="lg">
+            <x-stack column gap="6">
                 <x-stack
                     class="justify-between md:flex-row"
                     gap="xl"

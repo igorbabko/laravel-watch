@@ -1,7 +1,7 @@
 <x-layouts.guest>
     <x-section>
         <x-container class="py-10 pt-20 md:py-20">
-            <x-stack column centered gap="lg">
+            <x-stack column centered gap="6">
                 <x-heading>Courses</x-heading>
                 <x-stack
                     column
