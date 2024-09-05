@@ -1,3 +1,5 @@
-<form {{ $attributes->merge(["action" => "/"]) }}>
-    <x-stack column :attributes="$attributes">{{ $slot }}</x-stack>
+<form action="{{ $action }}">
+    <x-stack :attributes="$attributes->merge(['column' => true])">
+        {{ $slot }}
+    </x-stack>
 </form>

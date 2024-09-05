@@ -1,4 +1,4 @@
-<x-stack column :attributes="$attributes">
+<x-stack :attributes="$attributes->merge(['column' => true])">
     @foreach ($lessons as $lesson)
         <x-lesson :lesson="$lesson" />
     @endforeach

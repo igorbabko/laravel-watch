@@ -1,4 +1,4 @@
-<x-stack column :attributes="$attributes">
+<x-stack :attributes="$attributes->merge(['column' => true])">
     <x-heading tag="h2">Comments ({{ $comments->count() }})</x-heading>
     <x-comment-form />
     @if ($comments->isNotEmpty())

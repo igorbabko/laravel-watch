@@ -1,4 +1,6 @@
-<x-stack column tag="article" :attributes="$attributes">
+<x-stack
+    :attributes="$attributes->merge(['column' => true, 'tag' => $article])"
+>
     <x-text tag="header" size="lg" bold>
         Last Updated: {{ $course->updated_at->format("M d, Y") }}
     </x-text>

@@ -1,4 +1,4 @@
-<x-stack column :attributes="$attributes" gap="1">
+<x-stack :attributes="$attributes->merge(['column' => true, 'gap' => 1])">
     <x-stack class="mb-2 mt-8 justify-between">
         <x-stack
             centered

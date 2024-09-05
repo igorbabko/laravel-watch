@@ -1,4 +1,4 @@
-<x-stack column :attributes="$attributes">
+<x-stack :attributes="$attributes->merge(['column' => true])">
     <x-stack class="items-center">
         <img
             src="https://i.pravatar.cc/64?img={{ $i }}"
