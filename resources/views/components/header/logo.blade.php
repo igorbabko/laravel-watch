@@ -2,7 +2,7 @@
 
 <x-stack
     tag="a"
-    gap="sm"
+    gap="2"
     :href="route('index')"
     :attributes="$attributes->merge(['class' => 'text-3xl font-bold items-center'])"
 >

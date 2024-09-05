@@ -13,11 +13,11 @@
 @endphp
 
 @if ($attributes->has("href"))
-    <x-stack centered tag="a" gap="sm" :attributes="$mergedAttributes">
+    <x-stack centered tag="a" gap="2" :attributes="$mergedAttributes">
         {{ $slot }}
     </x-stack>
 @else
-    <x-stack centered tag="button" gap="sm" :attributes="$mergedAttributes">
+    <x-stack centered tag="button" gap="2" :attributes="$mergedAttributes">
         {{ $slot }}
     </x-stack>
 @endif

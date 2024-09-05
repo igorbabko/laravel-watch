@@ -3,7 +3,7 @@
         Last Updated: {{ $course->updated_at->format("M d, Y") }}
     </x-text>
     <x-text>{{ $course->description }}</x-text>
-    <x-stack column gap="sm" tag="footer" class="sm:flex-row">
+    <x-stack column gap="2" tag="footer" class="sm:flex-row">
         <x-course-buttons :course="$course" />
     </x-stack>
 </x-stack>

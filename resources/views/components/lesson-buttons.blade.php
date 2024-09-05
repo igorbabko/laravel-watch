@@ -1,4 +1,4 @@
-<x-stack gap="sm" :attributes="$attributes->merge(['class' => 'mt-2'])">
+<x-stack gap="2" :attributes="$attributes->merge(['class' => 'mt-2'])">
     <x-button type="secondary" class="mr-auto">All lessons</x-button>
     <x-button type="secondary" :href="route('lessons.show', $lesson)">
         <x-icon name="chevron-left" />

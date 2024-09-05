@@ -11,7 +11,7 @@
             <x-stack column gap="6">
                 <x-stack
                     class="justify-between md:flex-row"
-                    gap="xl"
+                    gap="10"
                     centered
                     column
                 >

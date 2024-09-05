@@ -4,7 +4,7 @@
 
 <x-stack
     tag="ul"
-    gap="xl"
+    gap="10"
     :attributes="$attributes->merge(['class' => 'justify-end'])"
 >
     @foreach ($items as $routeName => $label)

@@ -2,7 +2,7 @@
     :attributes="$attributes->merge(['class' => 'bg-gray-100 hover:bg-gray-200'])"
 >
     <a href="{{ route("lessons.show", $lesson) }}">
-        <x-stack column gap="sm" class="p-4">
+        <x-stack column gap="2" class="p-4">
             <x-stack class="justify-between font-mono">
                 <x-text tag="span" size="sm">
                     {{ Str::padLeft($lesson->number, 2, 0) }}

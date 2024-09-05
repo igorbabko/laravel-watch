@@ -6,7 +6,7 @@
     :attributes="$attributes->merge(['class' => 'overflow-hidden bg-gray-100 hover:bg-gray-200'])"
 >
     <a href="{{ route("courses.show", $course) }}">
-        <x-stack column gap="xs" tag="article" class="h-full p-2 sm:p-4">
+        <x-stack column gap="1" tag="article" class="h-full p-2 sm:p-4">
             <header>
                 <x-heading tag="h3" class="line-clamp-1 lg:line-clamp-2">
                     {{ $course->title }}
