@@ -4,7 +4,7 @@
     $mergedAttributes = $attributes->class([
         "text-sm" => $size === "sm",
         "text-sm sm:text-base" => $size === "md",
-        "text-lg" => $size === "lg",
+        "text-lg sm:text-xl md:text-2xl" => $size === "lg",
         "font-semibold" => $bold,
     ]);
 @endphp

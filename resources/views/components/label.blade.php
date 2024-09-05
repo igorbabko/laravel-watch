@@ -1,5 +1,6 @@
-<label
-    {{ $attributes->merge(["class" => "font-medium text-sm sm:text-base"]) }}
+<x-text
+    tag="label"
+    :attributes="$attributes->merge(['class' => 'font-medium'])"
 >
     {{ $slot }}
-</label>
+</x-text>

@@ -18,9 +18,9 @@
                     <x-footer.nav />
                     <x-footer.social />
                 </x-stack>
-                <div>
+                <x-stack centered>
                     <x-footer.copyright />
-                </div>
+                </x-stack>
             </x-stack>
         </x-container>
     </x-section>

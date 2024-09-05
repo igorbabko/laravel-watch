@@ -21,12 +21,10 @@
             >
                 Learn Web Development
             </h1>
-            <p
-                class="mb-6 text-center text-lg font-medium sm:text-xl md:text-2xl"
-            >
+            <x-text bold size="lg" class="mb-6 text-center">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Nostrum, quis.
-            </p>
+            </x-text>
             <x-stack column gap="sm" class="md:flex-row">
                 <x-button :href="route('register')" size="lg">
                     Get Started
