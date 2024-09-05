@@ -1,14 +1,7 @@
-@props(["tag" => "p", "size" => "md", "bold" => false])
+@props(["tag" => "p", "size" => "md", "weight" => "normal"])
 
-@php
-    $mergedAttributes = $attributes->class([
-        "text-sm" => $size === "sm",
-        "text-sm sm:text-base" => $size === "md",
-        "text-lg sm:text-xl md:text-2xl" => $size === "lg",
-        "font-semibold" => $bold,
-    ]);
-@endphp
-
-<{{ $tag }} {{ $mergedAttributes }}>
+<{{ $tag }}
+    {{ $attributes->merge(["class" => "text-{$size} font-{$weight}"]) }}
+>
     {{ $slot }}
 </{{ $tag }}>

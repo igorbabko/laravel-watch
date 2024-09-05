@@ -4,12 +4,14 @@
 ])
 
 @php
-    $mergedAttributes = $attributes->class([
-        "size-4 md:size-4" => $size === "xs",
-        "size-4 md:size-6" => $size === "sm",
-        "size-6 md:size-8" => $size === "md",
-        "size-10 md:size-12" => $size === "lg",
-    ]);
+    $mergedAttributes = $attributes
+        ->class([
+            "size-4 md:size-4" => $size === "xs",
+            "size-4 md:size-6" => $size === "sm",
+            "size-6 md:size-8" => $size === "md",
+            "size-10 md:size-12" => $size === "lg",
+        ])
+        ->merge(["class"]);
 @endphp
 
 @if ($name === "bars")
