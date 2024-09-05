@@ -1,12 +1,12 @@
 <x-stack
-    :attributes="$attributes->merge(['tag' => 'footer', 'class' => 'justify-between font-medium'])"
+    :attributes="$attributes->merge(['tag' => 'footer', 'class' => 'justify-between'])"
 >
     <x-stack centered gap="sm" class="text-sm">
-        <x-icon name="circle-play" />
-        <x-text>{{ $course->lessons()->count() }} lessons</x-text>
+        <x-icon name="circle-play" size="xs" />
+        <x-text bold>{{ $course->lessons()->count() }} lessons</x-text>
     </x-stack>
     <x-stack centered gap="sm" class="text-sm">
-        <x-icon name="clock" />
-        <x-text>2h 30m</x-text>
+        <x-icon name="clock" size="xs" />
+        <x-text bold>2h 30m</x-text>
     </x-stack>
 </x-stack>

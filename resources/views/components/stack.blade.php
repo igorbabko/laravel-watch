@@ -10,13 +10,11 @@
     $mergedAttributes = $attributes
         ->class([
             "flex-col" => $column,
-            "justify-center" => ! $column && $centered,
-            "items-center" => $centered,
+            "justify-center items-center" => $centered,
             "gap-1" => $gap === "xs",
-            "gap-2 md:gap-3" => $gap === "sm",
-            //            "gap-4 md:gap-6 lg:gap-8" => $gap === "md",
+            "gap-2" => $gap === "sm",
             "gap-4" => $gap === "md",
-            "gap-6 md:gap-10" => $gap === "lg",
+            "gap-6" => $gap === "lg",
             "gap-8" => $gap === "xl",
         ])
         ->merge(["class" => "flex"]);
