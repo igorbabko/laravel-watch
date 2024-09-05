@@ -1,15 +1,15 @@
 <x-layouts.auth>
     <x-form>
-        <div class="text-sm sm:text-base">
+        <x-text tag="div">
             This is a secure area of the application. Please confirm your
             password before continuing.
-        </div>
+        </x-text>
         <x-form-field>
             <x-label for="password">Password</x-label>
             <x-input id="password" type="password" required />
         </x-form-field>
-        <div class="ml-auto">
+        <x-stack class="justify-end">
             <x-button>Confirm</x-button>
-        </div>
+        </x-stack>
     </x-form>
 </x-layouts.auth>

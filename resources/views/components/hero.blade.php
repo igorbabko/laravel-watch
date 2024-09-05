@@ -15,18 +15,13 @@
 
     <x-container class="pb-16 pt-28 md:min-h-screen md:py-40">
         <x-stack column centered gap="sm" class="self-center">
-            <h1
-                class="text-center text-4xl font-black sm:text-5xl md:text-7xl"
-                id="a"
-            >
-                Learn Web Development
-            </h1>
+            <x-heading id="a" weight="black">Learn Web Development</x-heading>
             <x-text bold size="lg" class="mb-6 text-center">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Nostrum, quis.
             </x-text>
             <x-stack column gap="sm" class="md:flex-row">
-                <x-button :href="route('register')" size="lg">
+                <x-button size="lg" :href="route('register')">
                     Get Started
                 </x-button>
                 <x-button
