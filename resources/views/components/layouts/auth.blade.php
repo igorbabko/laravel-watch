@@ -13,8 +13,7 @@
     <x-stack
         column
         centered
-        gap="6"
-        class="min-h-screen justify-center p-4 sm:px-8 sm:py-6"
+        class="min-h-screen justify-center gap-6 p-4 sm:px-8 sm:py-6"
     >
         <header>
             <x-header.logo class="overflow-hidden rounded-full" />

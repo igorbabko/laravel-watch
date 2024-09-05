@@ -1,5 +1,5 @@
 <x-stack :attributes="$attributes->merge(['column' => true, 'gap' => 1])">
-    <x-stack class="mb-2 mt-8 justify-between">
+    <x-stack class="mb-2 mt-8 justify-between gap-2">
         <x-stack
             centered
             tag="a"

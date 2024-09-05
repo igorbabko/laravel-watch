@@ -1,7 +1,6 @@
 @props([
     "column" => false,
     "centered" => false,
-    "gap" => 2,
     "tag" => "div",
 ])
 
@@ -11,7 +10,7 @@
             "flex-col" => $column,
             "justify-center items-center" => $centered,
         ])
-        ->merge(["class" => "flex gap-{$gap}"]);
+        ->merge(["class" => "flex"]);
 @endphp
 
 <{{ $tag }} {{ $mergedAttributes }}>

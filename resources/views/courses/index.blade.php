@@ -1,7 +1,7 @@
 <x-layouts.guest>
     <x-section>
         <x-container class="py-10 pt-20 md:py-20">
-            <x-stack column centered gap="6">
+            <x-stack column centered class="gap-6">
                 <x-heading>Courses</x-heading>
                 <x-stack
                     column
@@ -10,7 +10,7 @@
                     <x-stack column class="w-full md:sticky md:top-24 md:w-1/4">
                         <x-filters :tags="$tags" />
                     </x-stack>
-                    <x-stack column class="md:w-3/4">
+                    <x-stack column class="gap-2 md:w-3/4">
                         <x-search-form />
                         <x-courses :courses="$courses" />
                         <x-pagination />
