@@ -2,10 +2,19 @@
     "isActive" => false,
 ])
 
+@php
+    $mergedAttributes = $attributes
+        ->class(["text-purple-600" => $isActive])
+        ->merge([
+            "class" => "hover:text-purple-600",
+            "weight" => "semibold",
+            "size" => "lg",
+            "tag" => "a",
+        ]);
+@endphp
+
 <li>
-    <a
-        {{ $attributes->merge(["class" => "text-lg font-semibold hover:text-purple-600" . ($isActive ? " text-purple-600" : "")]) }}
-    >
+    <x-text :attributes="$mergedAttributes">
         {{ $slot }}
-    </a>
+    </x-text>
 </li>
