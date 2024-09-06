@@ -3,7 +3,8 @@
 ])
 
 <x-stack
-    :attributes="$attributes->merge(['class' => 'justify-end', 'gap' => 10, 'tag' => 'ul'])"
+    gap="xl"
+    :attributes="$attributes->merge(['class' => 'justify-end', 'tag' => 'ul'])"
 >
     @foreach ($items as $routeName => $label)
         <x-nav.item

@@ -1,4 +1,4 @@
-@props(["size" => 10])
+@props(["size" => "lg"])
 
 <x-stack
     tag="a"

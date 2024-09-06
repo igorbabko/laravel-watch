@@ -10,7 +10,7 @@
             />
             <x-heading tag="h3">{{ $tag->name }}</x-heading>
         </x-stack>
-        <x-stack column centered class="gap-1">
+        <x-stack column centered gap="xs">
             <x-text>{{ $tag->courses()->count() }} courses</x-text>
             <x-text>
                 {{ $tag->courses->reduce(fn (int $carry, $course) => $carry + $course->lessons()->count(), 0) }}

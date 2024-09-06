@@ -5,7 +5,12 @@
         ->class([
             "text-4xl sm:text-5xl md:text-6xl mt-2 sm:mt-8 text-center" => $tag === "h1",
             "text-3xl sm:text-4xl md:text-5xl mt-2 sm:mt-8 text-center" => $tag === "h2",
-            "text-xl" => $tag === "h3",
+            "text-lg" => $tag === "h3",
+            "font-normal" => $weight === "normal",
+            "font-medium" => $weight === "medium",
+            "font-semibold" => $weight === "semibold",
+            "font-bold" => $weight === "bold",
+            "font-black" => $weight === "black",
         ])
         ->merge(["class" => "font-{$weight}"]);
 @endphp

@@ -1,4 +1,4 @@
-<x-form :attributes="$attributes->merge(['class' => '!flex-row !gap-2'])">
+<x-form :attributes="$attributes->merge(['class' => '!flex-row'])">
     <x-form-field>
         <x-input
             type="search"
@@ -7,6 +7,6 @@
         />
     </x-form-field>
     <x-button>
-        <x-icon name="magnifying-glass" size="md" class="fill-white" />
+        <x-icon name="magnifying-glass" size="sm" class="fill-white" />
     </x-button>
 </x-form>

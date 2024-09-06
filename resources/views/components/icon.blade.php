@@ -1,10 +1,18 @@
 @props([
-    "size" => 4,
+    "size" => "md",
     "name",
 ])
 
 @php
-    $mergedAttributes = $attributes->merge(["class" => "size-{$size}"]);
+    $mergedAttributes = $attributes
+        ->class([
+            "size-4" => $size == "xs",
+            "size-6" => $size == "sm",
+            "size-8" => $size == "md",
+            "size-10" => $size == "lg",
+            "size-12" => $size == "xl",
+        ])
+        ->merge(["class"]);
 @endphp
 
 @if ($name === "bars")

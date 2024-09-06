@@ -1,5 +1,6 @@
 <x-stack
-    :attributes="$attributes->merge(['class' => 'flex-grow gap-1', 'column' => true])"
+    gap="xs"
+    :attributes="$attributes->merge(['class' => 'flex-grow', 'column' => true])"
 >
     {{ $slot }}
 </x-stack>
