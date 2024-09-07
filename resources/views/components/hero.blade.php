@@ -2,7 +2,7 @@
     <x-container class="pb-16 pt-28 md:min-h-screen md:py-40">
         <x-stack column centered class="self-center">
             <x-heading>Learn Web Development</x-heading>
-            <x-text weight="semibold" size="xl" class="text-center">
+            <x-text weight="medium" size="xl" class="text-center">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Nostrum, quis.
             </x-text>
