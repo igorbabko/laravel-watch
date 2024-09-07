@@ -11,7 +11,6 @@
         "size-10" => $size == "lg",
         "size-12" => $size == "xl",
     ]);
-    //        ->merge(["class"]);
 @endphp
 
 @if ($name === "bars")

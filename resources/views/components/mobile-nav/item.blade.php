@@ -1,11 +1,13 @@
-@props([
-    "isActive" => false,
-])
+@props(["isActive" => false])
+
+@php
+    $mergedAttributes = $attributes
+        ->class(["bg-gray-100" => $isActive])
+        ->merge(["class" => "inline-block w-full rounded-md p-4 text-lg hover:bg-gray-100"]);
+@endphp
 
 <li>
-    <a
-        {{ $attributes->merge(["class" => "inline-block w-full rounded-md p-4 text-xl font-semibold hover:bg-gray-100" . ($isActive ? " bg-gray-100" : "")]) }}
-    >
+    <x-text tag="a" weight="semibold" :attributes="$mergedAttributes">
         {{ $slot }}
-    </a>
+    </x-text>
 </li>
