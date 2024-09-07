@@ -1,7 +1,7 @@
 <a
     {{ $attributes->merge(["href" => route("courses.index"), "class" => "rounded-md bg-gray-100 p-4 hover:bg-gray-200"]) }}
 >
-    <x-stack column centered>
+    <x-stack column centered gap="md">
         <x-stack centered>
             <img
                 src="{{ "/img/" . $tag->name . ".svg" }}"
@@ -10,12 +10,11 @@
             />
             <x-heading tag="h3">{{ $tag->name }}</x-heading>
         </x-stack>
-        <x-stack column centered gap="xs">
-            <x-text>{{ $tag->courses()->count() }} courses</x-text>
-            <x-text>
-                {{ $tag->courses->reduce(fn (int $carry, $course) => $carry + $course->lessons()->count(), 0) }}
-                lessons
-            </x-text>
-        </x-stack>
+        <x-text centered weight="medium">
+            {{ $tag->courses()->count() }} courses
+            <br />
+            {{ $tag->courses->reduce(fn (int $carry, $course) => $carry + $course->lessons()->count(), 0) }}
+            lessons
+        </x-text>
     </x-stack>
 </a>
