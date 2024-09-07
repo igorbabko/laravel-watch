@@ -4,11 +4,7 @@
     </x-like-button>
     @if (! $isReply)
         @if ($comment->replies()->count())
-            <x-button
-                type="secondary"
-                size="sm"
-                class="bg-gray-200 hover:bg-gray-300"
-            >
+            <x-button type="secondary" class="bg-gray-200 hover:bg-gray-300">
                 <x-icon name="comment" size="xs" />
                 {{ $comment->replies()->count() }}
             </x-button>

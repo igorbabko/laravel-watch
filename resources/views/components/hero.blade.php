@@ -21,14 +21,8 @@
                 Nostrum, quis.
             </x-text>
             <x-stack column class="md:flex-row">
-                <x-button size="lg" :href="route('register')">
-                    Get Started
-                </x-button>
-                <x-button
-                    type="secondary"
-                    size="lg"
-                    :href="route('courses.index')"
-                >
+                <x-button :href="route('register')">Get Started</x-button>
+                <x-button type="secondary" :href="route('courses.index')">
                     Explore Courses
                 </x-button>
             </x-stack>
