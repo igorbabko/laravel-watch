@@ -8,12 +8,10 @@
     ];
 @endphp
 
-<nav {{ $attributes->merge(["class" => "md:hidden"]) }}>
-    <x-container>
-        <x-stack centered class="flex-wrap justify-between py-2">
-            <x-header.logo size="xl" class="z-20" />
-            <x-mobile-nav.items :items="$items" />
-            <x-mobile-nav.button />
-        </x-stack>
+<nav {{ $attributes->merge(["class" => "lg:hidden"]) }}>
+    <x-container centered class="flex-wrap justify-between py-2">
+        <x-header.logo size="xl" class="z-20" />
+        <x-mobile-nav.items :items="$items" />
+        <x-mobile-nav.button />
     </x-container>
 </nav>

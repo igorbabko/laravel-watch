@@ -1,3 +1,5 @@
-<section {{ $attributes->merge(["class" => "relative px-2 md:px-10"]) }}>
+@props(["tag" => "section"])
+
+<{{ $tag }} {{ $attributes->merge(["class" => "relative px-2 md:px-10"]) }}>
     {{ $slot }}
-</section>
+</{{ $tag }}>
