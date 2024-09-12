@@ -8,7 +8,7 @@
 >
     @foreach ($items as $item)
         <li>
-            <x-filter-item>{{ $item->name ?? $item }}</x-filter-item>
+            <x-filters.item>{{ $item->name ?? $item }}</x-filters.item>
         </li>
     @endforeach
 </x-grid>
