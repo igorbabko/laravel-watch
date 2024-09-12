@@ -18,10 +18,10 @@
             </x-text>
             <x-media :$comment :$i />
         </div>
-        <x-comment-buttons :$comment :is-reply="$isReply" />
+        <x-comments.buttons :$comment :is-reply="$isReply" />
     </x-stack>
 </x-card>
 
 @if (! $isReply && $i === 2)
-    <x-comment-form class="ml-8 md:ml-12" is-reply />
+    <x-comments.form class="ml-8 md:ml-12" is-reply />
 @endif
