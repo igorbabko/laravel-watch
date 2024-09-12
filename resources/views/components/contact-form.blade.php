@@ -1,4 +1,4 @@
-<x-form :attributes="$attributes">
+<x-form :$attributes>
     <x-form-field>
         <x-label for="name">Name</x-label>
         <x-input id="name" class="w-96" />

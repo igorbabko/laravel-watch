@@ -16,9 +16,9 @@
             >
                 {{ $comment->created_at->diffForHumans() }}
             </x-text>
-            <x-media :comment="$comment" :i="$i" />
+            <x-media :$comment :$i />
         </div>
-        <x-comment-buttons :comment="$comment" :is-reply="$isReply" />
+        <x-comment-buttons :$comment :is-reply="$isReply" />
     </x-stack>
 </x-card>
 

@@ -2,7 +2,7 @@
     "isReply" => false,
 ])
 
-<x-form :attributes="$attributes">
+<x-form :$attributes>
     <x-form-field>
         <x-label for="{{ $isReply ? 'reply' : 'comment' }}">
             Write your comment here

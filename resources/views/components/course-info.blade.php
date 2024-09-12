@@ -6,6 +6,6 @@
     </x-text>
     <x-text>{{ $course->description }}</x-text>
     <x-stack column tag="footer" class="sm:flex-row">
-        <x-course-buttons :course="$course" />
+        <x-course-buttons :$course />
     </x-stack>
 </x-stack>

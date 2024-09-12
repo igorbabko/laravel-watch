@@ -3,7 +3,7 @@
     <x-section>
         <x-container column gap="xl" class="py-10 md:py-20">
             <x-heading tag="h2">Topics</x-heading>
-            <x-topics :tags="$tags" />
+            <x-topics :$tags />
         </x-container>
     </x-section>
     <x-section>

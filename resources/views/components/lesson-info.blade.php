@@ -1,4 +1,4 @@
-<x-stack gap="xs" :attributes="$attributes->merge(['column' => true])">
+<x-stack :attributes="$attributes->merge(['column' => true, 'gap' => 'xs'])">
     {{-- <x-stack class="mb-2 mt-8 justify-between"> --}}
     {{-- <x-stack --}}
     {{-- centered --}}
@@ -11,5 +11,5 @@
     {{-- </x-stack> --}}
     {{-- </x-stack> --}}
     <x-video />
-    <x-lesson-buttons :lesson="$lesson" />
+    <x-lesson-buttons :$lesson />
 </x-stack>

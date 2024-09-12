@@ -4,9 +4,9 @@
     @if ($comments->isNotEmpty())
         <x-stack column class="mt-6">
             @foreach ($comments->filter(fn ($comment) => $comment->parent_id === null) as $i => $comment)
-                <x-comment :comment="$comment" :i="$i" />
+                <x-comment :$comment :$i />
                 @foreach ($comment->replies as $j => $comment)
-                    <x-comment :comment="$comment" :i="$j" is-reply />
+                    <x-comment :$comment :i="$j" is-reply />
                 @endforeach
             @endforeach
         </x-stack>

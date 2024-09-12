@@ -1,4 +1,4 @@
-<x-stack :attributes="$attributes">
+<x-stack :$attributes>
     <x-like-button :is-liked="$comment->isLikedBy(auth()->user())">
         {{ $comment->likes()->count() }}
     </x-like-button>

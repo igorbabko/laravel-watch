@@ -1,7 +1,7 @@
 @props(["type" => "primary"])
 
 @php
-    $mergedAttributes = $attributes
+    $attributes = $attributes
         ->class([
             "bg-purple-500 text-white hover:bg-purple-600" => $type === "primary",
             "bg-gray-100 hover:bg-gray-200" => $type === "secondary",
@@ -13,6 +13,6 @@
         ]);
 @endphp
 
-<x-stack :attributes="$mergedAttributes">
+<x-stack :$attributes>
     {{ $slot }}
 </x-stack>

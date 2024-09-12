@@ -5,7 +5,7 @@
                 {{ Str::padLeft($lesson->number, 2, 0) }}.
                 {{ $lesson->title }}
             </x-heading>
-            <x-lesson-info :lesson="$lesson" />
+            <x-lesson-info :$lesson />
             <x-comments :comments="$lesson->comments" />
         </x-container>
     </x-section>

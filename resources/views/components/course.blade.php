@@ -15,7 +15,7 @@
             <x-text class="mb-6 mt-4 line-clamp-6 sm:mb-8">
                 {{ $course->description }}
             </x-text>
-            <x-course.footer :course="$course" class="mt-auto" />
+            <x-course.footer :$course class="mt-auto" />
         </x-stack>
     </a>
 </x-card>
