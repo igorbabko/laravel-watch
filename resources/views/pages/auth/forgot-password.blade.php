@@ -5,10 +5,10 @@
             address and we will email you a password reset link that will allow
             you to choose a new one.
         </x-text>
-        <x-form-field>
+        <x-field>
             <x-label for="email">Email</x-label>
             <x-input id="email" />
-        </x-form-field>
+        </x-field>
         <x-stack class="justify-end">
             <x-button>Email Password Reset Link</x-button>
         </x-stack>

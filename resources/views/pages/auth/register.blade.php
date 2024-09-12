@@ -1,21 +1,21 @@
 <x-layouts.auth>
     <x-form>
-        <x-form-field>
+        <x-field>
             <x-label for="name">Name</x-label>
             <x-input id="name" />
-        </x-form-field>
-        <x-form-field>
+        </x-field>
+        <x-field>
             <x-label for="email">Email</x-label>
             <x-input id="email" />
-        </x-form-field>
-        <x-form-field>
+        </x-field>
+        <x-field>
             <x-label for="password">Password</x-label>
             <x-input id="password" type="password" required />
-        </x-form-field>
-        <x-form-field>
+        </x-field>
+        <x-field>
             <x-label for="password_confirmation">Confirm Password</x-label>
             <x-input id="password_confirmation" type="password" />
-        </x-form-field>
+        </x-field>
         <x-stack centered class="justify-between">
             <x-button type="secondary" :href="route('login')">
                 Already registered?

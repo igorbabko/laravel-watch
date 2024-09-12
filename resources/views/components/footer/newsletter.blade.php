@@ -11,6 +11,8 @@
         <x-field>
             <x-input type="email" placeholder="Your email" />
         </x-field>
+        {{-- <x-stack centered class="justify-between"> --}}
         <x-button>Subscribe</x-button>
+        {{-- </x-stack> --}}
     </x-form>
 </x-stack>

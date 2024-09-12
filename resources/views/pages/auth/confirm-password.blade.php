@@ -4,10 +4,10 @@
             This is a secure area of the application. Please confirm your
             password before continuing.
         </x-text>
-        <x-form-field>
+        <x-field>
             <x-label for="password">Password</x-label>
             <x-input id="password" type="password" required />
-        </x-form-field>
+        </x-field>
         <x-stack class="justify-end">
             <x-button>Confirm</x-button>
         </x-stack>

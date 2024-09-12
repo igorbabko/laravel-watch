@@ -11,7 +11,7 @@ class CourseController extends Controller
 {
     public function index()
     {
-        return view('courses.index', [
+        return view('pages.courses.index', [
             'courses' => Course::get(),
             'tags' => Tag::get(),
         ]);

@@ -34,7 +34,7 @@ class LessonController extends Controller
 
     public function show(Lesson $lesson)
     {
-        return view('lessons.show', [
+        return view('pages.lessons.show', [
             'lesson' => $lesson,
             //            'currentLesson' => $lesson->load('completed', 'module.course.modules.lessons'),
         ]);
