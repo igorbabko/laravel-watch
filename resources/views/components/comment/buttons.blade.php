@@ -1,7 +1,7 @@
 <x-stack :$attributes>
-    <x-like-button :is-liked="$comment->isLikedBy(auth()->user())">
+    <x-comment.like :is-liked="$comment->isLikedBy(auth()->user())">
         {{ $comment->likes()->count() }}
-    </x-like-button>
+    </x-comment.like>
     @if (! $isReply)
         @if ($comment->replies()->count())
             <x-button type="secondary" class="bg-gray-200 hover:bg-gray-300">

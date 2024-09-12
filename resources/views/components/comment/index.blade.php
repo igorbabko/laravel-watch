@@ -16,12 +16,18 @@
             >
                 {{ $comment->created_at->diffForHumans() }}
             </x-text>
-            <x-media :$comment :$i />
+            <x-stack column>
+                <x-stack class="items-center">
+                    <img
+                        src="https://i.pravatar.cc/64?img={{ $i }}"
+                        class="size-10 rounded-full"
+                        alt=""
+                    />
+                    <x-text bold>{{ $comment->user->name }}</x-text>
+                </x-stack>
+                <x-text>{{ $comment->body }}</x-text>
+            </x-stack>
         </div>
-        <x-comments.buttons :$comment :is-reply="$isReply" />
+        <x-comment.buttons :$comment :is-reply="$isReply" />
     </x-stack>
 </x-card>
-
-@if (! $isReply && $i === 2)
-    <x-comments.form class="ml-8 md:ml-12" is-reply />
-@endif

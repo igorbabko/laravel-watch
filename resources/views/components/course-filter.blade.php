@@ -8,7 +8,9 @@
 >
     @foreach ($items as $item)
         <li>
-            <x-filters.item>{{ $item->name ?? $item }}</x-filters.item>
+            <x-checkbox class="text-md flex items-center" weight="semibold">
+                {{ $item->name ?? $item }}
+            </x-checkbox>
         </li>
     @endforeach
 </x-grid>

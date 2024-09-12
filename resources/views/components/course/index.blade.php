@@ -15,7 +15,18 @@
             <x-text class="mb-6 mt-4 line-clamp-6 sm:mb-8">
                 {{ $course->description }}
             </x-text>
-            <x-courses.footer :$course class="mt-auto" />
+            <x-stack tag="footer" class="mt-auto justify-between">
+                <x-stack centered class="text-sm">
+                    <x-icon name="circle-play" size="xs" />
+                    <x-text weight="semibold">
+                        {{ $course->lessons()->count() }} lessons
+                    </x-text>
+                </x-stack>
+                <x-stack centered class="text-sm">
+                    <x-icon name="clock" size="xs" />
+                    <x-text weight="semibold">2h 30m</x-text>
+                </x-stack>
+            </x-stack>
         </x-stack>
     </a>
 </x-card>

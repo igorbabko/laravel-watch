@@ -7,5 +7,10 @@
     >
         Want to receive updates about courses?
     </x-heading>
-    <x-newsletter-form />
+    <x-form class="!flex-row md:w-auto">
+        <x-field>
+            <x-input type="email" placeholder="Your email" />
+        </x-field>
+        <x-button>Subscribe</x-button>
+    </x-form>
 </x-stack>

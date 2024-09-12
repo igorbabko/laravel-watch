@@ -1,7 +1,7 @@
 <footer {{ $attributes->merge(["class" => "relative"]) }}>
     <x-section class="bg-gray-50">
         <x-container class="py-10 md:py-20">
-            <x-newsletter />
+            <x-footer.newsletter />
         </x-container>
     </x-section>
     <x-section class="bg-purple-600">
