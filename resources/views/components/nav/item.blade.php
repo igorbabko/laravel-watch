@@ -3,7 +3,7 @@
 ])
 
 @php
-    $mergedAttributes = $attributes
+    $attributes = $attributes
         ->class(["text-purple-600" => $isActive])
         ->merge([
             "class" => "hover:text-purple-600",
@@ -14,7 +14,7 @@
 @endphp
 
 <li>
-    <x-text :attributes="$mergedAttributes">
+    <x-text :$attributes>
         {{ $slot }}
     </x-text>
 </li>

@@ -6,7 +6,7 @@
 ])
 
 @php
-    $mergedAttributes = $attributes
+    $attributes = $attributes
         ->class([
             "flex-col" => $column,
             "justify-center items-center" => $centered,
@@ -19,6 +19,6 @@
         ->merge(["class" => "flex"]);
 @endphp
 
-<{{ $tag }} {{ $mergedAttributes }}>
+<{{ $tag }} {{ $attributes }}>
     {{ $slot }}
 </{{ $tag }}>
