@@ -7,7 +7,7 @@
                     <x-filters :$tags />
                 </x-stack>
                 <x-stack column gap="md" class="md:w-3/4">
-                    <x-search-form />
+                    <x-courses.search />
                     <x-courses :$courses />
                     <x-pagination />
                 </x-stack>

@@ -10,6 +10,6 @@
     {{-- {{ $lesson->course->title }} --}}
     {{-- </x-stack> --}}
     {{-- </x-stack> --}}
-    <x-video />
-    <x-lesson-buttons :$lesson />
+    <x-lessons.video />
+    <x-lessons.buttons :$lesson />
 </x-stack>

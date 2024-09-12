@@ -4,7 +4,7 @@
             <x-heading>{{ $course->title }}</x-heading>
             <x-stack column gap="lg" class="md:flex-row">
                 <div class="md:w-1/2">
-                    <x-course-info :$course class="md:sticky md:top-24" />
+                    <x-courses.info :$course class="md:sticky md:top-24" />
                 </div>
                 <x-stack column class="w-full md:w-1/2">
                     <x-text
