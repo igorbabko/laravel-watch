@@ -10,7 +10,7 @@
 
 <nav {{ $attributes->merge(["class" => "hidden lg:block"]) }}>
     <x-container centered class="justify-between py-4">
-        <x-nav.logo>Watch</x-nav.logo>
+        <x-logo>Watch</x-logo>
         <x-nav.items :$items />
     </x-container>
 </nav>
