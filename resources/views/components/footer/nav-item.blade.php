@@ -1,7 +1,11 @@
 <li class="text-center md:text-left">
-    <a
-        {{ $attributes->merge(["class" => "font-medium text-white hover:text-purple-200"]) }}
+    <x-text
+        :attributes="$attributes->merge([
+            'class' => 'text-white hover:text-purple-200',
+            'weight' => 'medium',
+            'tag' => 'a',
+        ])"
     >
         {{ $slot }}
-    </a>
+    </x-text>
 </li>

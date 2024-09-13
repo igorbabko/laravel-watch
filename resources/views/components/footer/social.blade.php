@@ -3,9 +3,9 @@
         <li>
             <a href="/">
                 <x-icon
+                    class="fill-white hover:fill-purple-200"
                     :name="$iconName"
                     size="md"
-                    class="fill-white hover:fill-purple-200"
                 />
             </a>
         </li>

@@ -10,7 +10,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Nostrum, quis.
             </x-text>
-            <x-stack class="mt-6 flex-col md:flex-row">
+            <x-stack column class="mt-6 md:flex-row">
                 <x-button :href="route('register')">Get Started</x-button>
                 <x-button type="secondary" :href="route('courses.index')">
                     Explore Courses
