@@ -7,5 +7,5 @@
     ])"
 >
     <x-icon name="circle-play-2" size="xl" />
-    <span class="hidden md:inline-block">Watch</span>
+    {{ $slot }}
 </x-stack>
