@@ -1,5 +1,3 @@
-<x-stack
-    :attributes="$attributes->merge(['class' => 'container md:max-w-screen-xl'])"
->
+<x-stack :attributes="$attributes->merge(['class' => 'md:container'])">
     {{ $slot }}
 </x-stack>
