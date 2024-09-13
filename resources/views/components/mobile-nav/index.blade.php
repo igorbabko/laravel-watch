@@ -1,12 +1,4 @@
 @php
-    $items = [
-        "index" => "Home",
-        "courses.index" => "Courses",
-        "contact" => "Contact",
-        "login" => "Log In",
-        "register" => "Register",
-    ];
-
     $attributes = $attributes->merge([
         "class" => "peer absolute inset-x-0 top-0 hidden bg-white pb-2 px-2 mt-[70px] target:flex border-b",
         "column" => true,

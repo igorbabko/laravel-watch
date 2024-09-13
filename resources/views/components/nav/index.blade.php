@@ -1,13 +1,3 @@
-@php
-    $items = [
-        "index" => "Home",
-        "courses.index" => "Courses",
-        "contact" => "Contact",
-        "login" => "Log In",
-        "register" => "Register",
-    ];
-@endphp
-
 <nav>
     <x-stack
         :attributes="$attributes->merge(['class' => 'justify-end', 'tag' => 'ul', 'gap' => 'xl'])"
