@@ -40,7 +40,7 @@ class CourseController extends Controller
 
     public function show(Course $course)
     {
-        return view('courses.show', ['course' => $course]);
+        return view('pages.courses.show', ['course' => $course]);
 
         //        return $course->loadRelationships(request('with'));
     }

@@ -6,12 +6,25 @@
         "login" => "Log In",
         "register" => "Register",
     ];
+
+    $attributes = $attributes->merge([
+        "class" => "peer absolute inset-x-0 top-0 hidden bg-white pb-2 px-2 mt-[70px] target:flex border-b",
+        "column" => true,
+        "tag" => "ul",
+        "id" => "nav",
+    ]);
 @endphp
 
-<nav {{ $attributes->merge(["class" => "lg:hidden"]) }}>
-    <x-container centered class="flex-wrap justify-between py-2">
-        <x-logo size="xl" class="z-20" />
-        <x-mobile-nav.items :$items />
-        <x-mobile-nav.button />
-    </x-container>
+<nav>
+    <x-stack :$attributes>
+        @foreach ($items as $routeName => $label)
+            <x-mobile-nav.item
+                :href="route($routeName)"
+                :is-active="request()->route()->named($routeName)"
+            >
+                {{ $label }}
+            </x-mobile-nav.item>
+        @endforeach
+    </x-stack>
+    <x-mobile-nav.button />
 </nav>
