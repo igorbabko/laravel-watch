@@ -9,9 +9,9 @@
 @endphp
 
 <x-stack
+    :attributes="$attributes->merge(['class' => 'md:flex-row'])"
     tag="ul"
     column
-    :attributes="$attributes->merge(['class' => 'md:flex-row'])"
 >
     @foreach ($items as $routeName => $label)
         <x-footer.nav-item :href="route($routeName)">
