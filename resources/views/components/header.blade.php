@@ -13,12 +13,12 @@
 >
     <x-section tag="header">
         <x-container centered class="hidden justify-between py-4 md:flex">
-            <x-logo>Watch</x-logo>
+            <x-logo />
             <x-nav :$items />
         </x-container>
         <x-container class="justify-between py-2 md:hidden">
             <x-logo />
-            <x-mobile-nav :$items />
+            <x-nav :$items is-mobile />
         </x-container>
     </x-section>
 </header>

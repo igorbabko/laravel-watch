@@ -1,6 +1,7 @@
+@aware(["isMobile"])
+
 @props([
     "isActive" => false,
-    "isMobile" => false,
 ])
 
 @php
@@ -13,7 +14,7 @@
         ])
         ->merge([
             "weight" => "semibold",
-            "size" => "lg",
+            "size" => "xl",
             "tag" => "a",
         ]);
 @endphp

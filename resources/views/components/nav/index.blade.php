@@ -1,7 +1,21 @@
+@props([
+    "isMobile" => false,
+    "items",
+])
+
+@php
+    $attributes = $isMobile
+        ? $attributes->merge([
+            "class" => "peer absolute inset-x-0 top-0 hidden bg-white pt-2 pb-4 px-4 mt-[70px] target:flex border-b",
+            "column" => true,
+            "tag" => "ul",
+            "id" => "nav",
+        ])
+        : $attributes->merge(["class" => "justify-end", "tag" => "ul", "gap" => "xl"]);
+@endphp
+
 <nav>
-    <x-stack
-        :attributes="$attributes->merge(['class' => 'justify-end', 'tag' => 'ul', 'gap' => 'xl'])"
-    >
+    <x-stack :$attributes>
         @foreach ($items as $routeName => $label)
             <x-nav.item
                 :href="route($routeName)"
@@ -11,4 +25,7 @@
             </x-nav.item>
         @endforeach
     </x-stack>
+    @if ($isMobile)
+        <x-nav.button />
+    @endif
 </nav>
