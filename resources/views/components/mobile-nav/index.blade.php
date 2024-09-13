@@ -18,13 +18,14 @@
 <nav>
     <x-stack :$attributes>
         @foreach ($items as $routeName => $label)
-            <x-mobile-nav.item
+            <x-nav.item
                 :href="route($routeName)"
                 :is-active="request()->route()->named($routeName)"
+                is-mobile
             >
                 {{ $label }}
-            </x-mobile-nav.item>
+            </x-nav.item>
         @endforeach
     </x-stack>
-    <x-mobile-nav.button />
+    <x-nav.button />
 </nav>
