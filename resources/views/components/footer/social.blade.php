@@ -1,4 +1,4 @@
-<x-stack :attributes="$attributes->merge(['tag' => 'ul'])">
+<x-stack :attributes="$attributes->merge(['tag' => 'ul', 'gap' => 'md'])">
     @foreach (["youtube", "telegram", "github", "x"] as $iconName)
         <li>
             <a href="/">

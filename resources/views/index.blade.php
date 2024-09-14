@@ -19,7 +19,7 @@
         </x-container>
     </x-section>
     <x-section>
-        <x-container column gap="xl" class="pb-16 md:py-20">
+        <x-container column gap="xl" class="pb-16 md:pb-20">
             <x-heading tag="h2">Topics</x-heading>
             <x-grid class="w-full sm:grid-cols-2 md:grid-cols-3">
                 @foreach ($tags as $tag)
@@ -29,7 +29,7 @@
         </x-container>
     </x-section>
     <x-section>
-        <x-container column gap="xl" class="pb-16 md:py-20">
+        <x-container column gap="xl" class="pb-16 md:pb-20">
             <x-heading tag="h2">Latest Courses</x-heading>
             <x-grid class="w-full lg:grid-cols-2">
                 @foreach ($latestCourses as $course)
@@ -39,7 +39,7 @@
         </x-container>
     </x-section>
     <x-section>
-        <x-container column gap="xl" class="pb-16 md:py-20">
+        <x-container column gap="xl" class="pb-16 md:pb-20">
             <x-heading tag="h2">Popular Courses</x-heading>
             <x-grid class="w-full lg:grid-cols-2">
                 @foreach ($popularCourses as $course)

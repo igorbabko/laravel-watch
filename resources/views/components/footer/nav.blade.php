@@ -6,13 +6,16 @@
         "privacy" => "Privacy",
         "terms" => "Terms",
     ];
+
+    $attributes = $attributes->merge([
+        "class" => "md:flex-row",
+        "column" => true,
+        "tag" => "ul",
+        "gap" => "md",
+    ]);
 @endphp
 
-<x-stack
-    :attributes="$attributes->merge(['class' => 'md:flex-row'])"
-    tag="ul"
-    column
->
+<x-stack :$attributes>
     @foreach ($items as $routeName => $label)
         <x-footer.nav-item :href="route($routeName)">
             {{ $label }}
