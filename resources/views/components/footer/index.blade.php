@@ -5,7 +5,7 @@
         </x-container>
     </x-section>
     <x-section class="bg-purple-600">
-        <x-container column gap="lg" class="py-6 md:pt-12">
+        <x-container column gap="xl" class="py-10">
             <x-stack
                 class="justify-between md:flex-row"
                 centered

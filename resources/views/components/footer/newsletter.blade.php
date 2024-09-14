@@ -1,5 +1,5 @@
 <x-stack
-    :attributes="$attributes->merge(['class' => 'mx-auto', 'column' => true])"
+    :attributes="$attributes->merge(['class' => 'mx-auto', 'column' => true, 'gap' => 'md'])"
 >
     <x-heading
         tag="h3"
