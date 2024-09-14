@@ -9,7 +9,7 @@
                 <x-video />
                 <x-lesson-buttons :$lesson />
             </x-stack>
-            <x-stack :attributes="$attributes->merge(['column' => true])">
+            <x-stack column>
                 <x-heading tag="h2">
                     Comments ({{ $lesson->comments->count() }})
                 </x-heading>
