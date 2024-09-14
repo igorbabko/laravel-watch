@@ -4,9 +4,13 @@
     "i",
 ])
 
-<x-card
-    :attributes="$attributes->class(['ml-8 md:ml-12' => $isReply])->merge(['class' => 'bg-gray-100 p-4'])"
->
+@php
+    $attributes = $attributes
+        ->class(["ml-8 md:ml-12" => $isReply])
+        ->merge(["class" => "bg-gray-100 p-4"]);
+@endphp
+
+<x-card :$attributes>
     <x-stack column>
         <div class="relative">
             <x-text
