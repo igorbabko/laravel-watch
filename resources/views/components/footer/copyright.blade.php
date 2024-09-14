@@ -1,6 +1,5 @@
 <x-text
-    size="sm"
-    :attributes="$attributes->merge(['class' => 'text-purple-200'])"
+    :attributes="$attributes->merge(['class' => 'text-purple-200', 'size' => 'sm'])"
 >
     &copy; Watch {{ date("Y") }}. All rights reserved.
 </x-text>

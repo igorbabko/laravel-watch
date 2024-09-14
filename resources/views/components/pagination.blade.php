@@ -1,6 +1,5 @@
 <x-stack
-    centered
-    :attributes="$attributes->merge(['class' => 'justify-between bg-white py-3'])"
+    :attributes="$attributes->merge(['class' => 'justify-between bg-white py-3', 'centered' => true])"
 >
     <x-stack class="flex-1 justify-between sm:hidden">
         <x-button type="secondary" href="#">Previous</x-button>
