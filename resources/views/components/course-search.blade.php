@@ -2,7 +2,7 @@
     <x-field>
         <x-input
             type="search"
-            placeholder="Search by course title or description"
+            placeholder="Course title or description"
             class="flex-grow truncate"
         />
     </x-field>

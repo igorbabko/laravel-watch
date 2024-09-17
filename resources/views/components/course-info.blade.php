@@ -1,7 +1,7 @@
 <x-stack
-    :attributes="$attributes->merge(['column' => true, 'tag' => 'article'])"
+    :attributes="$attributes->merge(['column' => true, 'tag' => 'article', 'gap' => 'md'])"
 >
-    <x-text tag="header" size="lg" weight="semibold">
+    <x-text tag="header" weight="semibold" class="text-center sm:text-left">
         Last Updated: {{ $course->updated_at->format("M d, Y") }}
     </x-text>
     <x-text>{{ $course->description }}</x-text>
@@ -10,7 +10,6 @@
             :href="route('lessons.show', $course->lessons()->first())"
             class="sm:w-1/2"
         >
-            <x-icon name="circle-play-2" size="md" />
             Start Watching
         </x-button>
         <x-button
@@ -18,7 +17,6 @@
             :href="$course->repositoryUrl"
             class="sm:w-1/2"
         >
-            <x-icon name="github" size="md" />
             Source Code
         </x-button>
     </x-stack>

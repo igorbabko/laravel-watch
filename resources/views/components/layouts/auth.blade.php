@@ -12,14 +12,15 @@
     </head>
     <x-stack
         class="min-h-screen justify-center gap-6 p-4 sm:px-8 sm:py-6"
+        tag="body"
         centered
         column
     >
         <header>
             <x-logo class="overflow-hidden rounded-full" />
         </header>
-        <x-card tag="main" class="w-full max-w-96 md:w-2/3 xl:w-1/3">
+        <main class="w-full max-w-96 md:w-2/3 xl:w-1/3">
             {{ $slot }}
-        </x-card>
+        </main>
     </x-stack>
 </html>

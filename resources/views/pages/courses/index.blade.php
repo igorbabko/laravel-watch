@@ -1,6 +1,6 @@
 <x-layouts.guest>
     <x-section>
-        <x-container column gap="xl" class="py-10 pt-20 md:py-28">
+        <x-container column gap="xl" class="py-10 pt-24 md:py-28">
             <x-heading>Courses</x-heading>
             <x-stack column class="items-start md:top-20 md:flex-row" gap="xl">
                 <x-stack column class="w-full md:sticky md:top-24 md:w-1/4">

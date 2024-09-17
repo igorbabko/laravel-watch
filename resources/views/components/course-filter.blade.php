@@ -7,7 +7,7 @@
 >
     @foreach ($items as $item)
         <li>
-            <x-checkbox class="text-md flex items-center" weight="semibold">
+            <x-checkbox class="flex items-center" size="lg" weight="semibold">
                 {{ $item->name ?? $item }}
             </x-checkbox>
         </li>

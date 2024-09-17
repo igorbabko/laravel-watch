@@ -1,6 +1,6 @@
 <x-layouts.guest>
     <x-section>
-        <x-container column class="pb-10 pt-20 md:py-20">
+        <x-container column gap="lg" class="pb-10 pt-24 md:py-20">
             <x-heading>{{ $course->title }}</x-heading>
             <x-stack column gap="lg" class="md:flex-row">
                 <div class="md:w-1/2">
@@ -8,10 +8,9 @@
                 </div>
                 <x-stack column class="w-full md:w-1/2">
                     <x-text
-                        size="lg"
+                        class="text-center sm:text-right"
                         weight="semibold"
                         tag="div"
-                        class="text-right"
                     >
                         {{ $course->lessons()->count() }} lessons &middot; 2h
                         25m
