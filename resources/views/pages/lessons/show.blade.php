@@ -10,7 +10,7 @@
                 <x-lesson-buttons :$lesson />
             </x-stack>
             <x-stack column>
-                <x-heading tag="h2">
+                <x-heading tag="h2" size="4xl">
                     Comments ({{ $lesson->comments->count() }})
                 </x-heading>
                 <x-comment-form />

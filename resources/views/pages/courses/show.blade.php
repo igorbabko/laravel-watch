@@ -1,21 +1,22 @@
 <x-layouts.guest>
     <x-section>
-        <x-container column gap="lg" class="pb-10 pt-24 md:py-20">
+        <x-container column gap="lg" class="pb-10 pt-24 md:py-28">
             <x-heading>{{ $course->title }}</x-heading>
             <x-stack column gap="lg" class="md:flex-row">
                 <div class="md:w-1/2">
                     <x-course-info :$course class="md:sticky md:top-24" />
                 </div>
-                <x-stack column class="w-full md:w-1/2">
+                <x-stack column gap="md" class="w-full md:w-1/2">
                     <x-text
                         class="text-center sm:text-right"
                         weight="semibold"
+                        size="lg"
                         tag="div"
                     >
                         {{ $course->lessons()->count() }} lessons &middot; 2h
                         25m
                     </x-text>
-                    <x-stack column>
+                    <x-stack column gap="md">
                         @foreach ($course->lessons as $lesson)
                             <x-lesson :$lesson />
                         @endforeach

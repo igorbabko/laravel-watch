@@ -5,10 +5,10 @@
         <x-stack centered>
             <img
                 src="{{ "/img/" . $tag->name . ".svg" }}"
-                alt=""
+                alt="{{ $tag->name }}"
                 class="size-12"
             />
-            <x-heading tag="h3">{{ $tag->name }}</x-heading>
+            <x-heading tag="h3" size="xl">{{ $tag->name }}</x-heading>
         </x-stack>
         <x-text centered weight="medium">
             {{ $tag->courses()->count() }} courses

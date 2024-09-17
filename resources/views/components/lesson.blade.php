@@ -12,8 +12,6 @@
             </x-text>
             <x-text tag="span" size="sm" class="text-gray-600">5m 32s</x-text>
         </x-stack>
-        <x-heading tag="h3" class="text-base">
-            {{ $lesson->title }}
-        </x-heading>
+        <x-heading tag="h3" size="base">{{ $lesson->title }}</x-heading>
     </x-stack>
 </x-card>

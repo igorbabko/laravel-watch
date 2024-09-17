@@ -13,7 +13,7 @@
 <x-card :$attributes>
     <x-stack column tag="article" gap="xs" class="h-full p-4">
         <header>
-            <x-heading tag="h3" class="line-clamp-1 lg:line-clamp-2">
+            <x-heading tag="h3" size="xl" class="line-clamp-1 lg:line-clamp-2">
                 {{ $course->title }}
             </x-heading>
         </header>

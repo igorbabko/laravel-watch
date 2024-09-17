@@ -1,6 +1,6 @@
 <x-layouts.guest>
     <x-section>
-        <x-container column centered gap="lg" class="py-10 md:py-20">
+        <x-container column centered gap="lg" class="py-10 md:py-28">
             <x-heading>Contact Us</x-heading>
             <x-form>
                 <x-field>

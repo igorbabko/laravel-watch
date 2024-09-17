@@ -1,10 +1,14 @@
-@props(["tag" => "h1"])
+@props(["tag" => "h1", "size" => "5xl"])
 
 @php
     $attributes = $attributes->class([
-        "text-center text-4xl font-extrabold sm:text-5xl md:text-6xl" => $tag === "h1",
-        "text-center text-3xl font-bold sm:text-4xl md:text-5xl" => $tag === "h2",
-        "text-xl font-semibold" => $tag === "h3",
+        "text-center font-extrabold" => $tag === "h1",
+        "text-center font-bold" => $tag === "h2",
+        "font-semibold" => $tag === "h3",
+        "text-base" => $size === "base",
+        "text-xl" => $size === "xl",
+        "text-4xl" => $size === "4xl",
+        "text-5xl" => $size === "5xl",
     ]);
 @endphp
 

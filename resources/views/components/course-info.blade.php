@@ -1,7 +1,12 @@
 <x-stack
     :attributes="$attributes->merge(['column' => true, 'tag' => 'article', 'gap' => 'md'])"
 >
-    <x-text tag="header" weight="semibold" class="text-center sm:text-left">
+    <x-text
+        class="text-center sm:text-left"
+        weight="semibold"
+        tag="header"
+        size="lg"
+    >
         Last Updated: {{ $course->updated_at->format("M d, Y") }}
     </x-text>
     <x-text>{{ $course->description }}</x-text>

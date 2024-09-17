@@ -5,7 +5,7 @@
         "text-center" => $centered,
         "text-xs" => $size === "xs",
         "text-sm" => $size === "sm",
-        "text-md" => $size === "md",
+        "text-base" => $size === "md",
         "text-lg" => $size === "lg",
         "text-xl" => $size === "xl",
         "font-normal" => $weight === "normal",
