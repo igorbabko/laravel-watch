@@ -1,6 +1,6 @@
 <x-layouts.guest>
     <x-section>
-        <x-container column gap="xl" class="pb-10 pt-12 md:pb-10 md:pt-20">
+        <x-container column gap="xl" class="pb-10 pt-24 md:py-28 md:pb-10">
             <x-heading>
                 {{ Str::padLeft($lesson->number, 2, 0) }}.
                 {{ $lesson->title }}
@@ -9,13 +9,13 @@
                 <x-video />
                 <x-lesson-buttons :$lesson />
             </x-stack>
-            <x-stack column>
+            <x-stack column gap="md">
                 <x-heading tag="h2" size="4xl">
                     Comments ({{ $lesson->comments->count() }})
                 </x-heading>
                 <x-comment-form />
                 @if ($lesson->comments->isNotEmpty())
-                    <x-stack column class="mt-6">
+                    <x-stack column gap="md" class="mt-6">
                         @foreach ($lesson->comments->filter(fn ($comment) => $comment->parent_id === null) as $i => $comment)
                             <x-comment :$comment :$i />
 
@@ -26,7 +26,7 @@
                                 />
                             @endif
 
-                            @foreach ($lesson->comment->replies as $j => $comment)
+                            @foreach ($comment->replies as $j => $comment)
                                 <x-comment :$comment :i="$j" is-reply />
                             @endforeach
                         @endforeach
