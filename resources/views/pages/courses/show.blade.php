@@ -8,7 +8,7 @@
                 </div>
                 <x-stack column gap="md" class="w-full md:w-1/2">
                     <x-text
-                        class="text-center sm:text-right"
+                        class="text-center md:text-right"
                         weight="semibold"
                         size="lg"
                         tag="div"
