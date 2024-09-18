@@ -1,5 +1,5 @@
 <x-stack
-    :attributes="$attributes->merge(['class' => 'mt-2 flex-col sm:flex-row'])"
+    :attributes="$attributes->merge(['class' => 'mt-2 flex-col md:flex-row'])"
 >
     <x-stack class="md:mr-auto">
         <x-button

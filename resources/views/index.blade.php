@@ -21,7 +21,7 @@
     <x-section>
         <x-container column gap="xl" class="pb-16 md:pb-24">
             <x-heading tag="h2" size="4xl">Topics</x-heading>
-            <x-grid class="w-full sm:grid-cols-2 md:grid-cols-3">
+            <x-grid class="w-full md:grid-cols-3">
                 @foreach ($tags as $tag)
                     <x-topic :$tag />
                 @endforeach

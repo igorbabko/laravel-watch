@@ -5,11 +5,11 @@
             <x-stack column class="items-start md:top-20 md:flex-row" gap="xl">
                 <x-stack column class="w-full md:sticky md:top-24 md:w-1/4">
                     <x-course-filter :items="$tags" />
-                    <hr class="my-2 sm:my-6 md:my-8" />
+                    <hr class="my-2 md:my-8" />
                     <x-course-filter
                         :items="['Beginner', 'Intermediate', 'Advanced']"
                     />
-                    <hr class="my-2 sm:my-6 md:my-8" />
+                    <hr class="my-2 md:my-8" />
                     <x-course-filter :items="['Free', 'Paid']" />
                 </x-stack>
                 <x-stack column gap="md" class="md:w-3/4">
