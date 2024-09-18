@@ -17,7 +17,7 @@
                 {{ $course->title }}
             </x-heading>
         </header>
-        <x-text class="mb-6 mt-4 line-clamp-6 sm:mb-8">
+        <x-text class="mb-8 mt-2 line-clamp-6">
             {{ $course->description }}
         </x-text>
         <x-stack tag="footer" class="mt-auto justify-between">

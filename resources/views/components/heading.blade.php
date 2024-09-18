@@ -7,6 +7,8 @@
         "font-semibold" => $tag === "h3",
         "text-base" => $size === "base",
         "text-xl" => $size === "xl",
+        "text-2xl" => $size === "2xl",
+        "text-3xl" => $size === "3xl",
         "text-4xl" => $size === "4xl",
         "text-5xl" => $size === "5xl",
     ]);

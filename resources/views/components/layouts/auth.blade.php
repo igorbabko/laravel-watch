@@ -11,7 +11,7 @@
         @vite(["resources/css/app.css", "resources/js/app.js"])
     </head>
     <x-stack
-        class="min-h-screen justify-center gap-6 p-4 sm:px-8 sm:py-6"
+        class="min-h-screen justify-center gap-6 p-4"
         tag="body"
         centered
         column
