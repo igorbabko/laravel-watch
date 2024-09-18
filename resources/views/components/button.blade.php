@@ -7,7 +7,7 @@
             "bg-gray-100 hover:bg-gray-200" => $type === "secondary",
         ])
         ->merge([
-            "class" => "whitespace-nowrap rounded-md font-medium px-4 py-3",
+            "class" => "whitespace-nowrap rounded-md font-medium px-4 py-2",
             "tag" => $attributes->has("href") ? "a" : "button",
             "centered" => true,
         ]);

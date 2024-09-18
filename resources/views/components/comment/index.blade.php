@@ -11,7 +11,7 @@
 @endphp
 
 <x-card :$attributes>
-    <x-stack column>
+    <x-stack column gap="md">
         <div class="relative">
             <x-text
                 tag="span"

@@ -1,6 +1,4 @@
-<x-stack
-    :attributes="$attributes->merge(['class' => 'mt-2 flex-col md:flex-row'])"
->
+<x-stack :attributes="$attributes->merge(['class' => 'flex-col md:flex-row'])">
     <x-stack class="md:mr-auto">
         <x-button
             :href="route('lessons.show', $lesson)"

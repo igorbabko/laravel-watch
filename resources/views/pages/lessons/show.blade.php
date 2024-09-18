@@ -5,7 +5,7 @@
                 {{ Str::padLeft($lesson->number, 2, 0) }}.
                 {{ $lesson->title }}
             </x-heading>
-            <x-stack column gap="xs">
+            <x-stack column>
                 <x-video />
                 <x-lesson-buttons :$lesson />
             </x-stack>

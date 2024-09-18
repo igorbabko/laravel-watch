@@ -1,5 +1,8 @@
 <x-heading tag="h2" size="4xl">
-    Comments ({{ $lesson->comments->count() }})
+    Comments
+    @if ($lesson->comments->count())
+        ({{ $lesson->comments->count() }})
+    @endif
 </x-heading>
 <x-comment-form />
 @if ($lesson->comments->isNotEmpty())

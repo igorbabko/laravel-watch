@@ -13,7 +13,7 @@
             "inline-block w-full rounded-md p-4 text-lg hover:bg-gray-100" => $isMobile,
         ])
         ->merge([
-            "weight" => "semibold",
+            "weight" => "bold",
             "size" => "xl",
             "tag" => "a",
         ]);
