@@ -8,7 +8,7 @@
     >
         Want to receive updates about courses?
     </x-heading>
-    <x-form class="!flex-row md:w-auto">
+    <x-form gap="sm" class="!flex-row md:w-auto">
         <x-field>
             <x-input type="email" placeholder="Your email" />
         </x-field>

@@ -1,6 +1,6 @@
 <x-layouts.guest>
     <x-section>
-        <x-container column gap="lg" class="pb-10 pt-24 md:py-28">
+        <x-container column gap="lg" class="pb-10 pt-24 md:pb-20 md:pt-32">
             <x-heading>{{ $course->title }}</x-heading>
             <x-stack column gap="lg" class="md:flex-row">
                 <div class="md:w-1/2">

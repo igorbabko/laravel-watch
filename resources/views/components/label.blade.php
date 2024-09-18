@@ -1,5 +1,5 @@
 <x-text
-    :attributes="$attributes->merge(['tag' => 'label', 'size' => 'lg', 'weight' => 'medium'])"
+    :attributes="$attributes->merge(['tag' => 'label', 'weight' => 'medium'])"
 >
     {{ $slot }}
 </x-text>

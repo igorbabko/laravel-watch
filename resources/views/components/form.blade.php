@@ -1,8 +1,8 @@
 @props(["action" => "/"])
 
-<form action="{{ $action }}">
+<form action="{{ $action }}" class="w-full">
     <x-stack
-        :attributes="$attributes->merge(['column' => true, 'gap' => 'lg'])"
+        :attributes="$attributes->merge(['column' => true, 'gap' => 'md'])"
     >
         {{ $slot }}
     </x-stack>
