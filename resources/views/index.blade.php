@@ -1,9 +1,9 @@
 <x-layouts.guest>
     <x-section>
         <x-container
-            column
-            centered
             class="pb-16 pt-28 md:min-h-screen md:py-40"
+            centered
+            column
         >
             <x-heading>Learn Web Development</x-heading>
             <x-text centered weight="medium" size="xl">

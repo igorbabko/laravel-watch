@@ -10,11 +10,7 @@
             </x-button>
         @endif
 
-        <x-button
-            type="secondary"
-            size="sm"
-            class="bg-gray-200 hover:bg-gray-300"
-        >
+        <x-button class="bg-gray-200 hover:bg-gray-300" type="secondary">
             Reply
         </x-button>
     @endif

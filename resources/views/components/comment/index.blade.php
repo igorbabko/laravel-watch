@@ -27,7 +27,9 @@
                         class="size-10 rounded-full"
                         alt=""
                     />
-                    <x-text bold>{{ $comment->user->name }}</x-text>
+                    <x-text weight="semibold">
+                        {{ $comment->user->name }}
+                    </x-text>
                 </x-stack>
                 <x-text>{{ $comment->body }}</x-text>
             </x-stack>
