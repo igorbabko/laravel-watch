@@ -31,7 +31,7 @@
     <x-section>
         <x-container column gap="xl" class="pb-16 md:pb-24">
             <x-heading tag="h2" size="4xl">Latest Courses</x-heading>
-            <x-grid class="w-full lg:grid-cols-2">
+            <x-grid class="w-full md:grid-cols-2">
                 @foreach ($latestCourses as $course)
                     <x-course :$course />
                 @endforeach
@@ -41,7 +41,7 @@
     <x-section>
         <x-container column gap="xl" class="pb-16 md:pb-24">
             <x-heading tag="h2" size="4xl">Popular Courses</x-heading>
-            <x-grid class="w-full lg:grid-cols-2">
+            <x-grid class="w-full md:grid-cols-2">
                 @foreach ($popularCourses as $course)
                     <x-course :$course />
                 @endforeach

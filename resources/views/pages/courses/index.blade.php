@@ -14,7 +14,7 @@
                 </x-stack>
                 <x-stack column gap="md" class="md:w-3/4">
                     <x-course-search />
-                    <x-grid class="w-full lg:grid-cols-2">
+                    <x-grid class="w-full md:grid-cols-2">
                         @foreach ($courses as $course)
                             <x-course :$course />
                         @endforeach
