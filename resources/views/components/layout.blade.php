@@ -9,9 +9,10 @@
         <title>{{ config('app.name') }}</title>
     </head>
     <body>
-        <x-header />
+        <x-header/>
         <main class="h-screen grid place-items-center text-7xl font-black">
             {{ $slot }}
         </main>
+        <x-footer/>
     </body>
 </html>
