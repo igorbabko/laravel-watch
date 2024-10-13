@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'index')->name('index');
-Route::get('/courses', fn () => 'Courses')->name('courses');
-Route::get('/contact', fn () => 'Contact')->name('contact');
-Route::get('/login', fn () => 'Login')->name('login');
-Route::get('/register', fn () => 'Register')->name('register');
+Route::view('/courses', 'courses')->name('courses');
+Route::view('/contact', 'contact')->name('contact');
+Route::view('/login', 'login')->name('login');
+Route::view('/register', 'register')->name('register');
