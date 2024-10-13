@@ -24,16 +24,16 @@
                             <a href="{{ route('index') }}" class="text-xl font-semibold hover:text-violet-600">Home</a>
                         </li>
                         <li>
-                            <a href="/" class="text-xl font-semibold hover:text-violet-600">Courses</a>
+                            <a href="{{ route('courses') }}" class="text-xl font-semibold hover:text-violet-600">Courses</a>
                         </li>
                         <li>
-                            <a href="/" class="text-xl font-semibold hover:text-violet-600">Contact</a>
+                            <a href="{{ route('contact') }}" class="text-xl font-semibold hover:text-violet-600">Contact</a>
                         </li>
                         <li>
-                            <a href="/" class="text-xl font-semibold hover:text-violet-600">Login</a>
+                            <a href="{{ route('login') }}" class="text-xl font-semibold hover:text-violet-600">Login</a>
                         </li>
                         <li>
-                            <a href="/" class="text-xl font-semibold hover:text-violet-600">Register</a>
+                            <a href="{{ route('register') }}" class="text-xl font-semibold hover:text-violet-600">Register</a>
                         </li>
                     </ul>
                 </nav>
