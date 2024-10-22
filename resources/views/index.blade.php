@@ -1,1 +1,3 @@
-<x-layout>Index</x-layout>
+<x-layout>
+    <x-hero/>
+</x-layout>
