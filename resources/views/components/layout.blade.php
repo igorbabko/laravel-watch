@@ -1,15 +1,3 @@
-@php
-    $navItems = collect([
-        'index' => 'Home',
-        'courses' => 'Courses',
-        'contact' => 'Contact',
-        'login' => 'Login',
-        'register' => 'Register',
-        'terms' => 'Terms',
-        'privacy' => 'Privacy',
-    ]);
-@endphp
-
 <!doctype html>
 <html lang="en">
     <head>
@@ -21,10 +9,10 @@
         @vite('resources/css/app.css')
     </head>
     <body>
-        <x-header :$navItems/>
+        <x-header/>
         <main class="h-screen grid place-items-center text-7xl font-black">
             {{ $slot }}
         </main>
-        <x-footer :$navItems/>
+        <x-footer/>
     </body>
 </html>
