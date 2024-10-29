@@ -10,7 +10,7 @@
     </head>
     <body class="flex flex-col h-screen">
         <x-header/>
-        <main class="flex-grow grid place-items-center font-black">{{ $slot }}</main>
+        <main class="flex-grow">{{ $slot }}</main>
         <x-footer/>
     </body>
 </html>

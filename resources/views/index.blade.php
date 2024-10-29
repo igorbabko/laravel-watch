@@ -1,4 +1,4 @@
 <x-layout>
     <x-hero/>
-    <x-courses/>
+    <x-courses heading="Latest Courses" :$courses/>
 </x-layout>
