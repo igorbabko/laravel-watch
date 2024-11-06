@@ -1,13 +1,10 @@
 <?php
 
 use App\Http\Controllers\CourseController;
+use App\Http\Controllers\IndexController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    $courses = DB::table('courses')->get();
-
-    return view('pages.index', compact('courses'));
-})->name('index');
+Route::get('/', IndexController::class)->name('index');
 
 Route::controller(CourseController::class)
     ->prefix('courses')
