@@ -11,13 +11,6 @@ class CourseSeeder extends Seeder
     {
         Course::truncate();
 
-        collect()->range(1, 10)->each(function (int $i) {
-            Course::create([
-                'title' => 'Course '.$i,
-                'description' => 'Course description',
-                'lessons_count' => 15,
-                'length' => '1h 45min',
-            ]);
-        });
+        Course::factory(10)->create();
     }
 }
