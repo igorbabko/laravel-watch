@@ -6,8 +6,5 @@
                 <x-course :$course/>
             @endforeach
         </div>
-        @if (method_exists($courses, 'links'))
-            {{ $courses->links() }}
-        @endif
     </div>
 </section>
