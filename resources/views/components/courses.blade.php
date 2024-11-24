@@ -3,7 +3,7 @@
         <h2 class="text-center font-bold text-4xl">{{ $heading }}</h2>
         <div class="grid grid-cols-2 gap-4">
             @foreach ($courses as $course)
-                <x-course :$course/>
+                <x-course.card :$course/>
             @endforeach
         </div>
     </div>
