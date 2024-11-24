@@ -3,10 +3,10 @@
         <div class="flex flex-col gap-8 container pb-24">
             <h1 class="text-center font-extrabold text-5xl">{{ $course->title }}</h1>
             <div class="flex gap-6">
-                <div>
+                <div class="w-1/2">
                     <x-course.info :$course/>
                 </div>
-                <div class="flex flex-col gap-4 grow">
+                <div class="flex flex-col gap-4 w-1/2">
                     <x-course.lessons/>
                 </div>
             </div>
