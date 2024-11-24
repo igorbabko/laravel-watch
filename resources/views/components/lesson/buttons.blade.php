@@ -2,19 +2,19 @@
     <div class="flex gap-2 mr-auto">
         @if ($lesson->previous)
             <a class="flex justify-center items-center gap-2 whitespace-nowrap rounded-md font-semibold px-4 py-2 bg-gray-100 hover:bg-gray-200 flex-grow"
-               href="{{ route('lessons.show', $lesson->previous) }}">
+               href="{{ $lesson->previous->routeUrl }}">
                 <x-icon name="chevron-left" class="size-6"/>
             </a>
         @endif
         @if ($lesson->next)
             <a class="flex justify-center items-center gap-2 whitespace-nowrap rounded-md font-semibold px-4 py-2 bg-gray-100 hover:bg-gray-200 flex-grow"
-               href="{{ route('lessons.show', $lesson->next) }}">
+               href="{{ $lesson->next->routeUrl }}">
                 <x-icon name="chevron-right" class="size-6"/>
             </a>
         @endif
     </div>
     <a class="flex justify-center items-center gap-2 whitespace-nowrap rounded-md font-semibold px-4 py-2 bg-gray-100 hover:bg-gray-200"
-       href="{{ route('courses.show', $lesson->course) }}">
+       href="{{ $lesson->course->routeUrl }}">
         All lessons
     </a>
     <a class="flex justify-center items-center gap-2 whitespace-nowrap rounded-md font-semibold px-4 py-2 bg-gray-100 hover:bg-gray-200"
