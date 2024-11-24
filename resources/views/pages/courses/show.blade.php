@@ -7,7 +7,7 @@
                     <x-course.info :$course/>
                 </div>
                 <div class="flex flex-col gap-4 w-1/2">
-                    <x-course.lessons/>
+                    <x-course.lessons :lessons="$course->lessons"/>
                 </div>
             </div>
         </div>
