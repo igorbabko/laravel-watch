@@ -10,6 +10,12 @@ class CourseSeeder extends Seeder
 {
     private array $data = [
         [
+            'title' => 'JetBrains IDE | Productivity',
+            'description' => 'Let\'s review how to use JetBrains IDEs productively. PhpStorm will be used for showcasing features.',
+            'lessons_count' => 16,
+            'length' => '1h 40min',
+        ],
+        [
             'title' => 'Vue Composition API From Scratch',
             'description' => 'Project development on Vue Composition API from scratch.',
             'lessons_count' => 137,
@@ -76,13 +82,7 @@ class CourseSeeder extends Seeder
             'length' => '22min',
         ],
         [
-            'title' => 'JetBrains IDE | Productivity',
-            'description' => 'Let\'s review how to use JetBrains IDEs productively. PhpStorm will be used for showcasing features.',
-            'lessons_count' => 16,
-            'length' => '1h 40min',
-        ],
-        [
-            'title' => 'IdeaVim | Vim in JetBrains',
+            'title' => 'IdeaVim | Vim in JetBrains IDE',
             'description' => 'Drastically Improve your productivity by leveraging Vim motions / mappings and powerful modern IDE at the same time.',
             'lessons_count' => 15,
             'length' => '1h 20min',
