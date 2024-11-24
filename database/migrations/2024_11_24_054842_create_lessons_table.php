@@ -22,6 +22,8 @@ return new class extends Migration
 
             $table->smallInteger('number');
             $table->string('title');
+            $table->string('url');
+            $table->string('commit_url');
             $table->timestamps();
         });
     }

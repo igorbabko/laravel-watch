@@ -20,7 +20,9 @@
                         All lessons
                     </a>
                     <a class="flex justify-center items-center gap-2 whitespace-nowrap rounded-md font-semibold px-4 py-2 bg-gray-100 hover:bg-gray-200"
-                       href="https://github.com/igorbabko">
+                       href="{{ $lesson->commit_url }}"
+                       target="_blank"
+                    >
                         Source Code
                     </a>
                     <button

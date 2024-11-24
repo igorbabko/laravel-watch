@@ -16,6 +16,7 @@ class CourseFactory extends Factory
             'description' => fake()->paragraph(2),
             'lessons_count' => fake()->numberBetween(10, 50),
             'length' => "{$hours}h {$minutes}min",
+            'repository_url' => 'https://github.com/igorbabko/phpstorm-productivity',
         ];
     }
 }

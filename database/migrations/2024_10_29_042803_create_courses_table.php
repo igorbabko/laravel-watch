@@ -17,6 +17,7 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->integer('lessons_count')->default(21);
             $table->string('length')->default('2h 30min');
+            $table->string('repository_url');
             $table->timestamps();
         });
     }
