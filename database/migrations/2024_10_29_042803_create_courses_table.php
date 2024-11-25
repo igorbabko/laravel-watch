@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->string('title')->default('Course');
             $table->text('description')->nullable();
-            $table->integer('lessons_count')->default(21);
             $table->string('length')->default('2h 30min');
             $table->timestamps();
         });

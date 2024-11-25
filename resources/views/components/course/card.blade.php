@@ -7,7 +7,7 @@
         <footer class="flex gap-2 justify-between mt-auto">
             <div class="flex items-center gap-2">
                 <x-icon name="film" class="size-4"/>
-                <span class="text-sm font-semibold">{{ $course->lessons_count }} lessons</span>
+                <span class="text-sm font-semibold">{{ $course->lessons()->count() }} lessons</span>
             </div>
             <div class="flex items-center gap-2">
                 <x-icon name="clock" class="size-4"/>
