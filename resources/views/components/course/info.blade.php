@@ -1,4 +1,4 @@
-<div>
+<div class="w-1/2">
     <article class="flex flex-col gap-4 sticky top-24">
         <header>
             <h2 class="text-lg font-semibold">
