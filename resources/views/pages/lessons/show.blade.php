@@ -15,7 +15,7 @@
                        class="font-semibold rounded-md px-4 py-2 bg-gray-100 hover:bg-gray-200">
                         All Lessons
                     </a>
-                    <a href="https://github.com/igorbabko"
+                    <a href="{{ $lesson->commit_url }}"
                        target="_blank"
                        class="font-semibold rounded-md px-4 py-2 bg-gray-100 hover:bg-gray-200">
                         Source Code
