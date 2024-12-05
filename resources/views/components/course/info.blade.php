@@ -7,7 +7,7 @@
         </header>
         <p>{{ $course->description }}</p>
         <footer class="flex gap-2">
-            <a href="#"
+            <a href="{{ route('lessons.show', $course->firstLesson) }}"
                class="text-center whitespace-nowrap rounded-md font-semibold px-4 py-2 bg-violet-500 text-white hover:bg-violet-600 grow">
                 Start Watching
             </a>
