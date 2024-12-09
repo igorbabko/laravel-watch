@@ -11,7 +11,7 @@
             </div>
             <div class="flex items-center gap-2">
                 <x-icon name="clock" class="size-4"/>
-                <span class="text-sm font-semibold">{{ $course->length }}</span>
+                <span class="text-sm font-semibold">{{ $course->formattedLength }}</span>
             </div>
         </footer>
     </article>
