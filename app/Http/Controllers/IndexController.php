@@ -9,7 +9,10 @@ class IndexController extends Controller
 {
     public function __invoke(Request $request)
     {
-        $courses = Course::latest()->take(4)->get();
+        $courses = Course::withSum('lessons as length', 'length')
+            ->latest()
+            ->take(4)
+            ->get();
 
         return view('pages.index', compact('courses'));
     }
