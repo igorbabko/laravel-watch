@@ -6,7 +6,7 @@
                         type="checkbox"
                         class="size-5 rounded-md border-gray-300 text-violet-600 focus:border-violet-300 focus:ring focus:ring-violet-200 focus:ring-opacity-50 focus:ring-offset-0"
                 />
-                {{ $tag }}
+                {{ $tag->name }}
             </label>
         </li>
     @endforeach

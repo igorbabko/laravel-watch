@@ -8,8 +8,8 @@ class CourseFactory extends Factory
 {
     public function definition(): array
     {
-        $hours = $this->faker->numberBetween(1, 15);
-        $minutes = $this->faker->numberBetween(1, 59);
+        $hours = fake()->numberBetween(1, 15);
+        $minutes = fake()->numberBetween(1, 59);
 
         return [
             'title' => ucfirst(fake()->words(rand(2, 6), true)),
