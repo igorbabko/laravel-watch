@@ -22,9 +22,14 @@
                 </div>
                 <div class="flex flex-col gap-4 w-3/4">
                     <div class="grid grid-cols-2 gap-4">
-                        @foreach ($courses as $course)
+                        @forelse ($courses as $course)
                             <x-course.card :$course/>
-                        @endforeach
+                        @empty
+                            <p>
+                                No courses found, <a href="{{ route('courses.index') }}"
+                                                     class="font-semibold text-violet-600">reset filters</a>.
+                            </p>
+                        @endforelse
                     </div>
                     {{ $courses->links() }}
                 </div>
