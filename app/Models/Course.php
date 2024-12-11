@@ -43,9 +43,9 @@ class Course extends Model
 
     public function scopeTaggedWith(Builder $query, ?array $tags): void
     {
-        $query->when($tags, fn (Builder $query) => $query
-            ->whereHas('tags', fn (Builder $query) => $query
-                ->whereIn('tags.id', $tags)
+        $query->when($tags, fn (Builder $query) => collect($tags)
+            ->each(fn ($tag) => $query
+                ->whereHas('tags', fn (Builder $query) => $query->where('tags.id', $tag))
             )
         );
     }
