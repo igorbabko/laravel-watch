@@ -4,6 +4,7 @@ namespace App\Models;
 
 use App\Traits\Routeable;
 use Carbon\CarbonInterval;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -15,19 +16,38 @@ class Course extends Model
 {
     use HasFactory, Routeable;
 
-    public function lessons(): HasMany
-    {
-        return $this->hasMany(Lesson::class);
-    }
-
     public function firstLesson(): HasOne
     {
         return $this->lessons()->one()->ofMany('number', 'min');
     }
 
+    public function lessons(): HasMany
+    {
+        return $this->hasMany(Lesson::class);
+    }
+
     public function tags(): BelongsToMany
     {
         return $this->belongsToMany(Tag::class)->withTimestamps();
+    }
+
+    public function scopeSearch(Builder $query, ?string $search): void
+    {
+        $query->when($search, fn (Builder $query) => $query
+            ->where(fn (Builder $query) => $query
+                ->whereLike('title', "%$search%")
+                ->orWhereLike('description', "%$search%")
+            )
+        );
+    }
+
+    public function scopeTaggedWith(Builder $query, ?array $tags): void
+    {
+        $query->when($tags, fn (Builder $query) => $query
+            ->whereHas('tags', fn (Builder $query) => $query
+                ->whereIn('tags.id', $tags)
+            )
+        );
     }
 
     protected function formattedLength(): Attribute
