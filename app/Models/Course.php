@@ -34,10 +34,10 @@ class Course extends Model
     public function scopeSearch(Builder $query, ?string $search): void
     {
         $query->when($search, fn (Builder $query) => $query
-            ->where(fn (Builder $query) => $query
-                ->whereLike('title', "%$search%")
-                ->orWhereLike('description', "%$search%")
-            )
+            ->whereAny([
+                'title',
+                'description',
+            ], 'like', "%$search%")
         );
     }
 
