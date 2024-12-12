@@ -28,7 +28,7 @@ class Course extends Model
     {
         return Attribute::make(
             get: function () {
-                $interval = CarbonInterval::seconds($this->lessons()->sum('length'))
+                $interval = CarbonInterval::seconds($this->length ?? $this->lessons()->sum('length'))
                     ->cascade()
                     ->toArray();
 
