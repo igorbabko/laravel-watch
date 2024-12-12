@@ -35,4 +35,9 @@ class Lesson extends Model
                 ->firstWhere('number', $this->number + 1),
         );
     }
+
+    protected function routeUrl(): Attribute
+    {
+        return Attribute::make(get: fn () => route('lessons.show', $this));
+    }
 }
