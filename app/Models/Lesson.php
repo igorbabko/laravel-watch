@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Traits\Routable;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -9,7 +10,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Lesson extends Model
 {
-    use HasFactory;
+    use HasFactory, Routable;
 
     public function course(): BelongsTo
     {
@@ -34,10 +35,5 @@ class Lesson extends Model
                 ->lessons()
                 ->firstWhere('number', $this->number + 1),
         );
-    }
-
-    protected function routeUrl(): Attribute
-    {
-        return Attribute::make(get: fn () => route('lessons.show', $this));
     }
 }
