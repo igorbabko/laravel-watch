@@ -14,14 +14,14 @@ class Course extends Model
 {
     use HasFactory, Routable;
 
-    public function lessons(): HasMany
-    {
-        return $this->hasMany(Lesson::class);
-    }
-
     public function firstLesson(): HasOne
     {
         return $this->lessons()->one()->ofMany('number', 'min');
+    }
+
+    public function lessons(): HasMany
+    {
+        return $this->hasMany(Lesson::class);
     }
 
     protected function formattedLength(): Attribute
@@ -37,6 +37,6 @@ class Course extends Model
 
                 return trim($formattedHours.' '.$formattedMinutes);
             }
-        );
+        )->shouldCache();
     }
 }
