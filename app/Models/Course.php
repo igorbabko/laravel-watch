@@ -37,6 +37,6 @@ class Course extends Model
 
                 return trim($formattedHours.' '.$formattedMinutes);
             }
-        );
+        )->shouldCache();
     }
 }
