@@ -3,7 +3,7 @@
         <div class="container flex flex-col gap-8 pb-24">
             <h1 class="text-center font-extrabold text-5xl">Courses</h1>
             <div class="flex items-start gap-8">
-                <div class="flex flex-col sticky top-24 w-1/5">
+                <div class="flex sticky top-24 w-1/5">
                     <x-course.filter
                         :tags="['Laravel', 'Symfony', 'Vue', 'Nuxt', 'React', 'Next', 'Angular', 'Tailwind CSS']"/>
                 </div>
