@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Course;
+use App\Models\Tag;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 
@@ -17,7 +18,9 @@ class CourseController extends Controller
             ->paginate()
             ->withQueryString();
 
-        return view('pages.courses.index', compact('courses'));
+        $tags = Tag::get();
+
+        return view('pages.courses.index', compact('courses', 'tags'));
     }
 
     public function show(Course $course): View
