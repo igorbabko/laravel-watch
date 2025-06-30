@@ -1,9 +1,16 @@
 <a href="{{ $course->routeUrl }}" class="rounded-md bg-gray-100 hover:bg-gray-200">
     <article class="flex flex-col p-4 h-full">
         <header>
+            <div class="flex gap-1 mb-2">
+                @foreach ($course->tags as $tag)
+                    <span class="bg-gray-500 text-white rounded-md px-2 py-0.5 text-xs font-medium">
+                        {{ $tag->name }}
+                    </span>
+                @endforeach
+            </div>
             <h3 class="font-semibold text-xl">{{ $course->title }}</h3>
         </header>
-        <p class="font-normal mb-8 mt-2">{{ $course->description }}</p>
+        <p class="font-normal mb-8 mt-1">{{ $course->description }}</p>
         <footer class="flex gap-2 justify-between mt-auto">
             <div class="flex items-center gap-2">
                 <x-icon name="film" class="size-4"/>
