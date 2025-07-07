@@ -4,6 +4,7 @@ namespace App\Models;
 
 use App\Traits\Routable;
 use Carbon\CarbonInterval;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -28,6 +29,25 @@ class Course extends Model
     public function tags(): BelongsToMany
     {
         return $this->belongsToMany(Tag::class)->withTimestamps();
+    }
+
+    public function scopeSearch(Builder $query, ?string $search): void
+    {
+        $query->when($search, fn (Builder $query) => $query
+            ->where(fn (Builder $query) => $query
+                ->whereLike('title', "%{$search}%")
+                ->orWhereLike('description', "%{$search}%")
+            )
+        );
+    }
+
+    public function scopeTagged(Builder $query, ?array $tags): void
+    {
+        $query->when($tags, fn (Builder $query) => $query
+            ->whereHas('tags', fn (Builder $query) => $query
+                ->whereIn('tags.id', $tags)
+            )
+        );
     }
 
     protected function formattedLength(): Attribute
