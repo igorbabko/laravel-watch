@@ -17,7 +17,7 @@ class TagSeeder extends Seeder
         ['name' => 'React'],
         ['name' => 'Next'],
         ['name' => 'Angular'],
-        ['name' => 'Tailwind CSS'],
+        ['name' => 'Tailwind'],
     ];
 
     public function run(): void
