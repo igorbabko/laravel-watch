@@ -34,18 +34,14 @@ class Course extends Model
     public function scopeSearch(Builder $query, ?string $search): void
     {
         $query->when($search, fn (Builder $query) => $query
-            ->where(fn (Builder $query) => $query
-                ->whereLike('title', "%{$search}%")
-                ->orWhereLike('description', "%{$search}%")
-            )
-        );
+            ->whereAny(['title', 'description'], 'like', "%$search%"));
     }
 
     public function scopeTagged(Builder $query, ?array $tags): void
     {
-        $query->when($tags, fn (Builder $query) => $query
-            ->whereHas('tags', fn (Builder $query) => $query
-                ->whereIn('tags.id', $tags)
+        $query->when($tags, fn (Builder $query) => collect($tags)
+            ->each(fn ($tag) => $query
+                ->whereHas('tags', fn (Builder $query) => $query->where('tags.id', $tag))
             )
         );
     }
