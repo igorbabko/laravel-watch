@@ -5,6 +5,8 @@ use App\Http\Controllers\IndexController;
 use App\Http\Controllers\LessonController;
 use Illuminate\Support\Facades\Route;
 
+Route::view('/register', 'pages.auth.register')->name('register');
+
 Route::get('/', IndexController::class)->name('index');
 
 Route::controller(CourseController::class)
@@ -19,6 +21,5 @@ Route::get('/lessons/{lesson}', [LessonController::class, 'show'])->name('lesson
 
 Route::view('/contact', 'pages.contact')->name('contact');
 Route::view('/login', 'pages.login')->name('login');
-Route::view('/register', 'pages.register')->name('register');
 Route::view('/terms', 'pages.terms')->name('terms');
 Route::view('/privacy', 'pages.privacy')->name('privacy');
