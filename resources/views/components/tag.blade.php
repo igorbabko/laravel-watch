@@ -9,10 +9,12 @@
             </div>
         </div>
         <p class="text-center text-base font-medium">
-            <span class="font-bold">{{ $tag->courses_count }}</span> courses
+            <span class="font-bold">{{ $tag->courses_count }}</span>
+            {{ Str::of('course')->plural($tag->courses_count) }}
             <br>
             {{--            {{ $tag->courses->reduce(fn (int $carry, $course) => $carry + $course->lessons()->count(), 0) }} lessons--}}
-            <span class="font-bold">{{ $tag->courses->sum('lessons_count') }}</span> lessons
+            <span class="font-bold">{{ $tag->courses->sum('lessons_count') }}</span>
+            {{ Str::of('lesson')->plural($tag->courses->sum('lessons_count')) }}
         </p>
     </div>
 </a>
