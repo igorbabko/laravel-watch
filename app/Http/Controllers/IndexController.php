@@ -11,7 +11,10 @@ class IndexController extends Controller
     public function __invoke(Request $request)
     {
         $courses = Course::latest()->take(4)->get();
-        $tags = Tag::get();
+
+        $tags = Tag::withCount('courses')
+            ->with(['courses' => fn ($query) => $query->withCount('lessons')])
+            ->get();
 
         return view('pages.index', compact('courses', 'tags'));
     }

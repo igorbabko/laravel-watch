@@ -7,7 +7,11 @@
             </div>
         </div>
         <p class="text-center font-medium">
-            4 courses <br> 120 lessons
+            <span class="font-bold">{{ $tag->courses_count }}</span>
+            {{ Str::of('course')->plural($tag->courses_count) }}
+            <br>
+            <span class="font-bold">{{ $tag->courses->sum('lessons_count') }}</span>
+            {{ Str::of('lesson')->plural($tag->courses->sum('lessons_count')) }}
         </p>
     </div>
 </a>
