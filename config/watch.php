@@ -1,15 +1,25 @@
 <?php
 
 return [
-    'nav_items' => [
-        'index' => 'Home',
-        'courses.index' => 'Courses',
-        'contact' => 'Contact',
-        'login' => 'Login',
-        'register' => 'Register',
-        'terms' => 'Terms',
-        'privacy' => 'Privacy',
-    ],
+    'nav_items' => function () {
+        $items = [
+            'index' => 'Home',
+            'courses.index' => 'Courses',
+            'contact' => 'Contact',
+            'login' => 'Login',
+            'register' => 'Register',
+            'profile' => 'Profile',
+            'logout' => 'Logout',
+            'terms' => 'Terms',
+            'privacy' => 'Privacy',
+        ];
+
+        if (auth()->check()) {
+            unset($items['login'], $items['register']);
+        }
+
+        return $items;
+    },
     'social_networks' => [
         'youtube' => 'https://youtube.com',
         'telegram' => 'https://telegram.org',
