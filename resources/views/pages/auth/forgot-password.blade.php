@@ -3,7 +3,7 @@
         <div class="container flex flex-col gap-8 pb-24 max-w-lg">
             <h1 class="text-center font-extrabold text-5xl">Forgot Password</h1>
             @session('status')
-                <div class="font-medium text-sm text-green-600 text-center">
+                <div class="font-medium text-sm text-violet-600 text-center">
                     {{ $value }}
                 </div>
             @endsession
