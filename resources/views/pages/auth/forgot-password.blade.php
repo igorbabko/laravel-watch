@@ -2,7 +2,12 @@
     <section class="pt-32 px-10">
         <div class="container flex flex-col gap-8 pb-24 max-w-lg">
             <h1 class="text-center font-extrabold text-5xl">Forgot Password</h1>
-            <form action="{{ route('login') }}" method="POST" class="flex flex-col gap-4">
+            @session('status')
+                <div class="font-medium text-sm text-green-600 text-center">
+                    {{ $value }}
+                </div>
+            @endsession
+            <form action="{{ route('password.email') }}" method="POST" class="flex flex-col gap-4">
                 @csrf
                 <div class="flex flex-col gap-1 grow">
                     <label class="font-medium" for="email">
