@@ -5,11 +5,6 @@ use App\Http\Controllers\IndexController;
 use App\Http\Controllers\LessonController;
 use Illuminate\Support\Facades\Route;
 
-Route::middleware('guest')->group(function () {
-    Route::view('/register', 'pages.auth.register')->name('register');
-    Route::view('/login', 'pages.auth.login')->name('login');
-});
-
 Route::middleware('auth')->group(function () {
     Route::view('/profile', 'pages.profile')->name('profile');
 });
