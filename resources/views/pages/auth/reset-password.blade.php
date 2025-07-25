@@ -19,6 +19,9 @@
                     @error('email')
                     <span class="text-red-500 text-sm">{{ $message }}</span>
                     @enderror
+                    @error('token')
+                    <span class="text-red-500 text-sm">{{ $message }}</span>
+                    @enderror
                 </div>
                 <div class="flex flex-col gap-1 grow">
                     <label class="font-medium" for="password">
