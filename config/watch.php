@@ -16,6 +16,8 @@ return [
 
         if (auth()->check()) {
             unset($items['login'], $items['register']);
+        } else {
+            unset($items['profile'], $items['logout']);
         }
 
         return $items;

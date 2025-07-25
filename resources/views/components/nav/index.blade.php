@@ -10,7 +10,16 @@
             <x-nav.item
                 :href="route($routeName)"
                 :is-active="request()->routeIs($routeName)">
-                {{ $label }}
+                @if ($routeName === 'logout')
+                    <form method="POST" action="{{ route($routeName) }}">
+                        @csrf
+                        <button type="submit" class="cursor-pointer">
+                            Logout
+                        </button>
+                    </form>
+                @else
+                    {{ $label }}
+                @endif
             </x-nav.item>
         @endforeach
     </ul>
