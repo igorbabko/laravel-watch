@@ -35,7 +35,8 @@
                     <div class="flex items-center gap-3">
                         <input type="checkbox"
                                name="remember"
-                               value="{{ old('remember') }}"
+                               value="1"
+                               {{ old('remember') ? 'checked' : '' }}
                                class="size-5 rounded-md border-gray-300 text-violet-600 focus:border-violet-300 focus:ring focus:ring-violet-200 focus:ring-opacity-50 focus:ring-offset-0"
                                id="remember">
                         <label class="font-medium" for="remember">
