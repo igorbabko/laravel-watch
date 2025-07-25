@@ -26,7 +26,8 @@
                            name="email"
                            value="{{ old('email') }}"
                            class="rounded-md focus:border-violet-300 focus:ring focus:ring-violet-200 focus:ring-opacity-50 h-full @error('email') border-red-500 @else border-gray-300 @enderror"
-                           id="email">
+                           id="email"
+                           required>
                     @error('email')
                     <span class="text-red-500 text-sm">{{ $message }}</span>
                     @enderror
@@ -50,7 +51,7 @@
                     </label>
                     <input type="password"
                            name="password_confirmation"
-                           class="rounded-md focus:border-violet-300 focus:ring focus:ring-violet-200 focus:ring-opacity-50 h-full @error('password_confirmation') border-red-500 @else border-gray-300 @enderror"
+                           class="rounded-md border-gray-300 focus:border-violet-300 focus:ring focus:ring-violet-200 focus:ring-opacity-50 h-full"
                            id="password_confirmation"
                            required>
                     @error('password_confirmation')

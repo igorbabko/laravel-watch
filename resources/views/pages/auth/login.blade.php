@@ -12,7 +12,8 @@
                            name="email"
                            value="{{ old('email') }}"
                            class="rounded-md focus:border-violet-300 focus:ring focus:ring-violet-200 focus:ring-opacity-50 h-full @error('email') border-red-500 @else border-gray-300 @enderror"
-                           id="email">
+                           id="email"
+                           required>
                     @error('email')
                     <span class="text-red-500 text-sm">{{ $message }}</span>
                     @enderror
@@ -29,6 +30,18 @@
                     @error('password')
                     <span class="text-red-500 text-sm">{{ $message }}</span>
                     @enderror
+                </div>
+                <div class="flex flex-col gap-1 grow">
+                    <div class="flex items-center gap-3">
+                        <input type="checkbox"
+                               name="remember"
+                               value="{{ old('remember') }}"
+                               class="size-5 rounded-md border-gray-300 text-violet-600 focus:border-violet-300 focus:ring focus:ring-violet-200 focus:ring-opacity-50 focus:ring-offset-0"
+                               id="remember">
+                        <label class="font-medium" for="remember">
+                            Remember me
+                        </label>
+                    </div>
                 </div>
                 <div class="flex items-center gap-2 justify-between">
                     <a href="{{ route('register') }}"
