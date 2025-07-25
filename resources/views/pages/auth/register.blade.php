@@ -13,7 +13,8 @@
                            value="{{ old('name') }}"
                            class="rounded-md focus:border-violet-300 focus:ring focus:ring-violet-200 focus:ring-opacity-50 h-full @error('name') border-red-500 @else border-gray-300 @enderror"
                            id="name"
-                           required>
+                           required
+                    autofocus>
                     @error('name')
                     <span class="text-red-500 text-sm">{{ $message }}</span>
                     @enderror
