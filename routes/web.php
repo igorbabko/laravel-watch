@@ -5,7 +5,7 @@ use App\Http\Controllers\IndexController;
 use App\Http\Controllers\LessonController;
 use Illuminate\Support\Facades\Route;
 
-Route::view('/register', 'pages.auth.register')->name('register');
+Route::view('/profile', 'pages.profile')->name('profile')->middleware('auth');
 
 Route::get('/', IndexController::class)->name('index');
 

@@ -7,6 +7,7 @@ return [
         'contact' => 'Contact',
         'login' => 'Login',
         'register' => 'Register',
+        'profile' => 'Profile',
         'terms' => 'Terms',
         'privacy' => 'Privacy',
     ],
