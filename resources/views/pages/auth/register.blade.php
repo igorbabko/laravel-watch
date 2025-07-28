@@ -12,9 +12,10 @@
                            class="rounded-md focus:border-violet-300 focus:ring focus:ring-violet-200 focus:ring-opacity-50 h-full @error('name') border-red-500 @else border-gray-300 @enderror"
                            name="name"
                            value="{{ old('name') }}"
-                           id="name">
+                           id="name"
+                           autofocus>
                     @error('name')
-                        <span class="text-red-500 text-sm">{{ $message }}</span>
+                    <span class="text-red-500 text-sm">{{ $message }}</span>
                     @enderror
                 </div>
                 <div class="flex flex-col gap-1 grow">
@@ -27,7 +28,7 @@
                            value="{{ old('email') }}"
                            id="email">
                     @error('email')
-                        <span class="text-red-500 text-sm">{{ $message }}</span>
+                    <span class="text-red-500 text-sm">{{ $message }}</span>
                     @enderror
                 </div>
                 <div class="flex flex-col gap-1 grow">
@@ -39,7 +40,7 @@
                            name="password"
                            id="password">
                     @error('password')
-                        <span class="text-red-500 text-sm">{{ $message }}</span>
+                    <span class="text-red-500 text-sm">{{ $message }}</span>
                     @enderror
                 </div>
                 <div class="flex flex-col gap-1 grow">
@@ -56,7 +57,8 @@
                        class="flex justify-center items-center gap-2 whitespace-nowrap rounded-md font-semibold px-4 py-2 bg-gray-100 hover:bg-gray-200">
                         Already registered?
                     </a>
-                    <button type="submit" class="flex justify-center items-center gap-2 whitespace-nowrap cursor-pointer rounded-md font-semibold px-4 py-2 bg-violet-500 text-white hover:bg-violet-600">
+                    <button type="submit"
+                            class="flex justify-center items-center gap-2 whitespace-nowrap cursor-pointer rounded-md font-semibold px-4 py-2 bg-violet-500 text-white hover:bg-violet-600">
                         Register
                     </button>
                 </div>

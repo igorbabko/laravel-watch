@@ -1,6 +1,17 @@
 @php
     $items = collect(config('watch.nav_items'))->reject(
-        fn ($label, $routeName) => in_array($routeName, ['terms', 'privacy'])
+        function ($label, $routeName) {
+            $rejectedRouteNames = ['terms', 'privacy'];
+
+            if (auth()->check()) {
+                $rejectedRouteNames[] = 'register';
+                $rejectedRouteNames[] = 'login';
+            } else {
+                $rejectedRouteNames[] = 'profile';
+            }
+
+            return in_array($routeName, $rejectedRouteNames);
+        }
     );
 @endphp
 
