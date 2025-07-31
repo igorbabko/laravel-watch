@@ -20,6 +20,5 @@ Route::controller(CourseController::class)
 Route::get('/lessons/{lesson}', [LessonController::class, 'show'])->name('lessons.show');
 
 Route::view('/contact', 'pages.contact')->name('contact');
-Route::view('/login', 'pages.login')->name('login');
 Route::view('/terms', 'pages.terms')->name('terms');
 Route::view('/privacy', 'pages.privacy')->name('privacy');
