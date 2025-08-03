@@ -1,6 +1,6 @@
 @php
     $items = collect(config('watch.nav_items'))->reject(
-        fn ($label, $routeName) => in_array($routeName, ['login', 'register', 'profile'])
+        fn ($label, $routeName) => in_array($routeName, ['login', 'register', 'profile', 'logout'])
     );
 @endphp
 
