@@ -2,6 +2,9 @@
     <section class="pt-32 px-10">
         <div class="container flex flex-col gap-8 pb-24 max-w-lg">
             <h1 class="text-center font-extrabold text-5xl">Login</h1>
+            @session('status')
+            <div class="font-medium text-sm text-violet-600 text-center">{{ $value }}</div>
+            @endsession
             <form action="{{ route('login') }}" method="POST" class="flex flex-col gap-4">
                 @csrf
                 <div class="flex flex-col gap-1 grow">
@@ -23,7 +26,8 @@
                         <label class="font-medium" for="password">
                             Password
                         </label>
-                        <a href="{{ route('password.request') }}" class="text-sm underline text-gray-500 hover:text-black">
+                        <a href="{{ route('password.request') }}"
+                           class="text-sm underline text-gray-500 hover:text-black">
                             Forgot password?
                         </a>
                     </div>
