@@ -8,6 +8,7 @@ return [
         'login' => 'Login',
         'register' => 'Register',
         'profile' => 'Profile',
+        'logout' => 'Logout',
         'terms' => 'Terms',
         'privacy' => 'Privacy',
     ],
