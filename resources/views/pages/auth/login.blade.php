@@ -19,9 +19,14 @@
                     @enderror
                 </div>
                 <div class="flex flex-col gap-1 grow">
-                    <label class="font-medium" for="password">
-                        Password
-                    </label>
+                    <div class="flex justify-between items-center">
+                        <label class="font-medium" for="password">
+                            Password
+                        </label>
+                        <a href="{{ route('password.request') }}" class="text-sm underline text-gray-500 hover:text-black">
+                            Forgot password?
+                        </a>
+                    </div>
                     <input type="password"
                            class="rounded-md focus:border-violet-300 focus:ring focus:ring-violet-200 focus:ring-opacity-50 h-full @error('password') border-red-500 @else border-gray-300 @enderror"
                            name="password"
