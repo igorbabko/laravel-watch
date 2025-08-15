@@ -45,6 +45,10 @@ class FortifyServiceProvider extends ServiceProvider
             return view('pages.auth.reset-password', ['request' => $request]);
         });
 
+        Fortify::verifyEmailView(function () {
+            return view('pages.auth.verify-email');
+        });
+
         Fortify::createUsersUsing(CreateNewUser::class);
         Fortify::updateUserProfileInformationUsing(UpdateUserProfileInformation::class);
         Fortify::updateUserPasswordsUsing(UpdateUserPassword::class);
