@@ -13,7 +13,8 @@
                            name="name"
                            value="{{ old('name') }}"
                            id="name"
-                           autofocus>
+                           autofocus
+                           required>
                     @error('name')
                     <span class="text-red-500 text-sm">{{ $message }}</span>
                     @enderror
@@ -26,7 +27,8 @@
                            class="rounded-md focus:border-violet-300 focus:ring focus:ring-violet-200 focus:ring-opacity-50 h-full @error('email') border-red-500 @else border-gray-300 @enderror"
                            name="email"
                            value="{{ old('email') }}"
-                           id="email">
+                           id="email"
+                           required>
                     @error('email')
                     <span class="text-red-500 text-sm">{{ $message }}</span>
                     @enderror
@@ -38,7 +40,8 @@
                     <input type="password"
                            class="rounded-md focus:border-violet-300 focus:ring focus:ring-violet-200 focus:ring-opacity-50 h-full @error('password') border-red-500 @else border-gray-300 @enderror"
                            name="password"
-                           id="password">
+                           id="password"
+                           required>
                     @error('password')
                     <span class="text-red-500 text-sm">{{ $message }}</span>
                     @enderror
@@ -50,7 +53,8 @@
                     <input type="password"
                            class="rounded-md border-gray-300 focus:border-violet-300 focus:ring focus:ring-violet-200 focus:ring-opacity-50 h-full"
                            name="password_confirmation"
-                           id="password_confirmation">
+                           id="password_confirmation"
+                           required>
                 </div>
                 <div class="flex items-center gap-2 justify-between">
                     <a href="{{ route('login') }}"

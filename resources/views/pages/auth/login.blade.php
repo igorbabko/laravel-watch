@@ -16,7 +16,8 @@
                            name="email"
                            value="{{ old('email') }}"
                            id="email"
-                           autofocus>
+                           autofocus
+                           required>
                     @error('email')
                     <span class="text-red-500 text-sm">{{ $message }}</span>
                     @enderror

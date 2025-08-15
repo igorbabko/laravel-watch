@@ -15,14 +15,14 @@
                     @csrf
                     <button type="submit"
                             class="flex justify-center items-center gap-2 whitespace-nowrap cursor-pointer rounded-md font-semibold px-4 py-2 bg-gray-100 hover:bg-gray-200">
-                        Log Out
+                        Log out
                     </button>
                 </form>
                 <form method="POST" action="{{ route('verification.send') }}">
                     @csrf
                     <button type="submit"
                             class="flex justify-center items-center gap-2 whitespace-nowrap cursor-pointer rounded-md font-semibold px-4 py-2 bg-violet-500 text-white hover:bg-violet-600">
-                        Resend Verification Email
+                        Resend verification email
                     </button>
                 </form>
             </div>
