@@ -1,7 +1,7 @@
 <x-layout>
     <section class="pt-32 px-10">
         <div class="container flex flex-col gap-8 pb-24 max-w-lg">
-            <h1 class="text-center font-extrabold text-5xl">Reset password</h1>
+            <h1 class="text-center font-extrabold text-5xl">Reset Password</h1>
             <form action="{{ route('password.update') }}" method="POST" class="flex flex-col gap-4">
                 @csrf
                 <input type="hidden" name="token" value="{{ $request->token }}">
@@ -29,7 +29,9 @@
                     <input type="password"
                            class="rounded-md focus:border-violet-300 focus:ring focus:ring-violet-200 focus:ring-opacity-50 h-full @error('password') border-red-500 @else border-gray-300 @enderror"
                            name="password"
-                           id="password">
+                           id="password"
+                           autofocus
+                           required>
                     @error('password')
                     <span class="text-red-500 text-sm">{{ $message }}</span>
                     @enderror
@@ -41,7 +43,8 @@
                     <input type="password"
                            class="rounded-md border-gray-300 focus:border-violet-300 focus:ring focus:ring-violet-200 focus:ring-opacity-50 h-full"
                            name="password_confirmation"
-                           id="password_confirmation">
+                           id="password_confirmation"
+                           required>
                 </div>
                 <div class="flex justify-end">
                     <button type="submit"
