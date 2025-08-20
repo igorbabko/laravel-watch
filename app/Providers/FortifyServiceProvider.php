@@ -49,6 +49,10 @@ class FortifyServiceProvider extends ServiceProvider
             return view('pages.auth.verify-email');
         });
 
+        Fortify::confirmPasswordView(function () {
+            return view('pages.auth.confirm-password');
+        });
+
         Fortify::createUsersUsing(CreateNewUser::class);
         Fortify::updateUserProfileInformationUsing(UpdateUserProfileInformation::class);
         Fortify::updateUserPasswordsUsing(UpdateUserPassword::class);
