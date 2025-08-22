@@ -41,7 +41,11 @@
                     <span class="text-red-500 text-sm">{{ $message }}</span>
                     @enderror
                 </div>
-                <div class="flex justify-end">
+                <div class="flex items-center gap-2 justify-between">
+                    <a href="{{ route('password') }}"
+                       class="flex justify-center items-center gap-2 whitespace-nowrap rounded-md font-semibold px-4 py-2 bg-gray-100 hover:bg-gray-200">
+                        Update password
+                    </a>
                     <button type="submit"
                             class="flex justify-center items-center gap-2 whitespace-nowrap cursor-pointer rounded-md font-semibold px-4 py-2 bg-violet-500 text-white hover:bg-violet-600">
                         Save
