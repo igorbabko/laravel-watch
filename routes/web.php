@@ -1,12 +1,26 @@
 <?php
 
 use App\Http\Controllers\CourseController;
+use App\Http\Controllers\DeleteAccount;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\LessonController;
 use Illuminate\Support\Facades\Route;
 
-Route::view('/profile', 'pages.profile')->name('profile')->middleware(['auth', 'password.confirm']);
-Route::view('/password', 'pages.password')->name('password')->middleware(['auth', 'verified']);
+Route::group(['middleware' => 'auth'], function () {
+    Route::view('/profile', 'pages.profile')->name('profile');
+
+    Route::view('/password', 'pages.password')
+        ->name('password')
+        ->middleware('verified');
+
+    Route::view('/delete-account', 'pages.delete-account')
+        ->name('delete-account.show')
+        ->middleware(['verified', 'password.confirm']);
+
+    Route::delete('/delete-account', DeleteAccount::class)
+        ->name('delete-account.destroy')
+        ->middleware('verified');
+});
 
 Route::get('/', IndexController::class)->name('index');
 

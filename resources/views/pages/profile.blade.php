@@ -42,10 +42,16 @@
                     @enderror
                 </div>
                 <div class="flex items-center gap-2 justify-between">
-                    <a href="{{ route('password') }}"
-                       class="flex justify-center items-center gap-2 whitespace-nowrap rounded-md font-semibold px-4 py-2 bg-gray-100 hover:bg-gray-200">
-                        Update password
-                    </a>
+                    <div class="flex gap-2">
+                        <a href="{{ route('delete-account.show') }}"
+                           class="flex justify-center items-center gap-2 whitespace-nowrap rounded-md font-semibold px-4 py-2 bg-red-100 text-red-700 hover:bg-red-200">
+                            Delete account
+                        </a>
+                        <a href="{{ route('password') }}"
+                           class="flex justify-center items-center gap-2 whitespace-nowrap rounded-md font-semibold px-4 py-2 bg-gray-100 hover:bg-gray-200">
+                            Update password
+                        </a>
+                    </div>
                     <button type="submit"
                             class="flex justify-center items-center gap-2 whitespace-nowrap cursor-pointer rounded-md font-semibold px-4 py-2 bg-violet-500 text-white hover:bg-violet-600">
                         Save
