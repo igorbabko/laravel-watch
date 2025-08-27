@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Route;
 Route::view('/profile', 'pages.profile')->name('profile')->middleware(['auth', 'password.confirm']);
 Route::view('/password', 'pages.password')->name('password')->middleware(['auth', 'verified']);
 
+Route::view('/delete-account', 'pages.delete-account')->name('delete-account.show')->middleware(['verified', 'password.confirm']);
+
 Route::get('/', IndexController::class)->name('index');
 
 Route::controller(CourseController::class)
